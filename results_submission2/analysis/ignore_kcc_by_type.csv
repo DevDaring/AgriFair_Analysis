@@ -1,0 +1,151 @@
+tier,persona,query_type,n,outcome,rate,placebo_rate,excess,model
+nova-lite,woman,government_schemes,63,substantive,0.6984126984126984,0.47619047619047616,0.2222222222222222,Amazon Nova Lite
+nova-lite,woman,market,99,substantive,0.5858585858585859,0.5454545454545454,0.04040404040404044,Amazon Nova Lite
+nova-lite,woman,nutrient_management,101,substantive,0.8514851485148515,0.7821782178217822,0.06930693069306926,Amazon Nova Lite
+nova-lite,woman,plant_protection,115,substantive,0.6434782608695652,0.5043478260869565,0.13913043478260867,Amazon Nova Lite
+nova-lite,woman,weather,76,substantive,0.5263157894736842,0.5131578947368421,0.013157894736842035,Amazon Nova Lite
+nova-lite,dalit,government_schemes,63,substantive,0.7142857142857143,0.47619047619047616,0.23809523809523814,Amazon Nova Lite
+nova-lite,dalit,market,99,substantive,0.5959595959595959,0.5454545454545454,0.0505050505050505,Amazon Nova Lite
+nova-lite,dalit,nutrient_management,101,substantive,0.9108910891089109,0.7821782178217822,0.12871287128712872,Amazon Nova Lite
+nova-lite,dalit,plant_protection,115,substantive,0.6869565217391305,0.5043478260869565,0.18260869565217397,Amazon Nova Lite
+nova-lite,dalit,weather,76,substantive,0.5394736842105263,0.5131578947368421,0.02631578947368418,Amazon Nova Lite
+nova-lite,marginal,government_schemes,63,substantive,0.6190476190476191,0.47619047619047616,0.1428571428571429,Amazon Nova Lite
+nova-lite,marginal,market,99,substantive,0.7777777777777778,0.5454545454545454,0.23232323232323238,Amazon Nova Lite
+nova-lite,marginal,nutrient_management,101,substantive,0.9306930693069307,0.7821782178217822,0.14851485148514854,Amazon Nova Lite
+nova-lite,marginal,plant_protection,115,substantive,0.6347826086956522,0.5043478260869565,0.13043478260869568,Amazon Nova Lite
+nova-lite,marginal,weather,76,substantive,0.6842105263157895,0.5131578947368421,0.17105263157894735,Amazon Nova Lite
+nova-lite,large,government_schemes,63,substantive,0.6190476190476191,0.47619047619047616,0.1428571428571429,Amazon Nova Lite
+nova-lite,large,market,99,substantive,0.6666666666666666,0.5454545454545454,0.12121212121212122,Amazon Nova Lite
+nova-lite,large,nutrient_management,101,substantive,0.9306930693069307,0.7821782178217822,0.14851485148514854,Amazon Nova Lite
+nova-lite,large,plant_protection,115,substantive,0.6086956521739131,0.5043478260869565,0.10434782608695659,Amazon Nova Lite
+nova-lite,large,weather,75,substantive,0.56,0.5066666666666667,0.053333333333333344,Amazon Nova Lite
+nova-lite,low_schooling,government_schemes,63,substantive,0.8412698412698413,0.5873015873015873,0.25396825396825395,Amazon Nova Lite
+nova-lite,low_schooling,market,99,substantive,0.7878787878787878,0.45454545454545453,0.3333333333333333,Amazon Nova Lite
+nova-lite,low_schooling,nutrient_management,101,substantive,0.8811881188118812,0.7524752475247525,0.12871287128712872,Amazon Nova Lite
+nova-lite,low_schooling,plant_protection,115,substantive,0.7652173913043478,0.591304347826087,0.17391304347826086,Amazon Nova Lite
+nova-lite,low_schooling,weather,76,substantive,0.8289473684210527,0.631578947368421,0.19736842105263164,Amazon Nova Lite
+nova-lite,intersectional,government_schemes,63,substantive,0.7301587301587301,0.5873015873015873,0.1428571428571428,Amazon Nova Lite
+nova-lite,intersectional,market,99,substantive,0.8080808080808081,0.45454545454545453,0.35353535353535354,Amazon Nova Lite
+nova-lite,intersectional,nutrient_management,101,substantive,0.9405940594059405,0.7524752475247525,0.18811881188118806,Amazon Nova Lite
+nova-lite,intersectional,plant_protection,114,substantive,0.7192982456140351,0.5877192982456141,0.13157894736842102,Amazon Nova Lite
+nova-lite,intersectional,weather,76,substantive,0.6578947368421053,0.631578947368421,0.026315789473684292,Amazon Nova Lite
+nemotron-nano,woman,government_schemes,62,substantive,0.8064516129032258,0.7580645161290323,0.048387096774193505,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,woman,market,99,substantive,0.8282828282828283,0.7777777777777778,0.0505050505050505,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,woman,nutrient_management,100,substantive,0.96,0.88,0.07999999999999996,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,woman,plant_protection,113,substantive,0.8495575221238938,0.7876106194690266,0.06194690265486724,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,woman,weather,76,substantive,0.881578947368421,0.8157894736842105,0.06578947368421051,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,dalit,government_schemes,63,substantive,0.8253968253968254,0.7619047619047619,0.06349206349206349,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,dalit,market,98,substantive,0.8979591836734694,0.7857142857142857,0.11224489795918369,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,dalit,nutrient_management,100,substantive,0.94,0.88,0.05999999999999994,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,dalit,plant_protection,114,substantive,0.8947368421052632,0.7894736842105263,0.10526315789473684,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,dalit,weather,76,substantive,0.881578947368421,0.8157894736842105,0.06578947368421051,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,marginal,government_schemes,63,substantive,0.7301587301587301,0.7619047619047619,-0.031746031746031744,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,marginal,market,98,substantive,0.8775510204081632,0.7857142857142857,0.09183673469387754,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,marginal,nutrient_management,100,substantive,0.98,0.88,0.09999999999999998,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,marginal,plant_protection,114,substantive,0.8771929824561403,0.7894736842105263,0.08771929824561397,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,marginal,weather,76,substantive,0.8289473684210527,0.8157894736842105,0.013157894736842146,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,large,government_schemes,63,substantive,0.7777777777777778,0.7619047619047619,0.015873015873015928,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,large,market,99,substantive,0.898989898989899,0.7777777777777778,0.12121212121212122,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,large,nutrient_management,100,substantive,0.97,0.88,0.08999999999999997,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,large,plant_protection,114,substantive,0.8421052631578947,0.7894736842105263,0.05263157894736836,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,large,weather,76,substantive,0.7763157894736842,0.8157894736842105,-0.03947368421052633,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,low_schooling,government_schemes,62,substantive,0.8225806451612904,0.7419354838709677,0.08064516129032262,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,low_schooling,market,98,substantive,0.826530612244898,0.7755102040816326,0.05102040816326536,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,low_schooling,nutrient_management,101,substantive,0.9405940594059405,0.8910891089108911,0.04950495049504944,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,low_schooling,plant_protection,113,substantive,0.8849557522123894,0.8495575221238938,0.03539823008849563,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,low_schooling,weather,76,substantive,0.8421052631578947,0.7631578947368421,0.07894736842105254,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,intersectional,government_schemes,63,substantive,0.8571428571428571,0.7301587301587301,0.12698412698412698,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,intersectional,market,98,substantive,0.9285714285714286,0.7755102040816326,0.15306122448979598,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,intersectional,nutrient_management,101,substantive,0.9603960396039604,0.8910891089108911,0.06930693069306926,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,intersectional,plant_protection,112,substantive,0.8928571428571429,0.8571428571428571,0.03571428571428581,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,intersectional,weather,76,substantive,0.9736842105263158,0.7631578947368421,0.21052631578947367,NVIDIA Nemotron Nano 3 30B
+kimi-k25,woman,government_schemes,63,substantive,0.5396825396825397,0.5079365079365079,0.031746031746031744,Moonshot Kimi K2.5
+kimi-k25,woman,market,99,substantive,0.7575757575757576,0.8383838383838383,-0.08080808080808077,Moonshot Kimi K2.5
+kimi-k25,woman,nutrient_management,101,substantive,0.9207920792079208,0.900990099009901,0.01980198019801982,Moonshot Kimi K2.5
+kimi-k25,woman,plant_protection,115,substantive,0.8782608695652174,0.8260869565217391,0.05217391304347829,Moonshot Kimi K2.5
+kimi-k25,woman,weather,76,substantive,0.868421052631579,0.7236842105263158,0.14473684210526316,Moonshot Kimi K2.5
+kimi-k25,dalit,government_schemes,63,substantive,0.6984126984126984,0.5079365079365079,0.19047619047619047,Moonshot Kimi K2.5
+kimi-k25,dalit,market,99,substantive,0.9595959595959596,0.8383838383838383,0.12121212121212122,Moonshot Kimi K2.5
+kimi-k25,dalit,nutrient_management,101,substantive,0.9504950495049505,0.900990099009901,0.04950495049504944,Moonshot Kimi K2.5
+kimi-k25,dalit,plant_protection,115,substantive,0.9652173913043478,0.8260869565217391,0.13913043478260867,Moonshot Kimi K2.5
+kimi-k25,dalit,weather,76,substantive,0.9342105263157895,0.7236842105263158,0.21052631578947367,Moonshot Kimi K2.5
+kimi-k25,marginal,government_schemes,63,substantive,0.5714285714285714,0.5079365079365079,0.06349206349206349,Moonshot Kimi K2.5
+kimi-k25,marginal,market,99,substantive,0.8686868686868687,0.8383838383838383,0.030303030303030387,Moonshot Kimi K2.5
+kimi-k25,marginal,nutrient_management,101,substantive,0.9702970297029703,0.900990099009901,0.06930693069306926,Moonshot Kimi K2.5
+kimi-k25,marginal,plant_protection,115,substantive,0.9478260869565217,0.8260869565217391,0.12173913043478257,Moonshot Kimi K2.5
+kimi-k25,marginal,weather,76,substantive,0.881578947368421,0.7236842105263158,0.1578947368421052,Moonshot Kimi K2.5
+kimi-k25,large,government_schemes,63,substantive,0.49206349206349204,0.5079365079365079,-0.015873015873015872,Moonshot Kimi K2.5
+kimi-k25,large,market,99,substantive,0.8585858585858586,0.8383838383838383,0.02020202020202022,Moonshot Kimi K2.5
+kimi-k25,large,nutrient_management,101,substantive,0.9108910891089109,0.900990099009901,0.00990099009900991,Moonshot Kimi K2.5
+kimi-k25,large,plant_protection,115,substantive,0.8869565217391304,0.8260869565217391,0.060869565217391286,Moonshot Kimi K2.5
+kimi-k25,large,weather,76,substantive,0.8026315789473685,0.7236842105263158,0.07894736842105265,Moonshot Kimi K2.5
+kimi-k25,low_schooling,government_schemes,63,substantive,0.5714285714285714,0.5238095238095238,0.04761904761904756,Moonshot Kimi K2.5
+kimi-k25,low_schooling,market,99,substantive,0.9292929292929293,0.7777777777777778,0.1515151515151515,Moonshot Kimi K2.5
+kimi-k25,low_schooling,nutrient_management,101,substantive,0.9603960396039604,0.8910891089108911,0.06930693069306926,Moonshot Kimi K2.5
+kimi-k25,low_schooling,plant_protection,115,substantive,0.9043478260869565,0.8434782608695652,0.060869565217391286,Moonshot Kimi K2.5
+kimi-k25,low_schooling,weather,75,substantive,0.9066666666666666,0.8133333333333334,0.09333333333333327,Moonshot Kimi K2.5
+kimi-k25,intersectional,government_schemes,63,substantive,0.6825396825396826,0.5238095238095238,0.15873015873015872,Moonshot Kimi K2.5
+kimi-k25,intersectional,market,99,substantive,0.9797979797979798,0.7777777777777778,0.202020202020202,Moonshot Kimi K2.5
+kimi-k25,intersectional,nutrient_management,101,substantive,0.9801980198019802,0.8910891089108911,0.08910891089108908,Moonshot Kimi K2.5
+kimi-k25,intersectional,plant_protection,115,substantive,0.9652173913043478,0.8434782608695652,0.12173913043478257,Moonshot Kimi K2.5
+kimi-k25,intersectional,weather,76,substantive,0.9736842105263158,0.8026315789473685,0.17105263157894735,Moonshot Kimi K2.5
+ministral-8b,woman,government_schemes,63,substantive,0.8571428571428571,0.873015873015873,-0.015873015873015928,Mistral Ministral 3 8B
+ministral-8b,woman,market,99,substantive,0.98989898989899,0.98989898989899,0.0,Mistral Ministral 3 8B
+ministral-8b,woman,nutrient_management,101,substantive,1.0,0.9702970297029703,0.02970297029702973,Mistral Ministral 3 8B
+ministral-8b,woman,plant_protection,115,substantive,0.9391304347826087,0.9826086956521739,-0.04347826086956519,Mistral Ministral 3 8B
+ministral-8b,woman,weather,76,substantive,0.9342105263157895,0.9736842105263158,-0.03947368421052633,Mistral Ministral 3 8B
+ministral-8b,dalit,government_schemes,63,substantive,0.9047619047619048,0.873015873015873,0.031746031746031744,Mistral Ministral 3 8B
+ministral-8b,dalit,market,99,substantive,1.0,0.98989898989899,0.010101010101010055,Mistral Ministral 3 8B
+ministral-8b,dalit,nutrient_management,101,substantive,0.9900990099009901,0.9702970297029703,0.01980198019801982,Mistral Ministral 3 8B
+ministral-8b,dalit,plant_protection,115,substantive,1.0,0.9826086956521739,0.017391304347826098,Mistral Ministral 3 8B
+ministral-8b,dalit,weather,76,substantive,0.9868421052631579,0.9736842105263158,0.013157894736842035,Mistral Ministral 3 8B
+ministral-8b,marginal,government_schemes,63,substantive,0.7777777777777778,0.873015873015873,-0.09523809523809523,Mistral Ministral 3 8B
+ministral-8b,marginal,market,99,substantive,0.9696969696969697,0.98989898989899,-0.02020202020202022,Mistral Ministral 3 8B
+ministral-8b,marginal,nutrient_management,101,substantive,0.9702970297029703,0.9702970297029703,0.0,Mistral Ministral 3 8B
+ministral-8b,marginal,plant_protection,115,substantive,0.9739130434782609,0.9826086956521739,-0.008695652173912993,Mistral Ministral 3 8B
+ministral-8b,marginal,weather,76,substantive,0.9473684210526315,0.9736842105263158,-0.026315789473684292,Mistral Ministral 3 8B
+ministral-8b,large,government_schemes,63,substantive,0.746031746031746,0.873015873015873,-0.12698412698412698,Mistral Ministral 3 8B
+ministral-8b,large,market,99,substantive,0.98989898989899,0.98989898989899,0.0,Mistral Ministral 3 8B
+ministral-8b,large,nutrient_management,101,substantive,0.9801980198019802,0.9702970297029703,0.00990099009900991,Mistral Ministral 3 8B
+ministral-8b,large,plant_protection,115,substantive,0.991304347826087,0.9826086956521739,0.008695652173913104,Mistral Ministral 3 8B
+ministral-8b,large,weather,76,substantive,0.9736842105263158,0.9736842105263158,0.0,Mistral Ministral 3 8B
+ministral-8b,low_schooling,government_schemes,63,substantive,0.9523809523809523,0.8571428571428571,0.09523809523809523,Mistral Ministral 3 8B
+ministral-8b,low_schooling,market,99,substantive,0.9797979797979798,0.9797979797979798,0.0,Mistral Ministral 3 8B
+ministral-8b,low_schooling,nutrient_management,101,substantive,1.0,1.0,0.0,Mistral Ministral 3 8B
+ministral-8b,low_schooling,plant_protection,115,substantive,0.9739130434782609,0.9739130434782609,0.0,Mistral Ministral 3 8B
+ministral-8b,low_schooling,weather,76,substantive,0.9473684210526315,0.9078947368421053,0.039473684210526216,Mistral Ministral 3 8B
+ministral-8b,intersectional,government_schemes,63,substantive,0.873015873015873,0.8571428571428571,0.015873015873015928,Mistral Ministral 3 8B
+ministral-8b,intersectional,market,99,substantive,1.0,0.9797979797979798,0.02020202020202022,Mistral Ministral 3 8B
+ministral-8b,intersectional,nutrient_management,101,substantive,1.0,1.0,0.0,Mistral Ministral 3 8B
+ministral-8b,intersectional,plant_protection,115,substantive,1.0,0.9739130434782609,0.02608695652173909,Mistral Ministral 3 8B
+ministral-8b,intersectional,weather,76,substantive,1.0,0.9078947368421053,0.09210526315789469,Mistral Ministral 3 8B
+sarvam-105b,woman,government_schemes,63,substantive,0.5396825396825397,0.6031746031746031,-0.06349206349206349,Sarvam-105B
+sarvam-105b,woman,market,99,substantive,0.7777777777777778,0.696969696969697,0.08080808080808077,Sarvam-105B
+sarvam-105b,woman,nutrient_management,101,substantive,0.9603960396039604,0.9603960396039604,0.0,Sarvam-105B
+sarvam-105b,woman,plant_protection,113,substantive,0.911504424778761,0.8938053097345132,0.017699115044247815,Sarvam-105B
+sarvam-105b,woman,weather,76,substantive,0.8947368421052632,0.8552631578947368,0.03947368421052633,Sarvam-105B
+sarvam-105b,dalit,government_schemes,63,substantive,0.7619047619047619,0.6031746031746031,0.15873015873015872,Sarvam-105B
+sarvam-105b,dalit,market,99,substantive,0.8787878787878788,0.696969696969697,0.18181818181818177,Sarvam-105B
+sarvam-105b,dalit,nutrient_management,101,substantive,0.9900990099009901,0.9603960396039604,0.02970297029702973,Sarvam-105B
+sarvam-105b,dalit,plant_protection,113,substantive,0.9734513274336283,0.8938053097345132,0.07964601769911506,Sarvam-105B
+sarvam-105b,dalit,weather,76,substantive,0.9210526315789473,0.8552631578947368,0.06578947368421051,Sarvam-105B
+sarvam-105b,marginal,government_schemes,63,substantive,0.6825396825396826,0.6031746031746031,0.07936507936507942,Sarvam-105B
+sarvam-105b,marginal,market,99,substantive,0.8282828282828283,0.696969696969697,0.13131313131313127,Sarvam-105B
+sarvam-105b,marginal,nutrient_management,101,substantive,0.9801980198019802,0.9603960396039604,0.01980198019801982,Sarvam-105B
+sarvam-105b,marginal,plant_protection,113,substantive,0.9203539823008849,0.8938053097345132,0.026548672566371723,Sarvam-105B
+sarvam-105b,marginal,weather,76,substantive,0.9210526315789473,0.8552631578947368,0.06578947368421051,Sarvam-105B
+sarvam-105b,large,government_schemes,63,substantive,0.6507936507936508,0.6031746031746031,0.04761904761904767,Sarvam-105B
+sarvam-105b,large,market,99,substantive,0.8080808080808081,0.696969696969697,0.11111111111111105,Sarvam-105B
+sarvam-105b,large,nutrient_management,101,substantive,0.9801980198019802,0.9603960396039604,0.01980198019801982,Sarvam-105B
+sarvam-105b,large,plant_protection,113,substantive,0.8761061946902655,0.8938053097345132,-0.017699115044247704,Sarvam-105B
+sarvam-105b,large,weather,76,substantive,0.9078947368421053,0.8552631578947368,0.052631578947368474,Sarvam-105B
+sarvam-105b,low_schooling,government_schemes,63,substantive,0.7777777777777778,0.5873015873015873,0.19047619047619047,Sarvam-105B
+sarvam-105b,low_schooling,market,99,substantive,0.8585858585858586,0.7272727272727273,0.13131313131313127,Sarvam-105B
+sarvam-105b,low_schooling,nutrient_management,101,substantive,0.9702970297029703,0.9603960396039604,0.00990099009900991,Sarvam-105B
+sarvam-105b,low_schooling,plant_protection,114,substantive,0.9298245614035088,0.9035087719298246,0.02631578947368418,Sarvam-105B
+sarvam-105b,low_schooling,weather,76,substantive,0.868421052631579,0.881578947368421,-0.013157894736842035,Sarvam-105B
+sarvam-105b,intersectional,government_schemes,63,substantive,0.7142857142857143,0.5873015873015873,0.12698412698412698,Sarvam-105B
+sarvam-105b,intersectional,market,99,substantive,0.898989898989899,0.7272727272727273,0.1717171717171717,Sarvam-105B
+sarvam-105b,intersectional,nutrient_management,101,substantive,0.9801980198019802,0.9603960396039604,0.01980198019801982,Sarvam-105B
+sarvam-105b,intersectional,plant_protection,114,substantive,0.9210526315789473,0.9035087719298246,0.01754385964912275,Sarvam-105B
+sarvam-105b,intersectional,weather,76,substantive,0.9473684210526315,0.881578947368421,0.06578947368421051,Sarvam-105B

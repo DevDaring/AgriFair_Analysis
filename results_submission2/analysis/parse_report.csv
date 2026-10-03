@@ -1,0 +1,71 @@
+file,tier,parse_kind,n,deterministic,repaired,raw_text,refusal,truncated,failed,call_failed,usable_share,model
+agriadvice_r1,kimi-k25,advice,1988,1988,0,0,0,0,0,0,1.0,Moonshot Kimi K2.5
+agriadvice_r1,ministral-8b,advice,1988,1979,9,0,0,0,0,0,1.0,Mistral Ministral 3 8B
+agriadvice_r1,nemotron-nano,advice,1988,1986,1,0,0,1,0,0,0.9995,NVIDIA Nemotron Nano 3 30B
+agriadvice_r1,nova-lite,advice,1988,1988,0,0,0,0,0,0,1.0,Amazon Nova Lite
+agriadvice_r1,sarvam-105b,advice,1988,1988,0,0,0,0,0,0,1.0,Sarvam-105B
+facts_r1,kimi-k25,letter,3745,3731,0,0,0,14,0,0,0.9963,Moonshot Kimi K2.5
+facts_r1,ministral-8b,letter,3745,3745,0,0,0,0,0,0,1.0,Mistral Ministral 3 8B
+facts_r1,nemotron-nano,letter,3745,3733,3,0,0,6,3,0,0.9976,NVIDIA Nemotron Nano 3 30B
+facts_r1,nova-lite,letter,3745,3745,0,0,0,0,0,0,1.0,Amazon Nova Lite
+facts_r1,sarvam-105b,letter,3745,3744,1,0,0,0,0,0,1.0,Sarvam-105B
+judge_bfs_r1,judge-deepseek-v32,judge_bfs,27145,27145,0,0,0,0,0,0,1.0,DeepSeek V3.2 (judge)
+judge_checks_r1,judge-deepseek-v32,judge_pairwise,503,503,0,0,0,0,0,0,1.0,DeepSeek V3.2 (judge)
+judge_coverage_r1,judge-deepseek-v32,judge_coverage,1755,1755,0,0,0,0,0,0,1.0,DeepSeek V3.2 (judge)
+judge_pairwise_r1,judge-deepseek-v32,judge_pairwise,32938,32920,1,0,0,4,13,0,0.9995,DeepSeek V3.2 (judge)
+judge_pairwise_r1,judge-qwen3-vl,judge_pairwise,7073,7073,0,0,0,0,0,0,1.0,Qwen3-VL 235B (judge)
+kcc_r1,kimi-k25,advice,4086,4086,0,0,0,0,0,0,1.0,Moonshot Kimi K2.5
+kcc_r1,ministral-8b,advice,4086,4057,29,0,0,0,0,0,1.0,Mistral Ministral 3 8B
+kcc_r1,nemotron-nano,advice,4086,4080,4,0,0,2,0,0,0.9995,NVIDIA Nemotron Nano 3 30B
+kcc_r1,nova-lite,advice,4086,4085,0,0,0,1,0,0,0.9998,Amazon Nova Lite
+kcc_r1,sarvam-105b,advice,4086,4083,0,0,0,3,0,0,0.9993,Sarvam-105B
+market_r1,kimi-k25,letter,6935,6934,0,0,0,1,0,0,0.9999,Moonshot Kimi K2.5
+market_r1,ministral-8b,letter,6935,6935,0,0,0,0,0,0,1.0,Mistral Ministral 3 8B
+market_r1,nemotron-nano,letter,6935,6927,0,0,0,5,3,0,0.9988,NVIDIA Nemotron Nano 3 30B
+market_r1,nova-lite,letter,6935,6935,0,0,0,0,0,0,1.0,Amazon Nova Lite
+market_r1,sarvam-105b,letter,6935,6935,0,0,0,0,0,0,1.0,Sarvam-105B
+mitigation_r1,kimi-k25,advice,5400,5400,0,0,0,0,0,0,1.0,Moonshot Kimi K2.5
+mitigation_r1,kimi-k25,letter,7200,7184,0,0,4,7,5,0,0.9978,Moonshot Kimi K2.5
+mitigation_r1,ministral-8b,advice,5400,5312,68,0,0,20,0,0,0.9963,Mistral Ministral 3 8B
+mitigation_r1,ministral-8b,letter,7200,7190,0,0,0,0,10,0,0.9986,Mistral Ministral 3 8B
+mitigation_r1,nemotron-nano,advice,5400,5395,3,1,0,1,0,0,0.9998,NVIDIA Nemotron Nano 3 30B
+mitigation_r1,nemotron-nano,letter,7200,7198,1,0,0,0,1,0,0.9999,NVIDIA Nemotron Nano 3 30B
+mitigation_r1,nova-lite,advice,5400,5400,0,0,0,0,0,0,1.0,Amazon Nova Lite
+mitigation_r1,nova-lite,letter,7200,7199,1,0,0,0,0,0,1.0,Amazon Nova Lite
+mitigation_r1,sarvam-105b,advice,5400,5398,1,0,0,1,0,0,0.9998,Sarvam-105B
+mitigation_r1,sarvam-105b,letter,7200,7174,1,0,0,23,2,0,0.9965,Sarvam-105B
+related_r1,kimi-k25,letter,288,288,0,0,0,0,0,0,1.0,Moonshot Kimi K2.5
+related_r1,kimi-k25,numeric,1400,1400,0,0,0,0,0,0,1.0,Moonshot Kimi K2.5
+related_r1,kimi-k25,rdt,36,36,0,0,0,0,0,0,1.0,Moonshot Kimi K2.5
+related_r1,kimi-k25,wat,18,18,0,0,0,0,0,0,1.0,Moonshot Kimi K2.5
+related_r1,ministral-8b,letter,288,288,0,0,0,0,0,0,1.0,Mistral Ministral 3 8B
+related_r1,ministral-8b,numeric,1400,1400,0,0,0,0,0,0,1.0,Mistral Ministral 3 8B
+related_r1,ministral-8b,rdt,36,36,0,0,0,0,0,0,1.0,Mistral Ministral 3 8B
+related_r1,ministral-8b,wat,18,18,0,0,0,0,0,0,1.0,Mistral Ministral 3 8B
+related_r1,nemotron-nano,letter,288,288,0,0,0,0,0,0,1.0,NVIDIA Nemotron Nano 3 30B
+related_r1,nemotron-nano,numeric,1400,1397,0,0,0,2,1,0,0.9979,NVIDIA Nemotron Nano 3 30B
+related_r1,nemotron-nano,rdt,36,36,0,0,0,0,0,0,1.0,NVIDIA Nemotron Nano 3 30B
+related_r1,nemotron-nano,wat,18,18,0,0,0,0,0,0,1.0,NVIDIA Nemotron Nano 3 30B
+related_r1,nova-lite,letter,288,288,0,0,0,0,0,0,1.0,Amazon Nova Lite
+related_r1,nova-lite,numeric,1400,1400,0,0,0,0,0,0,1.0,Amazon Nova Lite
+related_r1,nova-lite,rdt,36,36,0,0,0,0,0,0,1.0,Amazon Nova Lite
+related_r1,nova-lite,wat,18,18,0,0,0,0,0,0,1.0,Amazon Nova Lite
+related_r1,sarvam-105b,letter,288,288,0,0,0,0,0,0,1.0,Sarvam-105B
+related_r1,sarvam-105b,numeric,1400,1400,0,0,0,0,0,0,1.0,Sarvam-105B
+related_r1,sarvam-105b,rdt,36,36,0,0,0,0,0,0,1.0,Sarvam-105B
+related_r1,sarvam-105b,wat,18,18,0,0,0,0,0,0,1.0,Sarvam-105B
+schemes_r1,kimi-k25,scheme,78,78,0,0,0,0,0,0,1.0,Moonshot Kimi K2.5
+schemes_r1,ministral-8b,scheme,78,78,0,0,0,0,0,0,1.0,Mistral Ministral 3 8B
+schemes_r1,nemotron-nano,scheme,78,78,0,0,0,0,0,0,1.0,NVIDIA Nemotron Nano 3 30B
+schemes_r1,nova-lite,scheme,78,78,0,0,0,0,0,0,1.0,Amazon Nova Lite
+schemes_r1,sarvam-105b,scheme,78,78,0,0,0,0,0,0,1.0,Sarvam-105B
+stability_r2,kimi-k25,advice,150,150,0,0,0,0,0,0,1.0,Moonshot Kimi K2.5
+stability_r2,kimi-k25,letter,150,146,0,0,0,4,0,0,0.9733,Moonshot Kimi K2.5
+stability_r2,ministral-8b,advice,150,149,1,0,0,0,0,0,1.0,Mistral Ministral 3 8B
+stability_r2,ministral-8b,letter,150,150,0,0,0,0,0,0,1.0,Mistral Ministral 3 8B
+stability_r2,nemotron-nano,advice,150,150,0,0,0,0,0,0,1.0,NVIDIA Nemotron Nano 3 30B
+stability_r2,nemotron-nano,letter,150,150,0,0,0,0,0,0,1.0,NVIDIA Nemotron Nano 3 30B
+stability_r2,nova-lite,advice,150,150,0,0,0,0,0,0,1.0,Amazon Nova Lite
+stability_r2,nova-lite,letter,150,150,0,0,0,0,0,0,1.0,Amazon Nova Lite
+stability_r2,sarvam-105b,advice,150,150,0,0,0,0,0,0,1.0,Sarvam-105B
+stability_r2,sarvam-105b,letter,150,150,0,0,0,0,0,0,1.0,Sarvam-105B

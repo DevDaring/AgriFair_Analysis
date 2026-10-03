@@ -1,0 +1,12 @@
+# never commit secrets
+.env
+.env.*
+*.env
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+# local-only artefacts
+results_submission2/cache/
+*.sqlite
+*.log

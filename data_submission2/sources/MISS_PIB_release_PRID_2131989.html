@@ -1,0 +1,1109 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	Press Release Page | Press Information Bureau
+</title><link href="css/style.css" rel="stylesheet" type="text/css" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="alternate stylesheet" href="css/change.css" media="screen" title="change" /><link rel="alternate stylesheet" href="css/green.css" media="screen" title="green" /><link rel="alternate stylesheet" href="css/yellow.css" media="screen" title="yellow" /><link rel="stylesheet" type="text/css" href="css/prtint.css" media="print" /><link rel="stylesheet" href="css/style3.1.css" type="text/css" /><link id="pibA11yCss" rel="stylesheet" href="/css/accessibility.css?v=3" type="text/css" />
+      <script type="text/javascript">
+        /* Stamps the saved theme on <html> before the page paints. The
+           switcher in js/accessibility.js settles the rest, but on inner
+           pages it does not run until the end of the body and inside the
+           release frame it is a separate download - either way the reader
+           would otherwise watch a light page turn dark in front of them. */
+        (function (d) {
+            var t = "";
+            try {
+                t = window.localStorage.getItem("pibStyle") || "";
+            } catch (e) {
+                t = "";
+            }
+            if (t === "orange") {
+                t = "yellow";
+            }
+            var c = t === "change" ? " pib-hc"
+                : t === "green" ? " pib-theme-green"
+                : t === "yellow" ? " pib-theme-yellow" : "";
+            d.documentElement.className += c + " pib-a11y-content";
+        }(document));
+      </script>
+
+
+      <script src="js/jquery.min.js" type="text/javascript"></script>
+      <script type="text/javascript" src="/js/accessibility.js?v=7"></script>
+
+      <script type="text/javascript">
+            $(document).ready(function () {
+                  function getParameterByName(name) {
+                        var url = window.location.href;
+                        name = name.replace(/[\[\]]/g, '\\$&');
+                        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                              results = regex.exec(url);
+                        if (!results) return null;
+                        if (!results[2]) return '';
+                        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+                  }
+                  // Get the IDs from the current page's URL
+                  let prid = parseInt(getParameterByName('PRID'), 10);
+
+                  if (!isNaN(prid) && prid > 0) {
+                        $.ajax({
+                              type: "POST",
+                              url: "AjaxMethod.aspx/UpdatePRHitCount",
+                              async: false,
+                              data: JSON.stringify({ 'PermId': prid }),
+                              contentType: "application/json; charset=utf-8",
+                              dataType: "json",
+                              success: function (response) {
+                                    console.log(response);
+                              },
+                              error: function (error) {
+                                    console.log("Error in AJAX request", error);
+                              }
+                        });
+                  } else {
+                        console.log("Invalid parameters:", prid);
+                  }
+
+            });
+      </script>
+      <style type="text/css">
+            .table-responsive {
+                  width: 100%;
+                  overflow-x: auto;
+            }
+
+            .banner {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  background-color: #000;
+                  color: #fff;
+                  padding: 20px;
+            }
+
+            full-width {
+                  width: 100%;
+            }
+
+            .logo-left, .logo-center, .countdown {
+                  display: flex;
+                  align-items: center;
+            }
+
+                  .logo-left img, .logo-center img {
+                        height: 70px;
+                  }
+
+            .countdown {
+                  text-align: center;
+                  background-color: #444;
+                  border-radius: 10px;
+                  padding: 10px;
+                  border: 2px solid grey;
+            }
+
+            .firstnumber {
+                  color: #000000;
+                  position: absolute;
+                  top: 50px;
+                  right: 90px;
+                  font-size: 30px;
+            }
+
+            .secondnumber {
+                  position: absolute;
+                  color: #000000;
+                  right: 45px;
+                  top: 50px;
+                  font-size: 30px;
+            }
+
+            .countdown .days {
+                  font-size: 35px;
+                  color: gold;
+            }
+
+            .countdown p {
+                  margin: 0;
+            }
+
+            .countdown .text {
+                  font-size: 16px;
+            }
+
+            a {
+                  word-break: break-all;
+            }
+
+            iframe, img {
+                  max-width: 100%;
+            }
+
+            @media(max-width:1199px) {
+                  .firstnumber {
+                        top: 40px;
+                        right: 72px;
+                        font-size: 30px;
+                  }
+
+                  .secondnumber {
+                        right: 35px;
+                        top: 40px;
+                        font-size: 30px;
+                  }
+            }
+
+            @media(max-width:990px) {
+                  .firstnumber {
+                        top: 25px;
+                        right: 54px;
+                        font-size: 30px;
+                  }
+
+                  .secondnumber {
+                        right: 25px;
+                        top: 25px;
+                        font-size: 30px;
+                  }
+            }
+
+            @media(max-width:768px) {
+                  .countdown, .days {
+                        font-size: 12px !important;
+                  }
+
+
+                  .firstnumber {
+                        top: 25%;
+                        right: 8%;
+                        font-size: 30px;
+                  }
+
+                  .secondnumber {
+                        right: 4.5%;
+                        top: 25%;
+                        font-size: 30px;
+                  }
+            }
+
+            @media(max-width:475px) {
+                  .countdown, .days {
+                        font-size: 10px !important;
+                        top: 20%;
+                  }
+
+                  .bannerimgdiv {
+                        padding: 0 !important;
+                  }
+
+                  .bannerimg {
+                        width: 108% !important;
+                  }
+            }
+      </style>
+      <script type="text/javascript">
+            $(function () {
+                  $("[id*=printPDF]").click(function () {
+                        $("[id*=hfGridHtml]").val($("#PdfDiv").html());
+                  });
+            });
+            $(function () {
+                  $("[id*=printPDFEvent]").click(function () {
+                        $("[id*=hfGridHtml]").val($("#PdfDiv").html());
+                  });
+            });
+      </script>
+
+      
+
+      <link id="pibConsentCss" href="/css/consent.css?v=1" rel="stylesheet" type="text/css" /><meta property="og:title" content="Cabinet approves continuation of Modified Interest Subvention Scheme (MISS) for FY 2025-26 with existing 1.5% Interest Subvention (IS)" /><meta property="og:url" content="www.pib.gov.in/Pressreleaseshare.aspx?PRID=2131989" /><meta property="og:description" content="The Union Cabinet chaired by the Prime Minister Shri Narendra Modi today approved the continuation o" /><meta property="og:image" content="https:/pib.gov.in/images/indian-emblem.png" />
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="C4E7H-KSCMC-422L4-W3EM5-U36MF",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"C4E7H-KSCMC-422L4-W3EM5-U36MF";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="tighjgaxfpzrs2v7wqkq-f-8a9a34bc4-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1825201","ak.ai":parseInt("1215205",10),"ak.ol":"0","ak.cr":8,"ak.ipv":4,"ak.proto":"h2","ak.rid":"99bd1b1","ak.r":39272,"ak.a2":n,"ak.m":"dscb","ak.n":"ff","ak.cport":37712,"ak.gh":"23.43.243.21","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"","ak.t":"1790948373","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==ZTmVFhK+pt5pVOHJv2Tg2nsjfoZQ63pWDZTxvWq8111P9EeOJN2E88o0bxJPaG0ib9cT/Ao4TNJFekj2SadBerr3FqEnRToJv2x8kSfrtktaM491kZA/narTuLJnNWPs/GgtsYGjof1COB3kPOan6N01n/jttKaeEmNC0fvxFu3G4Ii0A/8+GiM2jkxjsTtAJcAnyeITxztiSHo7oYnoLDMQjFHad+G1abPU9rhGwes3FAWY0VaajD/2GVuizOV+yznyDj5R81ACuuJ2wGAY0lqhDs789Y4arAh1vB6+54ymISfbwzZvO759ONioqgjOQ32Nc+qgrYbQ7up3U/AyYRaITXX6sUzgafVj0L6dX1OCtiKvCnEm0+bcqd8Fp2bj+5I+3PmeUNKnWSdKRg5qhLxJgjL9VxY0MLI2XzVvBAA=","ak.pv":"9","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body>
+    
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+     style="position:absolute;width:0;height:0;overflow:hidden" id="dbim-icon-sprite">
+    <defs>
+        <symbol id="icon-angle-double-left" viewBox="0 0 24 24"><path d="M11.6 4.6 4.2 12l7.4 7.4 2.2-2.2L8.6 12l5.2-5.2z"/><path d="M19 4.6 11.6 12 19 19.4l2.2-2.2L16 12l5.2-5.2z"/></symbol>
+        <symbol id="icon-angle-double-right" viewBox="0 0 24 24"><path d="M12.4 4.6 10.2 6.8 15.4 12l-5.2 5.2 2.2 2.2L19.8 12z"/><path d="M5 4.6 2.8 6.8 8 12l-5.2 5.2L5 19.4 12.4 12z"/></symbol>
+        <symbol id="icon-arrow-left" viewBox="0 0 24 24"><path d="M20.8 10.6H9.6v2.8h11.2z"/><path d="M10.8 5.6 3.2 12l7.6 6.4z"/></symbol>
+        <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M3.2 10.6h11.2v2.8H3.2z"/><path d="M13.2 5.6 20.8 12l-7.6 6.4z"/></symbol>
+        <symbol id="icon-calendar" viewBox="0 0 24 24"><path d="M7.6 2.4H10v2.4H7.6z"/><path d="M14 2.4h2.4v2.4H14z"/><path fill-rule="evenodd" d="M4 4.8h16a1.6 1.6 0 0 1 1.6 1.6v13.2a1.6 1.6 0 0 1-1.6 1.6H4a1.6 1.6 0 0 1-1.6-1.6V6.4A1.6 1.6 0 0 1 4 4.8zm.4 5.6v8.4h15.2v-8.4z"/><path d="M6.4 12.4h3.2v3.2H6.4z"/></symbol>
+        <symbol id="icon-chevron-left" viewBox="0 0 24 24"><path d="M15.4 4.6 8 12l7.4 7.4 2.2-2.2L12.4 12l5.2-5.2z"/></symbol>
+        <symbol id="icon-chevron-right" viewBox="0 0 24 24"><path d="M8.6 4.6 6.4 6.8 11.6 12l-5.2 5.2 2.2 2.2L16 12z"/></symbol>
+        <symbol id="icon-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/></symbol>
+        <symbol id="icon-download" viewBox="0 0 24 24"><path d="M10.8 3h2.4v7.6h3.4L12 16.6l-4.6-6h3.4z"/><path d="M4 17.2h2.4v2.4h11.2v-2.4H20v3.2a1.4 1.4 0 0 1-1.4 1.4H5.4A1.4 1.4 0 0 1 4 20.4z"/></symbol>
+        <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M13.6 21.6v-8.4h2.8l.42-3.3h-3.22V7.8c0-.95.27-1.6 1.64-1.6h1.74V3.26a23 23 0 0 0-2.54-.13c-2.5 0-4.22 1.53-4.22 4.34v2.43H7.4v3.3h2.82v8.4z"/></symbol>
+        <symbol id="icon-hashtag" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M8.8 3h2.4l-1 6h3.2l1-6h2.4l-1 6h3.4v2.4h-3.8l-.6 3.2h3.6V17h-4l-1 5h-2.4l1-5h-3.2l-1 5H5.4l1-5H3V14.6h3.8l.6-3.2H3.8V9h4zm.6 8.4-.6 3.2h3.2l.6-3.2z"/></symbol>
+        <symbol id="icon-home" viewBox="0 0 24 24"><path d="M12 3.4 2.8 11.6h2.4v8.4a1 1 0 0 0 1 1h3.3v-5.4h5v5.4h3.3a1 1 0 0 0 1-1v-8.4h2.4z"/></symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M7.6 2.4h8.8a5.2 5.2 0 0 1 5.2 5.2v8.8a5.2 5.2 0 0 1-5.2 5.2H7.6a5.2 5.2 0 0 1-5.2-5.2V7.6a5.2 5.2 0 0 1 5.2-5.2zm0 2.4a2.8 2.8 0 0 0-2.8 2.8v8.8a2.8 2.8 0 0 0 2.8 2.8h8.8a2.8 2.8 0 0 0 2.8-2.8V7.6a2.8 2.8 0 0 0-2.8-2.8z"/><path fill-rule="evenodd" d="M12 6.8a5.2 5.2 0 1 0 0 10.4 5.2 5.2 0 0 0 0-10.4zm0 2.4a2.8 2.8 0 1 1 0 5.6 2.8 2.8 0 0 1 0-5.6z"/><circle cx="17.3" cy="6.7" r="1.3"/></symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M4.8 8.8h3.6v12H4.8z"/><circle cx="6.6" cy="5.4" r="2.1"/><path d="M10.8 8.8h3.45v1.65h.05c.48-.9 1.65-1.85 3.4-1.85 3.63 0 4.3 2.35 4.3 5.4v6.6h-3.6v-5.85c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1v5.95h-3.6z"/></symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24"><path d="M2.4 7.6v9.2a1.6 1.6 0 0 0 1.6 1.6h16a1.6 1.6 0 0 0 1.6-1.6V7.6L12 14z"/><path d="M21.2 5.4H2.8L12 11.8z"/></symbol>
+        <symbol id="icon-mail-open" viewBox="0 0 24 24"><path d="M2.4 9.8h19.2v9.6A1.6 1.6 0 0 1 20 21H4a1.6 1.6 0 0 1-1.6-1.6z"/><path d="M12 2.6 21.6 9.2h-3.8L12 5.3 6.2 9.2H2.4z"/><path d="m3.9 11.2 8.1 5.4 8.1-5.4 1.5 1.3-9.6 6.4-9.6-6.4z"/></symbol>
+        <symbol id="icon-map-marker" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.4a7 7 0 0 0-7 7c0 5.2 7 12.2 7 12.2s7-7 7-12.2a7 7 0 0 0-7-7zm0 9.6a2.6 2.6 0 1 1 0-5.2 2.6 2.6 0 0 1 0 5.2z"/></symbol>
+        <symbol id="icon-newspaper" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M2.8 4.4h14.8v15.2H2.8zm2 2v11.2h10.8V6.4z"/><path d="M6 7.6h8.4v1.6H6z"/><path d="M6 10.8h8.4v1.6H6z"/><path d="M6 14h5.2v1.6H6z"/><path d="M18.4 8.4h2.8v9.6a1.4 1.4 0 0 1-2.8 0z"/></symbol>
+        <symbol id="icon-pause" viewBox="0 0 24 24"><rect x="7.4" y="4" width="3.6" height="16" rx="0.9"/><rect x="13" y="4" width="3.6" height="16" rx="0.9"/></symbol>
+        <symbol id="icon-picture" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M2.4 5.2h19.2v13.6H2.4zm2 2v9.6h15.2V7.2z"/><path d="M5.6 16.4 10 11l2.6 3 2-2.2 4 4.6z"/><circle cx="8" cy="10.4" r="1.5"/></symbol>
+        <symbol id="icon-press-conference" viewBox="0 0 24 24"><circle cx="12" cy="5.2" r="2.6"/><path d="M7.6 12.2a4.4 4.4 0 0 1 8.8 0z"/><circle cx="4.9" cy="9.6" r="2.2"/><path d="M1.8 15.2a3.1 3.1 0 0 1 6.2 0z"/><circle cx="19.1" cy="9.6" r="2.2"/><path d="M16 15.2a3.1 3.1 0 0 1 6.2 0z"/><path d="M6.6 13.6h10.8l2.2 7.8H4.4z"/></symbol>
+        <symbol id="icon-print" viewBox="0 0 24 24"><path d="M6.4 2.8h11.2v4.4H6.4z"/><path d="M4 8.4h16a1.6 1.6 0 0 1 1.6 1.6v5.6a1.6 1.6 0 0 1-1.6 1.6h-1.6v-2.8H6v2.8H4a1.6 1.6 0 0 1-1.6-1.6V10A1.6 1.6 0 0 1 4 8.4z"/><path d="M7.2 15.6h9.6v5.6H7.2z"/></symbol>
+        <symbol id="icon-rss" viewBox="0 0 24 24"><circle cx="4.8" cy="19.2" r="2.4"/><path d="M2.4 11.2v3.2a6.4 6.4 0 0 1 6.4 6.4H12A9.6 9.6 0 0 0 2.4 11.2z"/><path d="M2.4 4.8V8A13.6 13.6 0 0 1 16 21.6h3.2A16.8 16.8 0 0 0 2.4 4.8z"/></symbol>
+        <symbol id="icon-search-plus" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M10 2.8a7.2 7.2 0 1 0 0 14.4 7.2 7.2 0 0 0 0-14.4zm0 2.4a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6z"/><path d="M15.3 14.6 21.2 20.5l-1.5 1.5-5.9-5.9z"/><path d="M9.2 6.8h1.6v2.4h2.4v1.6h-2.4v2.4H9.2v-2.4H6.8V9.2h2.4z"/></symbol>
+        <symbol id="icon-share" viewBox="0 0 24 24"><circle cx="18" cy="5.6" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="18.4" r="3"/><path d="M8.3 10.9 15.7 7.2l.9 1.8-7.4 3.7z"/><path d="M9.2 13.1 16.6 16.8l-.9 1.8-7.4-3.7z"/></symbol>
+        <symbol id="icon-twitter" viewBox="0 0 24 24"><path d="M4.2 3h4.3l11.3 18h-4.3z"/><path d="M19.3 3h-2.6L4.2 21h2.6z"/></symbol>
+        <symbol id="icon-university" viewBox="0 0 24 24"><path d="M12 2.4 21.6 7.2v1.6H2.4V7.2z"/><path d="M4.8 10.4h2.4v8H4.8z"/><path d="M9.2 10.4h2.4v8H9.2z"/><path d="M13.4 10.4h2.4v8h-2.4z"/><path d="M17.6 10.4H20v8h-2.4z"/><path d="M3.2 19.8h17.6v1.8H3.2z"/></symbol>
+        <symbol id="icon-volume-up" viewBox="0 0 24 24"><path d="M3.2 9.2h3.3l5-4.2v14l-5-4.2H3.2z"/><path d="M14.6 8.4a5 5 0 0 1 0 7.2l1.6 1.6a7.2 7.2 0 0 0 0-10.4z"/><path d="M17.4 5.6a8.8 8.8 0 0 1 0 12.8l1.5 1.5a10.9 10.9 0 0 0 0-15.8z"/></symbol>
+    </defs>
+</svg>
+
+      <form method="post" action="./PressReleasePage.aspx?PRID=2131989&amp;reg=48&amp;lang=2" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="sc_HiddenField" id="sc_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZPQet1wIx1Q48y3xJY2k25Y7qxH5RrQ9qQcN-OiTC9guZtri9w2&amp;t=639246310055090729" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=x6wALODbMJK5e0eRC_p1LdIxBJXt0U_WW5GWfJqHAqo6frgCmGRfEywglicTersO2OKrFhK1gAIp0Wk2al2YrpdR3uWqH6f4nfjBsCyRUfTUUVmb0&amp;t=ffffffffecf8d3f2" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=P5lTttoqSeZXoYRLQMIScH645UK3RD852IErF2548Wz9Ssv0rLjB4fhVKnHcMpqkaMHpNAGOeWY02Lf4aBYN9-dVBme_SNK5KJwmFQNpMixYDZ7M0&amp;t=ffffffffecf8d3f2" type="text/javascript"></script>
+<script src="/PressReleasePage.aspx?_TSM_HiddenField_=sc_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d3.5.7.123%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-US%3a5a4df314-b4a2-4da2-a207-9284f1b1e96c%3ade1feab2%3af2c8e708%3a8613aea7%3af9cec9bc%3a3202a5a2%3aab09e3fe%3a87104b7c%3a720a52bf%3a589eaa30%3aa67c2700%3abe6fb298" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="59B53027" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="JanN8WWdoUAwStRrLYZhE0s33RQ7+nfaiaxZI/YDlhKCgrCbLTZNnSC8z/Kg0xMrkk3UHDFs49+dhVqZ8t6ZMenLYMwywvQiTciHnUPdfPPSfZJ+/FATob6yPbhd5wmuxPOj7ayyypnEIgi5Q0/1Ojl8J+x+PvRQkiqmmhGkOsGdscck5r7Yxzbmiboq10Ru0pHhIwxvSARBqJ+DWtRbnqUolMbrf/nA0jyafsfSGc5sYO3Of47ML8SmYYvTRMOhM55gqH/KNlJ4tHWTeHmZ7ycQDws=" />
+</div>
+                              
+            <div id="templateCss"></div>
+            <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('sc', 'form1', ['tupdate12','update12'], [], [], 90, '');
+//]]>
+</script>
+
+            <input type="hidden" name="hfGridHtml" id="hfGridHtml" />
+            <div class="container" style='margin-bottom: 50px;'>
+                  <div id="accessories">
+
+                        
+                        <div class="pull-right" style="display: flex">
+                              <div id="voll"></div>
+                              <div id="vollDT"></div>
+                              
+                              
+<div class="print-icons">
+<input type="image" name="Print1$print" id="Print1_print" aria-label="Print" src="images/printer_icon.png" alt="print page button" style="padding: 5px 10px 5px 10px;" />
+</div>
+                        </div>
+                  </div>
+                  <input type="hidden" name="hydpermid" id="hydpermid" value="2131989" />
+                  
+
+
+
+                  <div class="innner-page-main-about-us-content-right-part">
+
+                        <div id="MinistryName" class="MinistryNameSubhead text-center">
+                              Ministry of Agriculture &
+Farmers Welfare
+                        </div>
+                        
+                        <div id="lg_g"><div class='log_oo'>  <img src='https://static.pib.gov.in/WriteReadData/specificdocs/photo/2026/sep/ph_9768_20260902_10000501.png' alt='azadi ka amrit mahotsav' /> </div></div>
+
+
+
+
+
+                        <div class="text-center event-heading-background">
+                              
+                              <h1 id="Titleh2">
+                                    Cabinet approves continuation of Modified Interest Subvention Scheme (MISS) for FY 2025-26 with existing 1.5% Interest Subvention (IS)
+                              </h1>
+                              <h3 id="Subtitleh3">
+                                    <span id="ltrSubtitle"></span>
+                              </h3>
+                        </div>
+
+                        <div id="PrDateTime" class="ReleaseDateSubHeaddateTime text-center pt20">
+                              Posted On:
+                28 MAY 2025 3:13PM by PIB Delhi
+                        </div>
+                        
+                        <div class='pt20'>
+                        </div>
+                        <input type="hidden" name="hydphotoUrl" id="hydphotoUrl" />
+                        
+                        <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">The Union Cabinet chaired by the Prime Minister Shri Narendra Modi today approved&nbsp;</span>the continuation of the&nbsp;<strong>Interest Subvention (IS)</strong>&nbsp;component under the&nbsp;<strong>Modified Interest Subvention Scheme (MISS)</strong>&nbsp;for the financial year 2025-26, and approved required fund arrangements.</span></span></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff">&nbsp;</span></span></span></span><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">MISS is a Central Sector Scheme aimed at ensuring the availability of short-term credit to farmers at an affordable interest rate through Kisan Credit card (KCC). Under the Scheme:</span></span></span></span></span><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff">&nbsp;</span></span></span></span></p>
+
+<p style="margin-left:1in; margin-right:0in; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Farmers received&nbsp;<strong>short-term loans of up to Rs.3 lakh</strong>&nbsp;through&nbsp;<strong>Kisan Credit Cards (KCC)</strong>&nbsp;at a&nbsp;<strong>subsidized interest rate of 7%</strong>, with&nbsp;<strong>1.5% interest subvention</strong>&nbsp;provided to eligible lending institutions.</span></span></span></span></span></p>
+
+<p style="margin-left:1in; margin-right:0in; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additionally, farmers repaying loans promptly are eligible for an incentive of&nbsp;<strong>up to 3%</strong>&nbsp;as&nbsp;<strong>Prompt Repayment Incentive (PRI) effectively reducing their interest rate on KCC loans to 4%.</strong></span></span></span></span></span></p>
+
+<p style="margin-left:1in; margin-right:0in; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For loans taken exclusively for animal husbandry or fisheries, the interest benefit is applicable up to Rs.2 lakh.</span></span></span></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><strong>&nbsp;</strong></span></span></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><strong><span style="color:black">No changes</span></strong><span style="color:black">&nbsp;have been proposed in the structure or other components of the scheme.</span></span></span></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff">&nbsp;</span></span></span></span><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">There are more than 7.75 crores of KCC accounts in the country. The continuation of this support is critical to&nbsp;<strong>sustaining the flow of institutional credit to agriculture,</strong>&nbsp;which is vital for enhancing productivity and ensuring financial inclusion for small and marginal farmers.</span></span></span></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><strong>&nbsp;</strong></span></span></span></span><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><strong><span style="color:black">Key highlights of Agriculture Credit:</span></strong></span></span></span></span></p>
+
+<p style="margin-left:0.5in; margin-right:0in; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Institutional credit disbursement through KCC increased from&nbsp;<strong>Rs.4.26 lakh crore in 2014 to Rs. 10.05 lakh crore by December 2024</strong></span><strong><span style="color:black">.</span></strong></span></span></span></span></p>
+
+<p style="margin-left:0.5in; margin-right:0in; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overall agricultural credit flow also rose from&nbsp;<strong>Rs.7.3 lakh crore in FY 2013-14</strong>&nbsp;to&nbsp;<strong>Rs.25.49 lakh crore in FY 2023-24</strong>.</span></span></span></span></span></p>
+
+<p style="margin-left:0.5in; margin-right:0in; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Digital reforms such as the launch of the&nbsp;<strong>Kisan Rin Portal (KRP)</strong>&nbsp;in August 2023 have enhanced transparency and efficiency in claim processing.</span></span></span></span></span></p>
+
+<p style="margin-left:0.5in; margin-right:0in; text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">Given the current lending cost trends, median MCLR and repo rate movements, retaining the&nbsp;<strong>interest subvention rate at 1.5%</strong>&nbsp;remains essential to support rural and cooperative banks and ensure continued access to low-cost credit for farmers.</span></span></span></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff">&nbsp;</span></span></span></span><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">The Cabinet&rsquo;s decision reinforces the Government&rsquo;s unwavering commitment to&nbsp;<strong>doubling farmers&rsquo; income, strengthening the rural credit ecosystem,</strong>&nbsp;and&nbsp;<strong>boosting agricultural growth through timely and affordable credit access.</strong></span></span></span></span></span><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff">&nbsp;</span></span></span></span></p>
+
+<p style="margin-left:0in; margin-right:0in; text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff">*****</span></span></span></span></p>
+
+<p style="margin-left:0in; margin-right:0in; text-align:justify"><strong><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff">MJPS/BM</span></span></span></span></strong></p>
+
+
+                        
+                        <div id="reel_pic">
+                        </div>
+
+
+
+                        
+                        <br />
+                        <span id="ReleaseId">(Release ID: 2131989)</span>
+                        <span id="lblViews">Visitor Counter : 10683</span>
+                        <div>
+                              
+                        </div>
+                        
+
+                        <span id="lblRefPhoto"></span>
+
+                        <div class="BackgroundRelease">
+                              
+                        </div>
+                        <div>
+                              
+                        </div>
+                        <div class="ReleaseLang">Read this release in: 
+                        
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2132068' target="_blank">
+                                          Telugu </a>
+                              
+                                    ,
+                              
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2132040' target="_blank">
+                                          Malayalam </a>
+                              
+                                    ,
+                              
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2132015' target="_blank">
+                                          Urdu </a>
+                              
+                                    ,
+                              
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2132002' target="_blank">
+                                          हिन्दी </a>
+                              
+                                    ,
+                              
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2132034' target="_blank">
+                                          Marathi </a>
+                              
+                                    ,
+                              
+                                    
+                                    <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2132003' target="_blank">
+                                          Gujarati </a>
+                              
+                        </div>
+
+                        <div class="RelTag">
+                              <ul>
+                                    
+                              </ul>
+                        </div>
+                        <div class="clear">
+                        </div>
+                        <div id="RelLink" class="RelLink">
+                              <ul>
+                                    
+                                    
+                              </ul>
+                        </div>
+                        <center>
+                              
+                        </center>
+                  </div>
+
+                  <div id="update12">
+	
+                              
+                              <input type="hidden" name="Hidden" id="Hidden" />
+                              <div id="P_CategoryManagement" class="ModalWindow" style="border-width:0px;height:60%;width:60%;overflow:auto;display: none">
+		
+                                    <div>
+                                          <input type="image" name="btnClose" id="btnClose" src="images/close_flat_icon.png" />
+                                    </div>
+                                    <div id="description">
+                                    </div>
+                                    <div class="text-center">
+                                          <h2>
+                                                
+                                                <br>
+                                                
+                                          </h2>
+                                    </div>
+                                    <br />
+                                    <div class="clear">
+                                    </div>
+                                    
+                              
+	</div>
+                        
+</div>
+            </div>
+            
+            <div id="PdfDiv" style="display: none;">
+                  <table width="100%">
+                        <tr>
+                              <td style="font-weight: 200; text-align: center">
+                                    Ministry of Agriculture &
+Farmers Welfare
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="font-weight: 200; text-align: center; font-size: 30px;">
+                                          Cabinet approves continuation of Modified Interest Subvention Scheme (MISS) for FY 2025-26 with existing 1.5% Interest Subvention (IS)
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="font-weight: 200; text-align: center; font-size: 30px;">
+                                          
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="text-align: center; font-size: 14px;">
+                                          Posted On:
+                        28 MAY 2025 3:13PM by PIB Delhi
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="font-weight: 200; text-align: left; font-size: 16px;">
+                                          <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">The Union Cabinet chaired by the Prime Minister Shri Narendra Modi today approved&nbsp;</span>the continuation of the&nbsp;<strong>Interest Subvention (IS)</strong>&nbsp;component under the&nbsp;<strong>Modified Interest Subvention Scheme (MISS)</strong>&nbsp;for the financial year 2025-26, and approved required fund arrangements.</span></span></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff">&nbsp;</span></span></span></span><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">MISS is a Central Sector Scheme aimed at ensuring the availability of short-term credit to farmers at an affordable interest rate through Kisan Credit card (KCC). Under the Scheme:</span></span></span></span></span><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff">&nbsp;</span></span></span></span></p>
+
+<p style="margin-left:1in; margin-right:0in; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Farmers received&nbsp;<strong>short-term loans of up to Rs.3 lakh</strong>&nbsp;through&nbsp;<strong>Kisan Credit Cards (KCC)</strong>&nbsp;at a&nbsp;<strong>subsidized interest rate of 7%</strong>, with&nbsp;<strong>1.5% interest subvention</strong>&nbsp;provided to eligible lending institutions.</span></span></span></span></span></p>
+
+<p style="margin-left:1in; margin-right:0in; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additionally, farmers repaying loans promptly are eligible for an incentive of&nbsp;<strong>up to 3%</strong>&nbsp;as&nbsp;<strong>Prompt Repayment Incentive (PRI) effectively reducing their interest rate on KCC loans to 4%.</strong></span></span></span></span></span></p>
+
+<p style="margin-left:1in; margin-right:0in; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For loans taken exclusively for animal husbandry or fisheries, the interest benefit is applicable up to Rs.2 lakh.</span></span></span></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><strong>&nbsp;</strong></span></span></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><strong><span style="color:black">No changes</span></strong><span style="color:black">&nbsp;have been proposed in the structure or other components of the scheme.</span></span></span></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff">&nbsp;</span></span></span></span><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">There are more than 7.75 crores of KCC accounts in the country. The continuation of this support is critical to&nbsp;<strong>sustaining the flow of institutional credit to agriculture,</strong>&nbsp;which is vital for enhancing productivity and ensuring financial inclusion for small and marginal farmers.</span></span></span></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><strong>&nbsp;</strong></span></span></span></span><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><strong><span style="color:black">Key highlights of Agriculture Credit:</span></strong></span></span></span></span></p>
+
+<p style="margin-left:0.5in; margin-right:0in; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Institutional credit disbursement through KCC increased from&nbsp;<strong>Rs.4.26 lakh crore in 2014 to Rs. 10.05 lakh crore by December 2024</strong></span><strong><span style="color:black">.</span></strong></span></span></span></span></p>
+
+<p style="margin-left:0.5in; margin-right:0in; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overall agricultural credit flow also rose from&nbsp;<strong>Rs.7.3 lakh crore in FY 2013-14</strong>&nbsp;to&nbsp;<strong>Rs.25.49 lakh crore in FY 2023-24</strong>.</span></span></span></span></span></p>
+
+<p style="margin-left:0.5in; margin-right:0in; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Digital reforms such as the launch of the&nbsp;<strong>Kisan Rin Portal (KRP)</strong>&nbsp;in August 2023 have enhanced transparency and efficiency in claim processing.</span></span></span></span></span></p>
+
+<p style="margin-left:0.5in; margin-right:0in; text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">Given the current lending cost trends, median MCLR and repo rate movements, retaining the&nbsp;<strong>interest subvention rate at 1.5%</strong>&nbsp;remains essential to support rural and cooperative banks and ensure continued access to low-cost credit for farmers.</span></span></span></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff">&nbsp;</span></span></span></span><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff"><span style="color:black">The Cabinet&rsquo;s decision reinforces the Government&rsquo;s unwavering commitment to&nbsp;<strong>doubling farmers&rsquo; income, strengthening the rural credit ecosystem,</strong>&nbsp;and&nbsp;<strong>boosting agricultural growth through timely and affordable credit access.</strong></span></span></span></span></span><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff">&nbsp;</span></span></span></span></p>
+
+<p style="margin-left:0in; margin-right:0in; text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff">*****</span></span></span></span></p>
+
+<p style="margin-left:0in; margin-right:0in; text-align:justify"><strong><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#222222"><span style="background-color:#ffffff">MJPS/BM</span></span></span></span></strong></p>
+
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                                    <div style="font-weight: 100; text-align: left; font-size: 16px;">
+                                          (Release ID: 2131989)
+                                    </div>
+                                    <div style="height: 30px; width: 100%;">
+                                    </div>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td style="font-weight: 200; text-align: center; font-size: 24px;"></td>
+                        </tr>
+                  </table>
+            </div>
+            <div class="clearfix">
+            </div>
+
+            
+
+            <div class="section1">
+                  <div id="frst_t">
+                        <div id="arr_rm"><div class='sticky-social_mb'><ul class='social_mb'><a href='http://www.facebook.com/share.php?u=https://pib.gov.in/PressReleasePage.aspx?PRID=2131989' target='_blank'><li class='fb_b'   ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/facebook.jpg' alt='Share on facebook'  width='40' /></li></a><a href='https://twitter.com/intent/tweet?url=https://pib.gov.in/PressReleasePage.aspx?PRID=2131989&text=Cabinet approves continuation of Modified Interest Subvention Scheme (MISS) for FY 2025-26 with existing 1.5% Interest Subvention (IS)' target='_blank'><li class='twitter_r'  ><img  src='https://static.pib.gov.in/WriteReadData/specificdocs/photo/2023/aug/ph2023818240601.jpg' alt='Share on twitter' width='40' /> </li></a><a href='https://api.whatsapp.com/send?text=https://pib.gov.in/PressReleasePage.aspx?PRID=2131989' target='_blank'><li class='whatsapp_r'  ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/whatsapp1.png' alt='Share on whatsapp' width='40' /></li></a><a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=Cabinet approves continuation of Modified Interest Subvention Scheme (MISS) for FY 2025-26 with existing 1.5% Interest Subvention (IS)&body=https://pib.gov.in/PressReleasePage.aspx?PRID=2131989&ui=2&tf=1&pli=1' title='Share by Email' target='_blank'><li class='fa-envelope_r' ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/email1.png' alt='Share on email'  width='40' /></li></a><a href='https://www.linkedin.com/shareArticle?mini=true&url=https://pib.gov.in/PressReleasePage.aspx?PRID=2131989&title=Cabinet approves continuation of Modified Interest Subvention Scheme (MISS) for FY 2025-26 with existing 1.5% Interest Subvention (IS)&summary=My%20favorite%20developer%20program&source=LinkedIn' target='_blank'><li class='fa-linkedin_r'  ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/linkedin.png' alt='Share on linkedin' width='40' /></li></a></ul></div></div>
+                  </div>
+                  <div id="second_t">
+                        <div id="sndr_rm"><div class='sticky-social'><ul class='social'><a href='http://www.facebook.com/share.php?u=https://pib.gov.in/PressReleasePage.aspx?PRID=2131989' target='_blank'><li class='fb_b'   ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/facebook.jpg' alt='Share on facebook'  width='35' /></li></a><a href='https://twitter.com/intent/tweet?url=https://pib.gov.in/PressReleasePage.aspx?PRID=2131989&text=Cabinet approves continuation of Modified Interest Subvention Scheme (MISS) for FY 2025-26 with existing 1.5% Interest Subvention (IS)' target='_blank'><li class='twitter_r'  ><img  src='https://static.pib.gov.in/WriteReadData/specificdocs/photo/2023/aug/ph2023818240601.jpg' alt='Share on twitter' width='35' /> </li></a><a href='https://api.whatsapp.com/send?text=https://pib.gov.in/PressReleasePage.aspx?PRID=2131989' target='_blank'><li class='whatsapp_r'  ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/whatsapp1.png' alt='Share on whatsapp' width='35' /></li></a><a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=Cabinet approves continuation of Modified Interest Subvention Scheme (MISS) for FY 2025-26 with existing 1.5% Interest Subvention (IS)&body=https://pib.gov.in/PressReleasePage.aspx?PRID=2131989&ui=2&tf=1&pli=1' title='Share by Email' target='_blank'><li class='fa-envelope_r' ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/email1.png' alt='Share on email'  width='35' /></li></a><a href='https://www.linkedin.com/shareArticle?mini=true&url=https://pib.gov.in/PressReleasePage.aspx?PRID=2131989&title=Cabinet approves continuation of Modified Interest Subvention Scheme (MISS) for FY 2025-26 with existing 1.5% Interest Subvention (IS)&summary=My%20favorite%20developer%20program&source=LinkedIn' target='_blank'><li class='fa-linkedin_r'  ><img  src='https://static.pib.gov.in/WriteReadData/userfiles/socialmedianew/linkedin.png' alt='Share on linkedin' width='35' /></li></a></ul></div></div>
+                  </div>
+            </div>
+            <input type="hidden" name="ltrTitlee" id="ltrTitlee" value="Cabinet approves continuation of Modified Interest Subvention Scheme (MISS) for FY 2025-26 with existing 1.5% Interest Subvention (IS)" />
+            <input type="hidden" name="ltrSubtitlee" id="ltrSubtitlee" />
+            <input type="hidden" name="ltrDescriptionn" id="ltrDescriptionn" value="&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&lt;span style=&quot;color:black&quot;>The Union Cabinet chaired by the Prime Minister Shri Narendra Modi today approved&amp;nbsp;&lt;/span>the continuation of the&amp;nbsp;&lt;strong>Interest Subvention (IS)&lt;/strong>&amp;nbsp;component under the&amp;nbsp;&lt;strong>Modified Interest Subvention Scheme (MISS)&lt;/strong>&amp;nbsp;for the financial year 2025-26, and approved required fund arrangements.&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&amp;nbsp;&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&lt;span style=&quot;color:black&quot;>MISS is a Central Sector Scheme aimed at ensuring the availability of short-term credit to farmers at an affordable interest rate through Kisan Credit card (KCC). Under the Scheme:&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&amp;nbsp;&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;margin-left:1in; margin-right:0in; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&lt;span style=&quot;color:black&quot;>&amp;middot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Farmers received&amp;nbsp;&lt;strong>short-term loans of up to Rs.3 lakh&lt;/strong>&amp;nbsp;through&amp;nbsp;&lt;strong>Kisan Credit Cards (KCC)&lt;/strong>&amp;nbsp;at a&amp;nbsp;&lt;strong>subsidized interest rate of 7%&lt;/strong>, with&amp;nbsp;&lt;strong>1.5% interest subvention&lt;/strong>&amp;nbsp;provided to eligible lending institutions.&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;margin-left:1in; margin-right:0in; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&lt;span style=&quot;color:black&quot;>&amp;middot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Additionally, farmers repaying loans promptly are eligible for an incentive of&amp;nbsp;&lt;strong>up to 3%&lt;/strong>&amp;nbsp;as&amp;nbsp;&lt;strong>Prompt Repayment Incentive (PRI) effectively reducing their interest rate on KCC loans to 4%.&lt;/strong>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;margin-left:1in; margin-right:0in; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&lt;span style=&quot;color:black&quot;>&amp;middot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;For loans taken exclusively for animal husbandry or fisheries, the interest benefit is applicable up to Rs.2 lakh.&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&lt;strong>&amp;nbsp;&lt;/strong>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&lt;strong>&lt;span style=&quot;color:black&quot;>No changes&lt;/span>&lt;/strong>&lt;span style=&quot;color:black&quot;>&amp;nbsp;have been proposed in the structure or other components of the scheme.&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&amp;nbsp;&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&lt;span style=&quot;color:black&quot;>There are more than 7.75 crores of KCC accounts in the country. The continuation of this support is critical to&amp;nbsp;&lt;strong>sustaining the flow of institutional credit to agriculture,&lt;/strong>&amp;nbsp;which is vital for enhancing productivity and ensuring financial inclusion for small and marginal farmers.&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&lt;strong>&amp;nbsp;&lt;/strong>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&lt;strong>&lt;span style=&quot;color:black&quot;>Key highlights of Agriculture Credit:&lt;/span>&lt;/strong>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;margin-left:0.5in; margin-right:0in; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&lt;span style=&quot;color:black&quot;>&amp;middot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Institutional credit disbursement through KCC increased from&amp;nbsp;&lt;strong>Rs.4.26 lakh crore in 2014 to Rs. 10.05 lakh crore by December 2024&lt;/strong>&lt;/span>&lt;strong>&lt;span style=&quot;color:black&quot;>.&lt;/span>&lt;/strong>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;margin-left:0.5in; margin-right:0in; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&lt;span style=&quot;color:black&quot;>&amp;middot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Overall agricultural credit flow also rose from&amp;nbsp;&lt;strong>Rs.7.3 lakh crore in FY 2013-14&lt;/strong>&amp;nbsp;to&amp;nbsp;&lt;strong>Rs.25.49 lakh crore in FY 2023-24&lt;/strong>.&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;margin-left:0.5in; margin-right:0in; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&lt;span style=&quot;color:black&quot;>&amp;middot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Digital reforms such as the launch of the&amp;nbsp;&lt;strong>Kisan Rin Portal (KRP)&lt;/strong>&amp;nbsp;in August 2023 have enhanced transparency and efficiency in claim processing.&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;margin-left:0.5in; margin-right:0in; text-align:justify&quot;>&amp;nbsp;&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&lt;span style=&quot;color:black&quot;>Given the current lending cost trends, median MCLR and repo rate movements, retaining the&amp;nbsp;&lt;strong>interest subvention rate at 1.5%&lt;/strong>&amp;nbsp;remains essential to support rural and cooperative banks and ensure continued access to low-cost credit for farmers.&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&amp;nbsp;&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&lt;span style=&quot;color:black&quot;>The Cabinet&amp;rsquo;s decision reinforces the Government&amp;rsquo;s unwavering commitment to&amp;nbsp;&lt;strong>doubling farmers&amp;rsquo; income, strengthening the rural credit ecosystem,&lt;/strong>&amp;nbsp;and&amp;nbsp;&lt;strong>boosting agricultural growth through timely and affordable credit access.&lt;/strong>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>&amp;nbsp;&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;margin-left:0in; margin-right:0in; text-align:center&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>*****&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;margin-left:0in; margin-right:0in; text-align:justify&quot;>&lt;strong>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#222222&quot;>&lt;span style=&quot;background-color:#ffffff&quot;>MJPS/BM&lt;/span>&lt;/span>&lt;/span>&lt;/span>&lt;/strong>&lt;/p>
+" />
+            <script type="text/javascript">
+                  var mPlayer = document.getElementById("background_music");
+                  var mPlayAction = document.getElementById("playbutton");
+
+                  var isPlaying = false;
+
+                  function playAudio() {
+                        mPlayer.play();
+                        isPlaying = true;
+                        document.getElementById('stopA').style.display = "block";
+                        document.getElementById('playA').style.display = "none";
+                  }
+
+                  function pauseAudio() {
+                        mPlayer.pause();
+                        isPlaying = false;
+                        document.getElementById('playA').style.display = "block";
+                        document.getElementById('stopA').style.display = "none";
+                  }
+                  //function HandleAudio() {
+                  //    if (isPlaying == true) {
+                  //        //Playing already Pause it
+                  //        pauseAudio();
+                  //    } else {
+                  //        //Play the music
+                  //        playAudio();
+                  //    }
+                  //}
+            </script>
+            <script type="text/javascript">
+                  var synth = window.speechSynthesis;
+
+            
+                  function CleanHtml(html) {
+
+                        html = html.replace(/<script[\s\S]*?<\/script>/gi, '');
+
+                        return html;
+                  }
+                  function stripHtml(html) {
+                        let tmp = document.createElement("DIV");
+                        tmp.innerHTML = CleanHtml(html);
+                        return tmp.textContent || tmp.innerText || "";
+                  }
+            </script>
+            <script type="text/javascript">
+                  $(document).ready(function () {
+                        //for responsive tables
+                        $("table").each(function () {
+                              if (!$(this).closest(".table-responsive").length) {
+                                    $(this).wrap("<div class='table-responsive'></div>");
+                              }
+                        });
+
+                        var width = $(window).width();
+                        if (width < 768) {
+
+                              // Extra Small Device
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+
+                        } else if (width < 991) {
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+                              // Small Device
+
+                        } else if (width < 1199) {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                              // Medium Device
+
+                        } else {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                              // Large Device
+
+                        }
+                  });
+            </script>
+            <script type="text/javascript">
+                  $(document).ready(function () {
+                        var width = $(window).width();
+                        if (width < 768) {
+
+                              // Extra Small Device
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+
+                        } else if (width < 991) {
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+                              // Small Device
+
+                        } else if (width < 1199) {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                              // Medium Device
+
+                        } else {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                              // Large Device
+
+                        }
+                  });
+            </script>
+            
+            <style type="text/css">
+                  @media print {
+                        .sticky-social, .sticky-social_mb, .pull-right, #printPDF {
+                              display: none !important;
+                        }
+                  }
+
+                  .f_vl {
+                        padding-right: 30px;
+                        font-size: 17px;
+                        cursor: pointer;
+                  }
+
+                  .log_oo {
+                        // width: 20%;
+                        display: flex;
+                        justify-content: space-between;
+                  }
+
+                        .log_oo img {
+                              width: 150px;
+                              /*width: 100%;
+                    height: auto;*/
+                        }
+
+                  .sticky-social_mb {
+                        position: fixed;
+                        bottom: 0px;
+                        padding: 0px;
+                        margin: 0px;
+                        width: 100%;
+                  }
+
+                  .social_mb {
+                        list-style: none;
+                        display: flex;
+                        width: 100%;
+                        margin-bottom: -8px;
+                  }
+
+                        .social_mb a {
+                              padding: 8px 0px;
+                              font-size: 30px;
+                              transition: all 0.8s ease-in-out;
+                              width: 20% !important;
+                              text-align: center;
+                        }
+            </style>
+            <style type="text/css">
+                  .section1 {
+                        position: relative;
+                        padding: 10px 0px;
+                        width: 100%;
+                  }
+
+
+
+                  .sticky-social {
+                        position: fixed;
+                        top: 20px;
+                        left: 0px;
+                        padding: 0px;
+                        margin: 0px;
+                  }
+
+                  .social {
+                        list-style: none;
+                  }
+
+                        .social a li {
+                              padding: 8px 12px;
+                              font-size: 25px;
+                              transition: all 0.8s ease-in-out;
+                        }
+
+                              .social a li:hover {
+                                    margin-right: -30px;
+                                    box-shadow: 2px 5px 10px grey;
+                              }
+
+                                    .social a li:hover .fa {
+                                          margin-left: 20px;
+                                    }
+
+                  .fb_b {
+                        /* background-color: rgb(59, 89, 152);*/
+                        background-color: rgba(65,103,178,255);
+                  }
+
+                  .twitter_r {
+                        /* background-color: rgb(29, 161, 242);*/
+                        background-color: #000000;
+                  }
+
+                  .whatsapp_r {
+                        /* background-color: rgb(77, 194, 71);*/
+                        background-color: rgba(13,191,67,255);
+                  }
+
+                  .fa-envelope_r {
+                        /* background-color: rgb(219, 68, 55);*/
+                        background-color: #e2123d;
+                  }
+
+                  .fa-linkedin_r {
+                        background-color: rgb(0, 119, 181);
+                  }
+            </style>
+            <style type="text/css">
+                  @media only screen and (max-device-width: 767px) {
+                        p span img {
+                              max-width: 90% !important;
+                              height: auto !important;
+                        }
+
+                        p img {
+                              max-width: 90% !important;
+                              height: auto !important;
+                        }
+
+                        h2 {
+                              font-size: var(--dbim-h2, 20px);   /* was 20px !important - the !important blocked A+/A- */
+                              font-weight: 600 !important;
+                        }
+
+                        h3 {
+                              font-size: var(--dbim-h3, 16px);   /* was 16px !important */
+                              font-weight: 600 !important;
+                        }
+                  }
+            </style>
+            <style type="text/css">
+                  /* === Film Roll Badge Styling(IFFI2025 countdown) === */
+                  .film-roll-badge {
+                        position: absolute;
+                        top:82%;
+                        right: 20px;
+                        width: 230px;
+                        height: 70px;
+                        background: repeating-linear-gradient( to right, #9a2375 0px, #9a2375 18px, #6e2b8b 18px, #6e2b8b 36px );
+                        border-top: 8px solid #9a2375;
+                        border-bottom: 8px solid #9a2375;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+                        animation: moveFilm 8s linear infinite;
+                        z-index: 10;
+                  }
+
+                        /* film sprocket holes */
+                        .film-roll-badge::before,
+                        .film-roll-badge::after {
+                              content: "";
+                              position: absolute;
+                              width: 100%;
+                              height: 10px;
+                              background: repeating-linear-gradient( to right, #9a2375 0px, #9a2375 10px, #fff 10px, #fff 20px );
+                              left: 0;
+                              z-index: 2;
+                        }
+
+                        .film-roll-badge::before {
+                              top: -4px;
+                        }
+
+                        .film-roll-badge::after {
+                              bottom: -4px;
+                        }
+
+                  .film-roll-inner {
+                        position: relative;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        animation: flicker 2s infinite ease-in-out;
+                  }
+
+                  .countdown-text {
+                        font-size: 1.3rem;
+                        font-weight: 700;
+                        color: #fff;
+                        text-shadow: 0 0 6px rgba(255, 255, 255, 0.4), 0 0 10px #000;
+                        white-space: nowrap;
+                  }
+
+                  /* === Animations === */
+                  @keyframes moveFilm {
+                        0% {
+                              background-position: 0 0;
+                        }
+
+                        100% {
+                              background-position: 120px 0;
+                        }
+                  }
+
+                  @keyframes flicker {
+                        0%, 100% {
+                              opacity: 1;
+                        }
+
+                        50% {
+                              opacity: 0.9;
+                        }
+
+                        25% {
+                              opacity: 0.95;
+                        }
+
+                        75% {
+                              opacity: 0.85;
+                        }
+                  }
+
+                  /* === Responsive Adjustments === */
+                  @media (max-width: 1500px) {
+                        .film-roll-badge {
+                              top: 68%;
+                              right: 18px;
+                              /* width: 220px; */
+                              height: 65px;
+                              font-size: 0.85rem;
+                        }
+
+                        .press-section {
+                              margin-top: 35px;
+                        }
+                  }
+
+                  @media (max-width: 992px) {
+                        .film-roll-badge {
+                              top: 52%;
+                              right: 10px;
+                               width: 200px; 
+                              height: 60px;
+                        }
+                  }
+
+                  @media (max-width: 768px) {
+                        .film-roll-badge {
+                              top: 56%;
+                              right: 10px;
+                               width: 124px; 
+                              height: 55px;
+                        }
+
+                        .countdown-text {
+                              font-size: 0.9rem;
+                        }
+                  }
+
+                  @media (max-width: 576px) {
+                        .film-roll-badge {
+                              top: 59%;
+                              right: 5px;
+                              /* width: 160px; */
+                              height: 50px;
+                        }
+
+                        .countdown-text {
+                              font-size: 0.85rem;
+                        }
+                  }
+            </style>
+          <script type="text/javascript">
+                const festivalStart = new Date("2025-11-20T00:00:00").getTime();
+                const festivalEnd = new Date("2025-11-28T23:59:59").getTime();
+
+                const countdownElement = document.getElementById("countdown");
+
+                const interval = setInterval(() => {
+                      const now = new Date().getTime();
+
+                      // BEFORE FESTIVAL — show days + hours left
+                      if (now < festivalStart) {
+                            const diff = festivalStart - now;
+                            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+                            countdownElement.innerHTML = `
+              ${days} Day${days !== 1 ? 's' : ''} 
+              ${hours} Hour${hours !== 1 ? 's' : ''} to go
+          `;
+
+                      }
+
+                      // DURING FESTIVAL — show 56th IFFI - Day X
+                      else if (now >= festivalStart && now <= festivalEnd) {
+                            const dayNumber = Math.floor((now - festivalStart) / (1000 * 60 * 60 * 24)) + 1;
+                            countdownElement.innerHTML = `56th IFFI - Day ${dayNumber}`;
+                      }
+
+                      // AFTER FESTIVAL — new message
+                      else {
+                            countdownElement.innerHTML = `✨ IFFI closes but never ends…`;
+
+                            // Width change logic
+                            const elements = document.querySelectorAll('.film-roll-badge');
+                            elements.forEach(el => el.style.width = "350px");
+
+                            clearInterval(interval);
+                      }
+
+                }, 1000);
+          </script>
+ <script type="text/javascript">
+
+               const miffStart = new Date("2026-06-15T00:00:00").getTime();
+               const miffEnd = new Date("2026-06-15T23:59:59").getTime();
+
+               const miffElement = document.getElementById("miff");
+
+               if (miffElement) {
+
+                   const miffInterval = setInterval(() => {
+
+                       const now = new Date().getTime();
+
+                       // Before MIFF
+                       if (now < miffStart) {
+
+                           const diff = miffStart - now;
+                           const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                           const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+        
+
+                   /*  miffElement.innerHTML = `${days} Day${days !== 1 ? 's' : ''} ${hours} Hour${hours !== 1 ? 's' : ''} to MIFF`;*/
+                           miffElement.innerHTML = `${days} Day${days === 1 ? '' : 's'} to MIFF ...`;
+
+
+                     }
+
+                       // During MIFF
+                       else if (now >= miffStart && now <= miffEnd) {
+
+                           const dayNumber =
+                               Math.floor((now - miffStart) / (1000 * 60 * 60 * 24)) + 1;
+
+                           miffElement.innerHTML = `19th MIFF - Day ${dayNumber}`;
+                       }
+
+                       // After MIFF
+                       else {
+
+                           miffElement.innerHTML = `✨ MIFF concludes, cinema lives on...`;
+
+                           document.querySelectorAll('.film-roll-badge')
+                               .forEach(el => el.style.width = "350px");
+
+                           clearInterval(miffInterval);
+                       }
+
+                   }, 1000);
+               }
+
+</script>
+
+      
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("sc_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","PopupControlID":"P_CategoryManagement","dynamicServicePath":"/PressReleasePage.aspx","id":"mpe"}, null, null, $get("Hidden"));
+});
+//]]>
+</script>
+<input type="hidden" name="__ncforminfo" value="Bn0WFQGkUmVTD-7wGit66zZPLeUxY1dVV0JqAWxUfp60B3l6Jy9HC4Xd34eQRZkMotuJV0ejjKbk98eriarqrDxmpTchsG59-R_jSNgFTdV2QyaY5ZqlBQ=="/></form>
+      
+      
+
+<script type="application/json" id="pibConsentConfig">{"ga4Id":"G-Q414Y0X6EE,G-QJJ6LZ8LHV","policyUrl":"/CookiePolicy.aspx","text":{"bannerLabel":"Cookie consent","title":"Cookies on this website","body":"We use essential cookies to make this website work. We also set analytics cookies when you arrive, so we can see how the site is used and improve it - you can switch these off below or at any time from the Cookie Policy page. Cookies from embedded social media content are set only if you allow them.","policyLink":"Read our Cookie Policy","accept":"Accept all","reject":"Reject optional","customize":"Customise","prefsTitle":"Cookie preferences","prefsIntro":"Choose which cookies this website may set. Essential cookies cannot be switched off because the site does not work without them. Analytics cookies are on unless you turn them off. Social media cookies stay off until you allow them. You can change these choices at any time from the Cookie Policy page.","essentialName":"Essential cookies","essentialDesc":"Needed for the site to function. These remember your session, your language and region, your text size and colour theme, and verify the security check on forms. They are always on.","analyticsName":"Analytics cookies","analyticsDesc":"Help us understand how visitors use the site - which pages are read and how long people stay - so it can be improved. The information is collected in a form that does not directly identify you. These are on when you arrive; switching them off here stops them and deletes the ones already set.","socialName":"Social media cookies","socialDesc":"Set by content embedded from X, Facebook and YouTube, such as timelines and videos. These platforms may use them to track you across websites. They stay off until you allow them.","save":"Save preferences","cancel":"Cancel"}}</script>
+<script type="text/javascript" src='/js/consent.js?v=9'></script>
+
+<script type="text/javascript" src='/js/consent-embeds.js?v=9'></script>
+
+</body>
+</html>
+

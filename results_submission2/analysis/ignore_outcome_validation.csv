@@ -1,0 +1,4 @@
+outcome,primary,field,status,kappa,agreement
+substantive,True,substantive_difference,headline,0.7622033139274518,0.923728813559322
+doses,False,same_inputs_and_doses,headline,0.895151754040205,0.9539473684210527
+main_actions,False,same_main_actions,not usable,0.13591117917304749,0.5878378378378378

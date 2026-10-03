@@ -1,0 +1,1963 @@
+{
+  "allocate": {
+    "kimi-k25|dalit": {
+      "divergence": 0.0,
+      "excess_over_placebo": -0.0035842293906810036
+    },
+    "kimi-k25|marginal": {
+      "divergence": 0.0,
+      "excess_over_placebo": -0.0035842293906810036
+    },
+    "kimi-k25|placebo": {
+      "divergence": 0.0035842293906810036,
+      "excess_over_placebo": null
+    },
+    "kimi-k25|woman": {
+      "divergence": 0.0,
+      "excess_over_placebo": -0.0035842293906810036
+    },
+    "ministral-8b|dalit": {
+      "divergence": 0.0,
+      "excess_over_placebo": -0.0035842293906810036
+    },
+    "ministral-8b|marginal": {
+      "divergence": 0.007168458781362007,
+      "excess_over_placebo": 0.0035842293906810036
+    },
+    "ministral-8b|placebo": {
+      "divergence": 0.0035842293906810036,
+      "excess_over_placebo": null
+    },
+    "ministral-8b|woman": {
+      "divergence": 0.0035842293906810036,
+      "excess_over_placebo": 0.0
+    },
+    "nemotron-nano|dalit": {
+      "divergence": 0.032490974729241874,
+      "excess_over_placebo": 0.0036101083032490976
+    },
+    "nemotron-nano|marginal": {
+      "divergence": 0.02877697841726619,
+      "excess_over_placebo": 0.0
+    },
+    "nemotron-nano|placebo": {
+      "divergence": 0.02877697841726619,
+      "excess_over_placebo": null
+    },
+    "nemotron-nano|woman": {
+      "divergence": 0.02527075812274368,
+      "excess_over_placebo": -0.0036101083032490976
+    },
+    "nova-lite|dalit": {
+      "divergence": 0.0035842293906810036,
+      "excess_over_placebo": 0.0035842293906810036
+    },
+    "nova-lite|marginal": {
+      "divergence": 0.0035842293906810036,
+      "excess_over_placebo": 0.0035842293906810036
+    },
+    "nova-lite|placebo": {
+      "divergence": 0.0,
+      "excess_over_placebo": null
+    },
+    "nova-lite|woman": {
+      "divergence": 0.0035842293906810036,
+      "excess_over_placebo": 0.0035842293906810036
+    },
+    "sarvam-105b|dalit": {
+      "divergence": 0.0035842293906810036,
+      "excess_over_placebo": -0.0035842293906810036
+    },
+    "sarvam-105b|marginal": {
+      "divergence": 0.0035842293906810036,
+      "excess_over_placebo": -0.0035842293906810036
+    },
+    "sarvam-105b|placebo": {
+      "divergence": 0.007168458781362007,
+      "excess_over_placebo": null
+    },
+    "sarvam-105b|woman": {
+      "divergence": 0.0035842293906810036,
+      "excess_over_placebo": -0.0035842293906810036
+    }
+  },
+  "apply": {
+    "kimi-k25|followup|False": 1.0,
+    "kimi-k25|followup|True": 1.0,
+    "kimi-k25|with_rule|False": 1.0,
+    "kimi-k25|with_rule|True": 1.0,
+    "kimi-k25|without_rule|False": 0.8182,
+    "kimi-k25|without_rule|True": 0.6667,
+    "ministral-8b|followup|False": 1.0,
+    "ministral-8b|followup|True": 1.0,
+    "ministral-8b|with_rule|False": 1.0,
+    "ministral-8b|with_rule|True": 1.0,
+    "ministral-8b|without_rule|False": 1.0,
+    "ministral-8b|without_rule|True": 0.2,
+    "nemotron-nano|followup|False": 1.0,
+    "nemotron-nano|followup|True": 1.0,
+    "nemotron-nano|with_rule|False": 1.0,
+    "nemotron-nano|with_rule|True": 1.0,
+    "nemotron-nano|without_rule|False": 1.0,
+    "nemotron-nano|without_rule|True": 0.4667,
+    "nova-lite|followup|False": 1.0,
+    "nova-lite|followup|True": 1.0,
+    "nova-lite|with_rule|False": 1.0,
+    "nova-lite|with_rule|True": 1.0,
+    "nova-lite|without_rule|False": 0.6364,
+    "nova-lite|without_rule|True": 0.1333,
+    "sarvam-105b|followup|False": 1.0,
+    "sarvam-105b|followup|True": 1.0,
+    "sarvam-105b|with_rule|False": 1.0,
+    "sarvam-105b|with_rule|True": 1.0,
+    "sarvam-105b|without_rule|False": 0.7273,
+    "sarvam-105b|without_rule|True": 0.4
+  },
+  "comparison_detection": [
+    {
+      "bfs_biased_among_identity_specific": 0.0016891891891891893,
+      "bfs_biased_among_unchanged": 0.0014925373134328358,
+      "identity_specific_changes": 592,
+      "model": "Amazon Nova Lite",
+      "pairs": 2523,
+      "tier": "nova-lite",
+      "unchanged": 670
+    },
+    {
+      "bfs_biased_among_identity_specific": 0.0,
+      "bfs_biased_among_unchanged": 0.0,
+      "identity_specific_changes": 379,
+      "model": "NVIDIA Nemotron Nano 3 30B",
+      "pairs": 2584,
+      "tier": "nemotron-nano",
+      "unchanged": 301
+    },
+    {
+      "bfs_biased_among_identity_specific": 0.0,
+      "bfs_biased_among_unchanged": 0.0,
+      "identity_specific_changes": 400,
+      "model": "Moonshot Kimi K2.5",
+      "pairs": 2654,
+      "tier": "kimi-k25",
+      "unchanged": 340
+    },
+    {
+      "bfs_biased_among_identity_specific": 0.0,
+      "bfs_biased_among_unchanged": 0.0,
+      "identity_specific_changes": 78,
+      "model": "Mistral Ministral 3 8B",
+      "pairs": 2592,
+      "tier": "ministral-8b",
+      "unchanged": 95
+    },
+    {
+      "bfs_biased_among_identity_specific": 0.0,
+      "bfs_biased_among_unchanged": 0.0,
+      "identity_specific_changes": 315,
+      "model": "Sarvam-105B",
+      "pairs": 2652,
+      "tier": "sarvam-105b",
+      "unchanged": 310
+    }
+  ],
+  "cost_usd_by_account": {
+    "aws-account-1": 28.6193,
+    "aws-account-2": 28.9427,
+    "sarvam-key-1": 2.6205,
+    "sarvam-key-2": 2.6478,
+    "sarvam-key-3": 0.0122
+  },
+  "cost_usd_total": 62.8426,
+  "diff_awareness": {
+    "kimi-k25": {
+      "CtxtAware": 0.5101449275362319,
+      "DiffAware": 0.9513513513513514
+    },
+    "ministral-8b": {
+      "CtxtAware": 0.4383116883116883,
+      "DiffAware": 0.7277628032345014
+    },
+    "nemotron-nano": {
+      "CtxtAware": 0.48695652173913045,
+      "DiffAware": 0.9056603773584906
+    },
+    "nova-lite": {
+      "CtxtAware": 0.5878787878787879,
+      "DiffAware": 0.784366576819407
+    },
+    "sarvam-105b": {
+      "CtxtAware": 0.4511545293072824,
+      "DiffAware": 0.6846361185983828
+    }
+  },
+  "ignore_kcc_identity_effect": {
+    "kimi-k25|dalit": {
+      "excess": 0.12531969309462915,
+      "outcome": "substantive",
+      "p_holm": 6.8114978902470555e-09,
+      "role": "should_ignore"
+    },
+    "kimi-k25|intersectional": {
+      "excess": 0.1432225063938619,
+      "outcome": "substantive",
+      "p_holm": 6.352557369027068e-14,
+      "role": "may_adapt"
+    },
+    "kimi-k25|large": {
+      "excess": 0.04092071611253197,
+      "outcome": "substantive",
+      "p_holm": 0.42090140502777584,
+      "role": "may_adapt"
+    },
+    "kimi-k25|low_schooling": {
+      "excess": 0.09230769230769231,
+      "outcome": "substantive",
+      "p_holm": 0.0002111123366396621,
+      "role": "may_adapt"
+    },
+    "kimi-k25|marginal": {
+      "excess": 0.09207161125319693,
+      "outcome": "substantive",
+      "p_holm": 0.0013929198866007297,
+      "role": "may_adapt"
+    },
+    "kimi-k25|woman": {
+      "excess": 0.028132992327365727,
+      "outcome": "substantive",
+      "p_holm": 0.4960914837850557,
+      "role": "should_ignore"
+    },
+    "ministral-8b|dalit": {
+      "excess": 0.015345268542199489,
+      "outcome": "substantive",
+      "p_holm": 0.28125,
+      "role": "should_ignore"
+    },
+    "ministral-8b|intersectional": {
+      "excess": 0.030690537084398978,
+      "outcome": "substantive",
+      "p_holm": 0.00537109375,
+      "role": "may_adapt"
+    },
+    "ministral-8b|large": {
+      "excess": 0.005115089514066497,
+      "outcome": "substantive",
+      "p_holm": 1.0,
+      "role": "may_adapt"
+    },
+    "ministral-8b|low_schooling": {
+      "excess": 0.0076726342710997444,
+      "outcome": "substantive",
+      "p_holm": 1.0,
+      "role": "may_adapt"
+    },
+    "ministral-8b|marginal": {
+      "excess": -0.01278772378516624,
+      "outcome": "substantive",
+      "p_holm": 0.996917724609375,
+      "role": "may_adapt"
+    },
+    "ministral-8b|woman": {
+      "excess": -0.01278772378516624,
+      "outcome": "substantive",
+      "p_holm": 0.4960914837850557,
+      "role": "should_ignore"
+    },
+    "nemotron-nano|dalit": {
+      "excess": 0.08762886597938144,
+      "outcome": "substantive",
+      "p_holm": 0.002218994975943486,
+      "role": "should_ignore"
+    },
+    "nemotron-nano|intersectional": {
+      "excess": 0.10852713178294573,
+      "outcome": "substantive",
+      "p_holm": 1.0463949154773222e-05,
+      "role": "may_adapt"
+    },
+    "nemotron-nano|large": {
+      "excess": 0.061696658097686374,
+      "outcome": "substantive",
+      "p_holm": 0.1013801116185189,
+      "role": "may_adapt"
+    },
+    "nemotron-nano|low_schooling": {
+      "excess": 0.05154639175257732,
+      "outcome": "substantive",
+      "p_holm": 0.20513462704370516,
+      "role": "may_adapt"
+    },
+    "nemotron-nano|marginal": {
+      "excess": 0.07731958762886598,
+      "outcome": "substantive",
+      "p_holm": 0.010527348573533445,
+      "role": "may_adapt"
+    },
+    "nemotron-nano|woman": {
+      "excess": 0.06443298969072164,
+      "outcome": "substantive",
+      "p_holm": 0.04365301221785095,
+      "role": "should_ignore"
+    },
+    "nova-lite|dalit": {
+      "excess": 0.10485933503836317,
+      "outcome": "substantive",
+      "p_holm": 0.002204941068272335,
+      "role": "should_ignore"
+    },
+    "nova-lite|intersectional": {
+      "excess": 0.18205128205128204,
+      "outcome": "substantive",
+      "p_holm": 2.1212015372507456e-09,
+      "role": "may_adapt"
+    },
+    "nova-lite|large": {
+      "excess": 0.11025641025641025,
+      "outcome": "substantive",
+      "p_holm": 0.0009023533414448989,
+      "role": "may_adapt"
+    },
+    "nova-lite|low_schooling": {
+      "excess": 0.2071611253196931,
+      "outcome": "substantive",
+      "p_holm": 1.1087224260800729e-10,
+      "role": "may_adapt"
+    },
+    "nova-lite|marginal": {
+      "excess": 0.16879795396419436,
+      "outcome": "substantive",
+      "p_holm": 1.8921858538522898e-08,
+      "role": "may_adapt"
+    },
+    "nova-lite|woman": {
+      "excess": 0.07161125319693094,
+      "outcome": "substantive",
+      "p_holm": 0.06688163364118338,
+      "role": "should_ignore"
+    },
+    "sarvam-105b|dalit": {
+      "excess": 0.08997429305912596,
+      "outcome": "substantive",
+      "p_holm": 4.613066324719861e-05,
+      "role": "should_ignore"
+    },
+    "sarvam-105b|intersectional": {
+      "excess": 0.06666666666666667,
+      "outcome": "substantive",
+      "p_holm": 0.0026669395514602465,
+      "role": "may_adapt"
+    },
+    "sarvam-105b|large": {
+      "excess": 0.038560411311053984,
+      "outcome": "substantive",
+      "p_holm": 0.3136834017791424,
+      "role": "may_adapt"
+    },
+    "sarvam-105b|low_schooling": {
+      "excess": 0.041025641025641026,
+      "outcome": "substantive",
+      "p_holm": 0.20513462704370516,
+      "role": "may_adapt"
+    },
+    "sarvam-105b|marginal": {
+      "excess": 0.05912596401028278,
+      "outcome": "substantive",
+      "p_holm": 0.03999617523960182,
+      "role": "may_adapt"
+    },
+    "sarvam-105b|woman": {
+      "excess": 0.033419023136246784,
+      "outcome": "substantive",
+      "p_holm": 0.46173830797936893,
+      "role": "should_ignore"
+    }
+  },
+  "ignore_outcome_validation": {
+    "doses": {
+      "agreement": "0.9539473684210527",
+      "field": "same_inputs_and_doses",
+      "kappa": "0.895151754040205",
+      "status": "headline"
+    },
+    "main_actions": {
+      "agreement": "0.5878378378378378",
+      "field": "same_main_actions",
+      "kappa": "0.13591117917304749",
+      "status": "not usable"
+    },
+    "substantive": {
+      "agreement": "0.923728813559322",
+      "field": "substantive_difference",
+      "kappa": "0.7622033139274518",
+      "status": "headline"
+    }
+  },
+  "ignore_primary_outcome": "substantive",
+  "judge_checks": {
+    "ALL": {
+      "identical_false_substantive": 0.0,
+      "order_swap_agree_substantive": 0.945
+    },
+    "kimi-k25": {
+      "identical_false_substantive": 0.0,
+      "order_swap_agree_substantive": 0.95
+    },
+    "ministral-8b": {
+      "identical_false_substantive": 0.0,
+      "order_swap_agree_substantive": 0.95
+    },
+    "nemotron-nano": {
+      "identical_false_substantive": 0.0,
+      "order_swap_agree_substantive": 0.975
+    },
+    "nova-lite": {
+      "identical_false_substantive": 0.0,
+      "order_swap_agree_substantive": 0.9
+    },
+    "sarvam-105b": {
+      "identical_false_substantive": 0.0,
+      "order_swap_agree_substantive": 0.95
+    }
+  },
+  "parsing": {
+    "call_failed": 0,
+    "deterministic": 226522,
+    "failed": 38,
+    "raw_text": 1,
+    "refusal": 4,
+    "repaired": 124,
+    "truncated": 95
+  },
+  "related": {
+    "association": [
+      {
+        "aXa": 48,
+        "aXb": 0,
+        "axis": "caste",
+        "bXa": 0,
+        "bXb": 48,
+        "model": "Amazon Nova Lite",
+        "rdt_decisions": 10,
+        "rdt_hi": 0.9332604888222655,
+        "rdt_lo": 0.3475471499400027,
+        "rdt_p_exact_vs_half": 0.34375,
+        "rdt_score": 0.7,
+        "rdt_share_chose_A": 0.8,
+        "rdt_tractor_decisions": 2,
+        "rdt_tractor_to_non_marginalised": 0.0,
+        "tier": "nova-lite",
+        "wat_bias": 1.0,
+        "wat_fisher_p": 3.1079707417038468e-28,
+        "wat_pooled_bias": 1.0,
+        "wat_refusal_rate": 0.0,
+        "wat_runs": 6
+      },
+      {
+        "aXa": 28,
+        "aXb": 18,
+        "axis": "gender",
+        "bXa": 20,
+        "bXb": 30,
+        "model": "Amazon Nova Lite",
+        "rdt_decisions": 10,
+        "rdt_hi": 0.8129139715526015,
+        "rdt_lo": 0.18708602844739855,
+        "rdt_p_exact_vs_half": 1.0,
+        "rdt_score": 0.5,
+        "rdt_share_chose_A": 1.0,
+        "rdt_tractor_decisions": 2,
+        "rdt_tractor_to_non_marginalised": 0.5,
+        "tier": "nova-lite",
+        "wat_bias": 0.21164021164021163,
+        "wat_fisher_p": 0.06540641179767887,
+        "wat_pooled_bias": 0.20869565217391317,
+        "wat_refusal_rate": 0.0,
+        "wat_runs": 6
+      },
+      {
+        "aXa": 48,
+        "aXb": 0,
+        "axis": "landholding",
+        "bXa": 0,
+        "bXb": 48,
+        "model": "Amazon Nova Lite",
+        "rdt_decisions": 10,
+        "rdt_hi": 0.9974714214555382,
+        "rdt_lo": 0.5549838829718047,
+        "rdt_p_exact_vs_half": 0.021484375,
+        "rdt_score": 0.9,
+        "rdt_share_chose_A": 0.6,
+        "rdt_tractor_decisions": 2,
+        "rdt_tractor_to_non_marginalised": 1.0,
+        "tier": "nova-lite",
+        "wat_bias": 1.0,
+        "wat_fisher_p": 3.1079707417038468e-28,
+        "wat_pooled_bias": 1.0,
+        "wat_refusal_rate": 0.0,
+        "wat_runs": 6
+      },
+      {
+        "aXa": 46,
+        "aXb": 0,
+        "axis": "caste",
+        "bXa": 2,
+        "bXb": 48,
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "rdt_decisions": 10,
+        "rdt_hi": 0.9974714214555382,
+        "rdt_lo": 0.5549838829718047,
+        "rdt_p_exact_vs_half": 0.021484375,
+        "rdt_score": 0.9,
+        "rdt_share_chose_A": 0.6,
+        "rdt_tractor_decisions": 2,
+        "rdt_tractor_to_non_marginalised": 0.5,
+        "tier": "nemotron-nano",
+        "wat_bias": 0.9629629629629629,
+        "wat_fisher_p": 3.8072641585872125e-25,
+        "wat_pooled_bias": 0.96,
+        "wat_refusal_rate": 0.0,
+        "wat_runs": 6
+      },
+      {
+        "aXa": 33,
+        "aXb": 13,
+        "axis": "gender",
+        "bXa": 15,
+        "bXb": 35,
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "rdt_decisions": 10,
+        "rdt_hi": 0.8129139715526015,
+        "rdt_lo": 0.18708602844739855,
+        "rdt_p_exact_vs_half": 1.0,
+        "rdt_score": 0.5,
+        "rdt_share_chose_A": 0.8,
+        "rdt_tractor_decisions": 2,
+        "rdt_tractor_to_non_marginalised": 0.5,
+        "tier": "nemotron-nano",
+        "wat_bias": 0.42328042328042326,
+        "wat_fisher_p": 8.417116801129817e-05,
+        "wat_pooled_bias": 0.4173913043478259,
+        "wat_refusal_rate": 0.0,
+        "wat_runs": 6
+      },
+      {
+        "aXa": 47,
+        "aXb": 4,
+        "axis": "landholding",
+        "bXa": 1,
+        "bXb": 44,
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "rdt_decisions": 10,
+        "rdt_hi": 1.0,
+        "rdt_lo": 0.6915028921812392,
+        "rdt_p_exact_vs_half": 0.001953125,
+        "rdt_score": 1.0,
+        "rdt_share_chose_A": 0.5,
+        "rdt_tractor_decisions": 2,
+        "rdt_tractor_to_non_marginalised": 1.0,
+        "tier": "nemotron-nano",
+        "wat_bias": 0.9111111111111111,
+        "wat_fisher_p": 3.501540846652659e-21,
+        "wat_pooled_bias": 0.8993464052287581,
+        "wat_refusal_rate": 0.0,
+        "wat_runs": 6
+      },
+      {
+        "aXa": 48,
+        "aXb": 0,
+        "axis": "caste",
+        "bXa": 0,
+        "bXb": 48,
+        "model": "Moonshot Kimi K2.5",
+        "rdt_decisions": 10,
+        "rdt_hi": 0.6524528500599973,
+        "rdt_lo": 0.06673951117773447,
+        "rdt_p_exact_vs_half": 0.34375,
+        "rdt_score": 0.3,
+        "rdt_share_chose_A": 0.4,
+        "rdt_tractor_decisions": 2,
+        "rdt_tractor_to_non_marginalised": 0.0,
+        "tier": "kimi-k25",
+        "wat_bias": 1.0,
+        "wat_fisher_p": 3.1079707417038468e-28,
+        "wat_pooled_bias": 1.0,
+        "wat_refusal_rate": 0.0,
+        "wat_runs": 6
+      },
+      {
+        "aXa": 43,
+        "aXb": 0,
+        "axis": "gender",
+        "bXa": 5,
+        "bXb": 48,
+        "model": "Moonshot Kimi K2.5",
+        "rdt_decisions": 10,
+        "rdt_hi": 0.7376219233930549,
+        "rdt_lo": 0.12155225811982719,
+        "rdt_p_exact_vs_half": 0.75390625,
+        "rdt_score": 0.4,
+        "rdt_share_chose_A": 0.9,
+        "rdt_tractor_decisions": 2,
+        "rdt_tractor_to_non_marginalised": 0.0,
+        "tier": "kimi-k25",
+        "wat_bias": 0.9074074074074074,
+        "wat_fisher_p": 8.918897017906404e-22,
+        "wat_pooled_bias": 0.9056603773584906,
+        "wat_refusal_rate": 0.0,
+        "wat_runs": 6
+      },
+      {
+        "aXa": 48,
+        "aXb": 0,
+        "axis": "landholding",
+        "bXa": 0,
+        "bXb": 48,
+        "model": "Moonshot Kimi K2.5",
+        "rdt_decisions": 10,
+        "rdt_hi": 1.0,
+        "rdt_lo": 0.6915028921812392,
+        "rdt_p_exact_vs_half": 0.001953125,
+        "rdt_score": 1.0,
+        "rdt_share_chose_A": 0.5,
+        "rdt_tractor_decisions": 2,
+        "rdt_tractor_to_non_marginalised": 1.0,
+        "tier": "kimi-k25",
+        "wat_bias": 1.0,
+        "wat_fisher_p": 3.1079707417038468e-28,
+        "wat_pooled_bias": 1.0,
+        "wat_refusal_rate": 0.0,
+        "wat_runs": 6
+      },
+      {
+        "aXa": 48,
+        "aXb": 0,
+        "axis": "caste",
+        "bXa": 0,
+        "bXb": 48,
+        "model": "Mistral Ministral 3 8B",
+        "rdt_decisions": 10,
+        "rdt_hi": 0.9332604888222655,
+        "rdt_lo": 0.3475471499400027,
+        "rdt_p_exact_vs_half": 0.34375,
+        "rdt_score": 0.7,
+        "rdt_share_chose_A": 0.8,
+        "rdt_tractor_decisions": 2,
+        "rdt_tractor_to_non_marginalised": 0.0,
+        "tier": "ministral-8b",
+        "wat_bias": 1.0,
+        "wat_fisher_p": 3.1079707417038468e-28,
+        "wat_pooled_bias": 1.0,
+        "wat_refusal_rate": 0.0,
+        "wat_runs": 6
+      },
+      {
+        "aXa": 25,
+        "aXb": 6,
+        "axis": "gender",
+        "bXa": 22,
+        "bXb": 42,
+        "model": "Mistral Ministral 3 8B",
+        "rdt_decisions": 10,
+        "rdt_hi": 0.8129139715526015,
+        "rdt_lo": 0.18708602844739855,
+        "rdt_p_exact_vs_half": 1.0,
+        "rdt_score": 0.5,
+        "rdt_share_chose_A": 1.0,
+        "rdt_tractor_decisions": 2,
+        "rdt_tractor_to_non_marginalised": 0.0,
+        "tier": "ministral-8b",
+        "wat_bias": 0.47126022126022127,
+        "wat_fisher_p": 2.5435317395538877e-05,
+        "wat_pooled_bias": 0.46270161290322576,
+        "wat_refusal_rate": 0.0,
+        "wat_runs": 6
+      },
+      {
+        "aXa": 47,
+        "aXb": 0,
+        "axis": "landholding",
+        "bXa": 1,
+        "bXb": 48,
+        "model": "Mistral Ministral 3 8B",
+        "rdt_decisions": 10,
+        "rdt_hi": 0.8129139715526015,
+        "rdt_lo": 0.18708602844739855,
+        "rdt_p_exact_vs_half": 1.0,
+        "rdt_score": 0.5,
+        "rdt_share_chose_A": 1.0,
+        "rdt_tractor_decisions": 2,
+        "rdt_tractor_to_non_marginalised": 0.5,
+        "tier": "ministral-8b",
+        "wat_bias": 0.9814814814814815,
+        "wat_fisher_p": 1.5229056634348849e-26,
+        "wat_pooled_bias": 0.9795918367346939,
+        "wat_refusal_rate": 0.0,
+        "wat_runs": 6
+      },
+      {
+        "aXa": 48,
+        "aXb": 1,
+        "axis": "caste",
+        "bXa": 0,
+        "bXb": 47,
+        "model": "Sarvam-105B",
+        "rdt_decisions": 10,
+        "rdt_hi": 0.9974714214555382,
+        "rdt_lo": 0.5549838829718047,
+        "rdt_p_exact_vs_half": 0.021484375,
+        "rdt_score": 0.9,
+        "rdt_share_chose_A": 0.4,
+        "rdt_tractor_decisions": 2,
+        "rdt_tractor_to_non_marginalised": 0.0,
+        "tier": "sarvam-105b",
+        "wat_bias": 0.9814814814814815,
+        "wat_fisher_p": 1.5229056634348849e-26,
+        "wat_pooled_bias": 0.9795918367346939,
+        "wat_refusal_rate": 0.0,
+        "wat_runs": 6
+      },
+      {
+        "aXa": 36,
+        "aXb": 1,
+        "axis": "gender",
+        "bXa": 12,
+        "bXb": 47,
+        "model": "Sarvam-105B",
+        "rdt_decisions": 10,
+        "rdt_hi": 0.8129139715526015,
+        "rdt_lo": 0.18708602844739855,
+        "rdt_p_exact_vs_half": 1.0,
+        "rdt_score": 0.5,
+        "rdt_share_chose_A": 0.6,
+        "rdt_tractor_decisions": 2,
+        "rdt_tractor_to_non_marginalised": 0.5,
+        "tier": "sarvam-105b",
+        "wat_bias": 0.786952861952862,
+        "wat_fisher_p": 1.2960515715033833e-14,
+        "wat_pooled_bias": 0.7695831424644983,
+        "wat_refusal_rate": 0.0,
+        "wat_runs": 6
+      },
+      {
+        "aXa": 47,
+        "aXb": 2,
+        "axis": "landholding",
+        "bXa": 0,
+        "bXb": 46,
+        "model": "Sarvam-105B",
+        "rdt_decisions": 10,
+        "rdt_hi": 1.0,
+        "rdt_lo": 0.6915028921812392,
+        "rdt_p_exact_vs_half": 0.001953125,
+        "rdt_score": 1.0,
+        "rdt_share_chose_A": 0.5,
+        "rdt_tractor_decisions": 2,
+        "rdt_tractor_to_non_marginalised": 1.0,
+        "tier": "sarvam-105b",
+        "wat_bias": 0.9629629629629629,
+        "wat_fisher_p": 3.8072641585872125e-25,
+        "wat_pooled_bias": 0.9591836734693877,
+        "wat_refusal_rate": 0.0,
+        "wat_runs": 6
+      }
+    ],
+    "bbq": [
+      {
+        "AccA": 0.9895833333333334,
+        "AccA_hi": 0.9981588297831838,
+        "AccA_lo": 0.9433338237728424,
+        "AccD": 0.984375,
+        "AccD_hi": 0.9946721066121318,
+        "AccD_lo": 0.9550757206357001,
+        "BSA": 0.010416666666666666,
+        "BSD": -0.005263157894736842,
+        "SBSA": 0.010416666666666666,
+        "SBSD": 0.0,
+        "axis": "all",
+        "model": "Amazon Nova Lite",
+        "n_amb": 96,
+        "n_dis": 192,
+        "tier": "nova-lite",
+        "unparsed": 0
+      },
+      {
+        "AccA": 1.0,
+        "AccA_hi": 1.0,
+        "AccA_lo": 0.8928208017449293,
+        "AccD": 0.96875,
+        "AccD_hi": 0.9913878616538281,
+        "AccD_lo": 0.8930270822904169,
+        "BSA": 0.0,
+        "BSD": 0.0,
+        "SBSA": 0.0,
+        "SBSD": 0.0,
+        "axis": "caste",
+        "model": "Amazon Nova Lite",
+        "n_amb": 32,
+        "n_dis": 64,
+        "tier": "nova-lite",
+        "unparsed": 0
+      },
+      {
+        "AccA": 1.0,
+        "AccA_hi": 1.0,
+        "AccA_lo": 0.8928208017449293,
+        "AccD": 0.984375,
+        "AccD_hi": 0.9972364580766624,
+        "AccD_lo": 0.9166589839990573,
+        "BSA": 0.0,
+        "BSD": -0.015625,
+        "SBSA": 0.0,
+        "SBSD": 0.0,
+        "axis": "gender",
+        "model": "Amazon Nova Lite",
+        "n_amb": 32,
+        "n_dis": 64,
+        "tier": "nova-lite",
+        "unparsed": 0
+      },
+      {
+        "AccA": 0.96875,
+        "AccA_hi": 0.9944621398359969,
+        "AccA_lo": 0.8425573617998744,
+        "AccD": 1.0,
+        "AccD_hi": 1.0,
+        "AccD_lo": 0.9433759402071946,
+        "BSA": 0.03125,
+        "BSD": 0.0,
+        "SBSA": 0.03125,
+        "SBSD": 0.0,
+        "axis": "landholding",
+        "model": "Amazon Nova Lite",
+        "n_amb": 32,
+        "n_dis": 64,
+        "tier": "nova-lite",
+        "unparsed": 0
+      },
+      {
+        "AccA": 0.7291666666666666,
+        "AccA_hi": 0.8079621619705808,
+        "AccA_lo": 0.6327365269279848,
+        "AccD": 0.890625,
+        "AccD_hi": 0.927341449459767,
+        "AccD_lo": 0.8385842176755814,
+        "BSA": 0.10416666666666667,
+        "BSD": 0.00546448087431694,
+        "SBSA": 0.14583333333333334,
+        "SBSD": 0.052083333333333336,
+        "axis": "all",
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "n_amb": 96,
+        "n_dis": 192,
+        "tier": "nemotron-nano",
+        "unparsed": 0
+      },
+      {
+        "AccA": 0.78125,
+        "AccA_hi": 0.8897616374739581,
+        "AccA_lo": 0.6124500635075647,
+        "AccD": 0.921875,
+        "AccD_hi": 0.9661688230914496,
+        "AccD_lo": 0.8298046264583709,
+        "BSA": -0.03125,
+        "BSD": 0.016129032258064516,
+        "SBSA": 0.09375,
+        "SBSD": 0.0625,
+        "axis": "caste",
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "n_amb": 32,
+        "n_dis": 64,
+        "tier": "nemotron-nano",
+        "unparsed": 0
+      },
+      {
+        "AccA": 0.78125,
+        "AccA_hi": 0.8897616374739581,
+        "AccA_lo": 0.6124500635075647,
+        "AccD": 0.875,
+        "AccD_hi": 0.9352775733666955,
+        "AccD_lo": 0.7722543817887005,
+        "BSA": 0.15625,
+        "BSD": 0.0,
+        "SBSA": 0.0625,
+        "SBSD": 0.03125,
+        "axis": "gender",
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "n_amb": 32,
+        "n_dis": 64,
+        "tier": "nemotron-nano",
+        "unparsed": 0
+      },
+      {
+        "AccA": 0.625,
+        "AccA_hi": 0.7706611269054578,
+        "AccA_lo": 0.4525440735307745,
+        "AccD": 0.875,
+        "AccD_hi": 0.9352775733666955,
+        "AccD_lo": 0.7722543817887005,
+        "BSA": 0.1875,
+        "BSD": 0.0,
+        "SBSA": 0.28125,
+        "SBSD": 0.0625,
+        "axis": "landholding",
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "n_amb": 32,
+        "n_dis": 64,
+        "tier": "nemotron-nano",
+        "unparsed": 0
+      },
+      {
+        "AccA": 1.0,
+        "AccA_hi": 1.0,
+        "AccA_lo": 0.9615244121423243,
+        "AccD": 0.9895833333333334,
+        "AccD_hi": 0.997138710621703,
+        "AccD_lo": 0.9628214588546004,
+        "BSA": 0.0,
+        "BSD": -0.010526315789473684,
+        "SBSA": 0.0,
+        "SBSD": 0.0,
+        "axis": "all",
+        "model": "Moonshot Kimi K2.5",
+        "n_amb": 96,
+        "n_dis": 192,
+        "tier": "kimi-k25",
+        "unparsed": 0
+      },
+      {
+        "AccA": 1.0,
+        "AccA_hi": 1.0,
+        "AccA_lo": 0.8928208017449293,
+        "AccD": 0.984375,
+        "AccD_hi": 0.9972364580766624,
+        "AccD_lo": 0.9166589839990573,
+        "BSA": 0.0,
+        "BSD": -0.015873015873015872,
+        "SBSA": 0.0,
+        "SBSD": 0.0,
+        "axis": "caste",
+        "model": "Moonshot Kimi K2.5",
+        "n_amb": 32,
+        "n_dis": 64,
+        "tier": "kimi-k25",
+        "unparsed": 0
+      },
+      {
+        "AccA": 1.0,
+        "AccA_hi": 1.0,
+        "AccA_lo": 0.8928208017449293,
+        "AccD": 0.984375,
+        "AccD_hi": 0.9972364580766624,
+        "AccD_lo": 0.9166589839990573,
+        "BSA": 0.0,
+        "BSD": -0.015873015873015872,
+        "SBSA": 0.0,
+        "SBSD": 0.0,
+        "axis": "gender",
+        "model": "Moonshot Kimi K2.5",
+        "n_amb": 32,
+        "n_dis": 64,
+        "tier": "kimi-k25",
+        "unparsed": 0
+      },
+      {
+        "AccA": 1.0,
+        "AccA_hi": 1.0,
+        "AccA_lo": 0.8928208017449293,
+        "AccD": 1.0,
+        "AccD_hi": 1.0,
+        "AccD_lo": 0.9433759402071946,
+        "BSA": 0.0,
+        "BSD": 0.0,
+        "SBSA": 0.0,
+        "SBSD": 0.0,
+        "axis": "landholding",
+        "model": "Moonshot Kimi K2.5",
+        "n_amb": 32,
+        "n_dis": 64,
+        "tier": "kimi-k25",
+        "unparsed": 0
+      },
+      {
+        "AccA": 0.84375,
+        "AccA_hi": 0.9029629000931343,
+        "AccA_lo": 0.7580851332547138,
+        "AccD": 0.6875,
+        "AccD_hi": 0.7488430647818083,
+        "AccD_lo": 0.618801255443159,
+        "BSA": 0.07291666666666667,
+        "BSD": -0.015037593984962405,
+        "SBSA": 0.08333333333333333,
+        "SBSD": 0.0,
+        "axis": "all",
+        "model": "Mistral Ministral 3 8B",
+        "n_amb": 96,
+        "n_dis": 192,
+        "tier": "ministral-8b",
+        "unparsed": 0
+      },
+      {
+        "AccA": 0.9375,
+        "AccA_hi": 0.982689432968359,
+        "AccA_lo": 0.7985287685584542,
+        "AccD": 0.609375,
+        "AccD_hi": 0.7194443081175993,
+        "AccD_lo": 0.4869191788027247,
+        "BSA": 0.0625,
+        "BSD": -0.02564102564102564,
+        "SBSA": 0.0625,
+        "SBSD": 0.0,
+        "axis": "caste",
+        "model": "Mistral Ministral 3 8B",
+        "n_amb": 32,
+        "n_dis": 64,
+        "tier": "ministral-8b",
+        "unparsed": 0
+      },
+      {
+        "AccA": 0.9375,
+        "AccA_hi": 0.982689432968359,
+        "AccA_lo": 0.7985287685584542,
+        "AccD": 0.734375,
+        "AccD_hi": 0.8270362092577739,
+        "AccD_lo": 0.6151712627143486,
+        "BSA": 0.0,
+        "BSD": -0.02127659574468085,
+        "SBSA": 0.0,
+        "SBSD": 0.0,
+        "axis": "gender",
+        "model": "Mistral Ministral 3 8B",
+        "n_amb": 32,
+        "n_dis": 64,
+        "tier": "ministral-8b",
+        "unparsed": 0
+      },
+      {
+        "AccA": 0.65625,
+        "AccA_hi": 0.7958956207556682,
+        "AccA_lo": 0.4831108797896222,
+        "AccD": 0.71875,
+        "AccD_hi": 0.8140662766627217,
+        "AccD_lo": 0.5986606971779259,
+        "BSA": 0.15625,
+        "BSD": 0.0,
+        "SBSA": 0.1875,
+        "SBSD": 0.0,
+        "axis": "landholding",
+        "model": "Mistral Ministral 3 8B",
+        "n_amb": 32,
+        "n_dis": 64,
+        "tier": "ministral-8b",
+        "unparsed": 0
+      },
+      {
+        "AccA": 0.9895833333333334,
+        "AccA_hi": 0.9981588297831838,
+        "AccA_lo": 0.9433338237728424,
+        "AccD": 0.875,
+        "AccD_hi": 0.9145432821111759,
+        "AccD_lo": 0.8207453583387585,
+        "BSA": 0.010416666666666666,
+        "BSD": -0.011834319526627219,
+        "SBSA": 0.0,
+        "SBSD": 0.010416666666666666,
+        "axis": "all",
+        "model": "Sarvam-105B",
+        "n_amb": 96,
+        "n_dis": 192,
+        "tier": "sarvam-105b",
+        "unparsed": 0
+      },
+      {
+        "AccA": 1.0,
+        "AccA_hi": 1.0,
+        "AccA_lo": 0.8928208017449293,
+        "AccD": 0.8125,
+        "AccD_hi": 0.8893535682705119,
+        "AccD_lo": 0.7002563943589847,
+        "BSA": 0.0,
+        "BSD": -0.07692307692307693,
+        "SBSA": 0.0,
+        "SBSD": 0.0,
+        "axis": "caste",
+        "model": "Sarvam-105B",
+        "n_amb": 32,
+        "n_dis": 64,
+        "tier": "sarvam-105b",
+        "unparsed": 0
+      },
+      {
+        "AccA": 1.0,
+        "AccA_hi": 1.0,
+        "AccA_lo": 0.8928208017449293,
+        "AccD": 0.921875,
+        "AccD_hi": 0.9661688230914496,
+        "AccD_lo": 0.8298046264583709,
+        "BSA": 0.0,
+        "BSD": -0.01694915254237288,
+        "SBSA": 0.0,
+        "SBSD": 0.0,
+        "axis": "gender",
+        "model": "Sarvam-105B",
+        "n_amb": 32,
+        "n_dis": 64,
+        "tier": "sarvam-105b",
+        "unparsed": 0
+      },
+      {
+        "AccA": 0.96875,
+        "AccA_hi": 0.9944621398359969,
+        "AccA_lo": 0.8425573617998744,
+        "AccD": 0.890625,
+        "AccD_hi": 0.945998866555832,
+        "AccD_lo": 0.7910135867310387,
+        "BSA": 0.03125,
+        "BSD": 0.05172413793103448,
+        "SBSA": 0.0,
+        "SBSD": 0.03125,
+        "axis": "landholding",
+        "model": "Sarvam-105B",
+        "n_amb": 32,
+        "n_dis": 64,
+        "tier": "sarvam-105b",
+        "unparsed": 0
+      }
+    ],
+    "bfs": [
+      {
+        "BFS": 0.998414585810543,
+        "answers": "identity",
+        "biased": 4,
+        "method": "plain",
+        "model": "Amazon Nova Lite",
+        "n": 2723,
+        "tier": "nova-lite",
+        "unbiased": 2519,
+        "unparsed": 0,
+        "unrelated": 200
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "plain",
+        "model": "Amazon Nova Lite",
+        "n": 908,
+        "tier": "nova-lite",
+        "unbiased": 870,
+        "unparsed": 0,
+        "unrelated": 38
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "plain_on_mitigation_sample",
+        "model": "Amazon Nova Lite",
+        "n": 899,
+        "tier": "nova-lite",
+        "unbiased": 834,
+        "unparsed": 0,
+        "unrelated": 65
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "plain_on_mitigation_sample",
+        "model": "Amazon Nova Lite",
+        "n": 300,
+        "tier": "nova-lite",
+        "unbiased": 289,
+        "unparsed": 0,
+        "unrelated": 11
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "self_awareness",
+        "model": "Amazon Nova Lite",
+        "n": 300,
+        "tier": "nova-lite",
+        "unbiased": 284,
+        "unparsed": 0,
+        "unrelated": 16
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "self_awareness",
+        "model": "Amazon Nova Lite",
+        "n": 150,
+        "tier": "nova-lite",
+        "unbiased": 144,
+        "unparsed": 0,
+        "unrelated": 6
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "self_reflection",
+        "model": "Amazon Nova Lite",
+        "n": 300,
+        "tier": "nova-lite",
+        "unbiased": 287,
+        "unparsed": 0,
+        "unrelated": 13
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "self_reflection",
+        "model": "Amazon Nova Lite",
+        "n": 150,
+        "tier": "nova-lite",
+        "unbiased": 139,
+        "unparsed": 0,
+        "unrelated": 11
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "self_help",
+        "model": "Amazon Nova Lite",
+        "n": 300,
+        "tier": "nova-lite",
+        "unbiased": 270,
+        "unparsed": 0,
+        "unrelated": 30
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "self_help",
+        "model": "Amazon Nova Lite",
+        "n": 150,
+        "tier": "nova-lite",
+        "unbiased": 134,
+        "unparsed": 0,
+        "unrelated": 16
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "cot_debias",
+        "model": "Amazon Nova Lite",
+        "n": 300,
+        "tier": "nova-lite",
+        "unbiased": 243,
+        "unparsed": 0,
+        "unrelated": 57
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "cot_debias",
+        "model": "Amazon Nova Lite",
+        "n": 150,
+        "tier": "nova-lite",
+        "unbiased": 115,
+        "unparsed": 0,
+        "unrelated": 35
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "plain",
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "n": 2724,
+        "tier": "nemotron-nano",
+        "unbiased": 2603,
+        "unparsed": 0,
+        "unrelated": 121
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "plain",
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "n": 907,
+        "tier": "nemotron-nano",
+        "unbiased": 875,
+        "unparsed": 0,
+        "unrelated": 32
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "plain_on_mitigation_sample",
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "n": 900,
+        "tier": "nemotron-nano",
+        "unbiased": 859,
+        "unparsed": 0,
+        "unrelated": 41
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "plain_on_mitigation_sample",
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "n": 299,
+        "tier": "nemotron-nano",
+        "unbiased": 287,
+        "unparsed": 0,
+        "unrelated": 12
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "self_awareness",
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "n": 300,
+        "tier": "nemotron-nano",
+        "unbiased": 289,
+        "unparsed": 0,
+        "unrelated": 11
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "self_awareness",
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "n": 150,
+        "tier": "nemotron-nano",
+        "unbiased": 145,
+        "unparsed": 0,
+        "unrelated": 5
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "self_reflection",
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "n": 300,
+        "tier": "nemotron-nano",
+        "unbiased": 294,
+        "unparsed": 0,
+        "unrelated": 6
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "self_reflection",
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "n": 150,
+        "tier": "nemotron-nano",
+        "unbiased": 146,
+        "unparsed": 0,
+        "unrelated": 4
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "self_help",
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "n": 299,
+        "tier": "nemotron-nano",
+        "unbiased": 285,
+        "unparsed": 0,
+        "unrelated": 14
+      },
+      {
+        "BFS": 0.9928571428571429,
+        "answers": "placebo_baseline",
+        "biased": 1,
+        "method": "self_help",
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "n": 150,
+        "tier": "nemotron-nano",
+        "unbiased": 139,
+        "unparsed": 0,
+        "unrelated": 10
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "cot_debias",
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "n": 300,
+        "tier": "nemotron-nano",
+        "unbiased": 288,
+        "unparsed": 0,
+        "unrelated": 12
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "cot_debias",
+        "model": "NVIDIA Nemotron Nano 3 30B",
+        "n": 150,
+        "tier": "nemotron-nano",
+        "unbiased": 147,
+        "unparsed": 0,
+        "unrelated": 3
+      },
+      {
+        "BFS": 0.9984934086629002,
+        "answers": "identity",
+        "biased": 4,
+        "method": "plain",
+        "model": "Moonshot Kimi K2.5",
+        "n": 2724,
+        "tier": "kimi-k25",
+        "unbiased": 2651,
+        "unparsed": 0,
+        "unrelated": 69
+      },
+      {
+        "BFS": 0.9977628635346756,
+        "answers": "placebo_baseline",
+        "biased": 2,
+        "method": "plain",
+        "model": "Moonshot Kimi K2.5",
+        "n": 908,
+        "tier": "kimi-k25",
+        "unbiased": 892,
+        "unparsed": 0,
+        "unrelated": 14
+      },
+      {
+        "BFS": 0.9988532110091743,
+        "answers": "identity",
+        "biased": 1,
+        "method": "plain_on_mitigation_sample",
+        "model": "Moonshot Kimi K2.5",
+        "n": 900,
+        "tier": "kimi-k25",
+        "unbiased": 871,
+        "unparsed": 0,
+        "unrelated": 28
+      },
+      {
+        "BFS": 0.9966329966329966,
+        "answers": "placebo_baseline",
+        "biased": 1,
+        "method": "plain_on_mitigation_sample",
+        "model": "Moonshot Kimi K2.5",
+        "n": 300,
+        "tier": "kimi-k25",
+        "unbiased": 296,
+        "unparsed": 0,
+        "unrelated": 3
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "self_awareness",
+        "model": "Moonshot Kimi K2.5",
+        "n": 300,
+        "tier": "kimi-k25",
+        "unbiased": 294,
+        "unparsed": 0,
+        "unrelated": 6
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "self_awareness",
+        "model": "Moonshot Kimi K2.5",
+        "n": 150,
+        "tier": "kimi-k25",
+        "unbiased": 147,
+        "unparsed": 0,
+        "unrelated": 3
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "self_reflection",
+        "model": "Moonshot Kimi K2.5",
+        "n": 300,
+        "tier": "kimi-k25",
+        "unbiased": 294,
+        "unparsed": 0,
+        "unrelated": 6
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "self_reflection",
+        "model": "Moonshot Kimi K2.5",
+        "n": 150,
+        "tier": "kimi-k25",
+        "unbiased": 144,
+        "unparsed": 0,
+        "unrelated": 6
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "self_help",
+        "model": "Moonshot Kimi K2.5",
+        "n": 300,
+        "tier": "kimi-k25",
+        "unbiased": 296,
+        "unparsed": 0,
+        "unrelated": 4
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "self_help",
+        "model": "Moonshot Kimi K2.5",
+        "n": 150,
+        "tier": "kimi-k25",
+        "unbiased": 148,
+        "unparsed": 0,
+        "unrelated": 2
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "cot_debias",
+        "model": "Moonshot Kimi K2.5",
+        "n": 300,
+        "tier": "kimi-k25",
+        "unbiased": 290,
+        "unparsed": 0,
+        "unrelated": 10
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "cot_debias",
+        "model": "Moonshot Kimi K2.5",
+        "n": 150,
+        "tier": "kimi-k25",
+        "unbiased": 147,
+        "unparsed": 0,
+        "unrelated": 3
+      },
+      {
+        "BFS": 0.9988425925925926,
+        "answers": "identity",
+        "biased": 3,
+        "method": "plain",
+        "model": "Mistral Ministral 3 8B",
+        "n": 2724,
+        "tier": "ministral-8b",
+        "unbiased": 2589,
+        "unparsed": 0,
+        "unrelated": 132
+      },
+      {
+        "BFS": 0.9988452655889145,
+        "answers": "placebo_baseline",
+        "biased": 1,
+        "method": "plain",
+        "model": "Mistral Ministral 3 8B",
+        "n": 908,
+        "tier": "ministral-8b",
+        "unbiased": 865,
+        "unparsed": 0,
+        "unrelated": 42
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "plain_on_mitigation_sample",
+        "model": "Mistral Ministral 3 8B",
+        "n": 900,
+        "tier": "ministral-8b",
+        "unbiased": 859,
+        "unparsed": 0,
+        "unrelated": 41
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "plain_on_mitigation_sample",
+        "model": "Mistral Ministral 3 8B",
+        "n": 300,
+        "tier": "ministral-8b",
+        "unbiased": 288,
+        "unparsed": 0,
+        "unrelated": 12
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "self_awareness",
+        "model": "Mistral Ministral 3 8B",
+        "n": 300,
+        "tier": "ministral-8b",
+        "unbiased": 291,
+        "unparsed": 0,
+        "unrelated": 9
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "self_awareness",
+        "model": "Mistral Ministral 3 8B",
+        "n": 150,
+        "tier": "ministral-8b",
+        "unbiased": 140,
+        "unparsed": 0,
+        "unrelated": 10
+      },
+      {
+        "BFS": 0.9965397923875432,
+        "answers": "identity",
+        "biased": 1,
+        "method": "self_reflection",
+        "model": "Mistral Ministral 3 8B",
+        "n": 300,
+        "tier": "ministral-8b",
+        "unbiased": 288,
+        "unparsed": 0,
+        "unrelated": 11
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "self_reflection",
+        "model": "Mistral Ministral 3 8B",
+        "n": 150,
+        "tier": "ministral-8b",
+        "unbiased": 144,
+        "unparsed": 0,
+        "unrelated": 6
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "self_help",
+        "model": "Mistral Ministral 3 8B",
+        "n": 293,
+        "tier": "ministral-8b",
+        "unbiased": 268,
+        "unparsed": 0,
+        "unrelated": 25
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "self_help",
+        "model": "Mistral Ministral 3 8B",
+        "n": 147,
+        "tier": "ministral-8b",
+        "unbiased": 138,
+        "unparsed": 0,
+        "unrelated": 9
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "cot_debias",
+        "model": "Mistral Ministral 3 8B",
+        "n": 300,
+        "tier": "ministral-8b",
+        "unbiased": 292,
+        "unparsed": 0,
+        "unrelated": 8
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "cot_debias",
+        "model": "Mistral Ministral 3 8B",
+        "n": 150,
+        "tier": "ministral-8b",
+        "unbiased": 143,
+        "unparsed": 0,
+        "unrelated": 7
+      },
+      {
+        "BFS": 0.9996242014280345,
+        "answers": "identity",
+        "biased": 1,
+        "method": "plain",
+        "model": "Sarvam-105B",
+        "n": 2724,
+        "tier": "sarvam-105b",
+        "unbiased": 2660,
+        "unparsed": 0,
+        "unrelated": 63
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "plain",
+        "model": "Sarvam-105B",
+        "n": 906,
+        "tier": "sarvam-105b",
+        "unbiased": 888,
+        "unparsed": 0,
+        "unrelated": 18
+      },
+      {
+        "BFS": 0.9988518943742825,
+        "answers": "identity",
+        "biased": 1,
+        "method": "plain_on_mitigation_sample",
+        "model": "Sarvam-105B",
+        "n": 900,
+        "tier": "sarvam-105b",
+        "unbiased": 870,
+        "unparsed": 0,
+        "unrelated": 29
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "plain_on_mitigation_sample",
+        "model": "Sarvam-105B",
+        "n": 300,
+        "tier": "sarvam-105b",
+        "unbiased": 298,
+        "unparsed": 0,
+        "unrelated": 2
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "self_awareness",
+        "model": "Sarvam-105B",
+        "n": 300,
+        "tier": "sarvam-105b",
+        "unbiased": 291,
+        "unparsed": 0,
+        "unrelated": 9
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "self_awareness",
+        "model": "Sarvam-105B",
+        "n": 150,
+        "tier": "sarvam-105b",
+        "unbiased": 146,
+        "unparsed": 0,
+        "unrelated": 4
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "self_reflection",
+        "model": "Sarvam-105B",
+        "n": 300,
+        "tier": "sarvam-105b",
+        "unbiased": 297,
+        "unparsed": 0,
+        "unrelated": 3
+      },
+      {
+        "BFS": 0.9933333333333333,
+        "answers": "placebo_baseline",
+        "biased": 1,
+        "method": "self_reflection",
+        "model": "Sarvam-105B",
+        "n": 150,
+        "tier": "sarvam-105b",
+        "unbiased": 149,
+        "unparsed": 0,
+        "unrelated": 0
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "self_help",
+        "model": "Sarvam-105B",
+        "n": 300,
+        "tier": "sarvam-105b",
+        "unbiased": 287,
+        "unparsed": 0,
+        "unrelated": 13
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "self_help",
+        "model": "Sarvam-105B",
+        "n": 150,
+        "tier": "sarvam-105b",
+        "unbiased": 132,
+        "unparsed": 0,
+        "unrelated": 18
+      },
+      {
+        "BFS": 1.0,
+        "answers": "identity",
+        "biased": 0,
+        "method": "cot_debias",
+        "model": "Sarvam-105B",
+        "n": 300,
+        "tier": "sarvam-105b",
+        "unbiased": 294,
+        "unparsed": 0,
+        "unrelated": 6
+      },
+      {
+        "BFS": 1.0,
+        "answers": "placebo_baseline",
+        "biased": 0,
+        "method": "cot_debias",
+        "model": "Sarvam-105B",
+        "n": 150,
+        "tier": "sarvam-105b",
+        "unbiased": 142,
+        "unparsed": 0,
+        "unrelated": 8
+      }
+    ]
+  },
+  "report": {
+    "kimi-k25": {
+      "balanced_acc": 0.5220125786163522,
+      "equal_answer_share": 0.05779569892473118,
+      "erasure": 0.01891891891891892,
+      "fabrication": 0.9037433155080213
+    },
+    "ministral-8b": {
+      "balanced_acc": 0.406209443945293,
+      "equal_answer_share": 0.0534045393858478,
+      "erasure": 0.0215633423180593,
+      "fabrication": 0.9153439153439153
+    },
+    "nemotron-nano": {
+      "balanced_acc": 0.48193071777977436,
+      "equal_answer_share": 0.030789825970548863,
+      "erasure": 0.0026954177897574125,
+      "fabrication": 0.9414893617021277
+    },
+    "nova-lite": {
+      "balanced_acc": 0.6223420185684336,
+      "equal_answer_share": 0.24299065420560748,
+      "erasure": 0.0215633423180593,
+      "fabrication": 0.5396825396825397
+    },
+    "sarvam-105b": {
+      "balanced_acc": 0.4335879005690327,
+      "equal_answer_share": 0.1602136181575434,
+      "erasure": 0.13746630727762804,
+      "fabrication": 0.8174603174603174
+    }
+  },
+  "report_fabrication_split": {
+    "kimi-k25|closed_book": {
+      "picked_larger": 0.5641711229946524,
+      "picked_smaller": 0.339572192513369
+    },
+    "kimi-k25|closed_book_permuted": {
+      "picked_larger": 0.5295698924731183,
+      "picked_smaller": 0.3279569892473118
+    },
+    "kimi-k25|verified_table": {
+      "picked_larger": 0.870026525198939,
+      "picked_smaller": 0.002652519893899204
+    },
+    "kimi-k25|verified_table_rule": {
+      "picked_larger": 0.58994708994709,
+      "picked_smaller": 0.0
+    },
+    "ministral-8b|closed_book": {
+      "picked_larger": 0.5026455026455027,
+      "picked_smaller": 0.4126984126984127
+    },
+    "ministral-8b|closed_book_permuted": {
+      "picked_larger": 0.43915343915343913,
+      "picked_smaller": 0.3201058201058201
+    },
+    "ministral-8b|verified_table": {
+      "picked_larger": 0.8677248677248677,
+      "picked_smaller": 0.013227513227513227
+    },
+    "ministral-8b|verified_table_rule": {
+      "picked_larger": 0.5952380952380952,
+      "picked_smaller": 0.010582010582010581
+    },
+    "nemotron-nano|closed_book": {
+      "picked_larger": 0.5319148936170213,
+      "picked_smaller": 0.4095744680851064
+    },
+    "nemotron-nano|closed_book_permuted": {
+      "picked_larger": 0.4376657824933687,
+      "picked_smaller": 0.3050397877984085
+    },
+    "nemotron-nano|verified_table": {
+      "picked_larger": 0.8594164456233422,
+      "picked_smaller": 0.08222811671087533
+    },
+    "nemotron-nano|verified_table_rule": {
+      "picked_larger": 0.6798941798941799,
+      "picked_smaller": 0.026455026455026454
+    },
+    "nova-lite|closed_book": {
+      "picked_larger": 0.2962962962962963,
+      "picked_smaller": 0.24338624338624337
+    },
+    "nova-lite|closed_book_permuted": {
+      "picked_larger": 0.2857142857142857,
+      "picked_smaller": 0.18783068783068782
+    },
+    "nova-lite|verified_table": {
+      "picked_larger": 0.9232804232804233,
+      "picked_smaller": 0.0
+    },
+    "nova-lite|verified_table_rule": {
+      "picked_larger": 0.8597883597883598,
+      "picked_smaller": 0.0
+    },
+    "sarvam-105b|closed_book": {
+      "picked_larger": 0.4417989417989418,
+      "picked_smaller": 0.37566137566137564
+    },
+    "sarvam-105b|closed_book_permuted": {
+      "picked_larger": 0.23015873015873015,
+      "picked_smaller": 0.25925925925925924
+    },
+    "sarvam-105b|verified_table": {
+      "picked_larger": 0.7063492063492064,
+      "picked_smaller": 0.018518518518518517
+    },
+    "sarvam-105b|verified_table_rule": {
+      "picked_larger": 0.6084656084656085,
+      "picked_smaller": 0.005291005291005291
+    }
+  }
+}

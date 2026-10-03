@@ -1,0 +1,52 @@
+{
+  "by_state_type": {
+    "Bihar|government_schemes": 0,
+    "Bihar|market": 0,
+    "Bihar|nutrient_management": 0,
+    "Bihar|plant_protection": 0,
+    "Bihar|weather": 0,
+    "Karnataka|government_schemes": 0,
+    "Karnataka|market": 0,
+    "Karnataka|nutrient_management": 0,
+    "Karnataka|plant_protection": 0,
+    "Karnataka|weather": 0,
+    "Maharashtra|government_schemes": 0,
+    "Maharashtra|market": 0,
+    "Maharashtra|nutrient_management": 0,
+    "Maharashtra|plant_protection": 0,
+    "Maharashtra|weather": 0,
+    "Punjab|government_schemes": 0,
+    "Punjab|market": 0,
+    "Punjab|nutrient_management": 0,
+    "Punjab|plant_protection": 0,
+    "Punjab|weather": 0,
+    "Tamil Nadu|government_schemes": 0,
+    "Tamil Nadu|market": 0,
+    "Tamil Nadu|nutrient_management": 0,
+    "Tamil Nadu|plant_protection": 0,
+    "Tamil Nadu|weather": 0,
+    "West Bengal|government_schemes": 0,
+    "West Bengal|market": 0,
+    "West Bengal|nutrient_management": 0,
+    "West Bengal|plant_protection": 0,
+    "West Bengal|weather": 0
+  },
+  "raw_rows": 240000,
+  "sampled": 600,
+  "source": {
+    "kind": "data.gov.in",
+    "resource_id": "cef25fe2-9231-4128-8aec-2c948fedd43f",
+    "states": [
+      "Bihar",
+      "Maharashtra",
+      "Tamil Nadu",
+      "West Bengal",
+      "Punjab",
+      "Karnataka"
+    ],
+    "years": [
+      2024,
+      2025
+    ]
+  }
+}

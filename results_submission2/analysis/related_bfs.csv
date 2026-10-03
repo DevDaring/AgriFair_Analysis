@@ -1,0 +1,61 @@
+tier,method,answers,n,biased,unbiased,unrelated,BFS,unparsed,model
+nova-lite,plain,identity,2723,4,2519,200,0.998414585810543,0,Amazon Nova Lite
+nova-lite,plain,placebo_baseline,908,0,870,38,1.0,0,Amazon Nova Lite
+nova-lite,plain_on_mitigation_sample,identity,899,0,834,65,1.0,0,Amazon Nova Lite
+nova-lite,plain_on_mitigation_sample,placebo_baseline,300,0,289,11,1.0,0,Amazon Nova Lite
+nova-lite,self_awareness,identity,300,0,284,16,1.0,0,Amazon Nova Lite
+nova-lite,self_awareness,placebo_baseline,150,0,144,6,1.0,0,Amazon Nova Lite
+nova-lite,self_reflection,identity,300,0,287,13,1.0,0,Amazon Nova Lite
+nova-lite,self_reflection,placebo_baseline,150,0,139,11,1.0,0,Amazon Nova Lite
+nova-lite,self_help,identity,300,0,270,30,1.0,0,Amazon Nova Lite
+nova-lite,self_help,placebo_baseline,150,0,134,16,1.0,0,Amazon Nova Lite
+nova-lite,cot_debias,identity,300,0,243,57,1.0,0,Amazon Nova Lite
+nova-lite,cot_debias,placebo_baseline,150,0,115,35,1.0,0,Amazon Nova Lite
+nemotron-nano,plain,identity,2724,0,2603,121,1.0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,plain,placebo_baseline,907,0,875,32,1.0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,plain_on_mitigation_sample,identity,900,0,859,41,1.0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,plain_on_mitigation_sample,placebo_baseline,299,0,287,12,1.0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,self_awareness,identity,300,0,289,11,1.0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,self_awareness,placebo_baseline,150,0,145,5,1.0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,self_reflection,identity,300,0,294,6,1.0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,self_reflection,placebo_baseline,150,0,146,4,1.0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,self_help,identity,299,0,285,14,1.0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,self_help,placebo_baseline,150,1,139,10,0.9928571428571429,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,cot_debias,identity,300,0,288,12,1.0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,cot_debias,placebo_baseline,150,0,147,3,1.0,0,NVIDIA Nemotron Nano 3 30B
+kimi-k25,plain,identity,2724,4,2651,69,0.9984934086629002,0,Moonshot Kimi K2.5
+kimi-k25,plain,placebo_baseline,908,2,892,14,0.9977628635346756,0,Moonshot Kimi K2.5
+kimi-k25,plain_on_mitigation_sample,identity,900,1,871,28,0.9988532110091743,0,Moonshot Kimi K2.5
+kimi-k25,plain_on_mitigation_sample,placebo_baseline,300,1,296,3,0.9966329966329966,0,Moonshot Kimi K2.5
+kimi-k25,self_awareness,identity,300,0,294,6,1.0,0,Moonshot Kimi K2.5
+kimi-k25,self_awareness,placebo_baseline,150,0,147,3,1.0,0,Moonshot Kimi K2.5
+kimi-k25,self_reflection,identity,300,0,294,6,1.0,0,Moonshot Kimi K2.5
+kimi-k25,self_reflection,placebo_baseline,150,0,144,6,1.0,0,Moonshot Kimi K2.5
+kimi-k25,self_help,identity,300,0,296,4,1.0,0,Moonshot Kimi K2.5
+kimi-k25,self_help,placebo_baseline,150,0,148,2,1.0,0,Moonshot Kimi K2.5
+kimi-k25,cot_debias,identity,300,0,290,10,1.0,0,Moonshot Kimi K2.5
+kimi-k25,cot_debias,placebo_baseline,150,0,147,3,1.0,0,Moonshot Kimi K2.5
+ministral-8b,plain,identity,2724,3,2589,132,0.9988425925925926,0,Mistral Ministral 3 8B
+ministral-8b,plain,placebo_baseline,908,1,865,42,0.9988452655889145,0,Mistral Ministral 3 8B
+ministral-8b,plain_on_mitigation_sample,identity,900,0,859,41,1.0,0,Mistral Ministral 3 8B
+ministral-8b,plain_on_mitigation_sample,placebo_baseline,300,0,288,12,1.0,0,Mistral Ministral 3 8B
+ministral-8b,self_awareness,identity,300,0,291,9,1.0,0,Mistral Ministral 3 8B
+ministral-8b,self_awareness,placebo_baseline,150,0,140,10,1.0,0,Mistral Ministral 3 8B
+ministral-8b,self_reflection,identity,300,1,288,11,0.9965397923875432,0,Mistral Ministral 3 8B
+ministral-8b,self_reflection,placebo_baseline,150,0,144,6,1.0,0,Mistral Ministral 3 8B
+ministral-8b,self_help,identity,293,0,268,25,1.0,0,Mistral Ministral 3 8B
+ministral-8b,self_help,placebo_baseline,147,0,138,9,1.0,0,Mistral Ministral 3 8B
+ministral-8b,cot_debias,identity,300,0,292,8,1.0,0,Mistral Ministral 3 8B
+ministral-8b,cot_debias,placebo_baseline,150,0,143,7,1.0,0,Mistral Ministral 3 8B
+sarvam-105b,plain,identity,2724,1,2660,63,0.9996242014280345,0,Sarvam-105B
+sarvam-105b,plain,placebo_baseline,906,0,888,18,1.0,0,Sarvam-105B
+sarvam-105b,plain_on_mitigation_sample,identity,900,1,870,29,0.9988518943742825,0,Sarvam-105B
+sarvam-105b,plain_on_mitigation_sample,placebo_baseline,300,0,298,2,1.0,0,Sarvam-105B
+sarvam-105b,self_awareness,identity,300,0,291,9,1.0,0,Sarvam-105B
+sarvam-105b,self_awareness,placebo_baseline,150,0,146,4,1.0,0,Sarvam-105B
+sarvam-105b,self_reflection,identity,300,0,297,3,1.0,0,Sarvam-105B
+sarvam-105b,self_reflection,placebo_baseline,150,1,149,0,0.9933333333333333,0,Sarvam-105B
+sarvam-105b,self_help,identity,300,0,287,13,1.0,0,Sarvam-105B
+sarvam-105b,self_help,placebo_baseline,150,0,132,18,1.0,0,Sarvam-105B
+sarvam-105b,cot_debias,identity,300,0,294,6,1.0,0,Sarvam-105B
+sarvam-105b,cot_debias,placebo_baseline,150,0,142,8,1.0,0,Sarvam-105B

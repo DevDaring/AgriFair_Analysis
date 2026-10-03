@@ -1,0 +1,176 @@
+tier,kind,condition,persona,n,accuracy,lo,hi,clusters,unparsed,model,fabricated_answer
+kimi-k25,choice,flipped_table,dalit,279,1.0,1.0,1.0,257,0.0,Moonshot Kimi K2.5,
+kimi-k25,choice,flipped_table,marginal,279,1.0,1.0,1.0,257,0.0,Moonshot Kimi K2.5,
+kimi-k25,choice,flipped_table,neutral,279,1.0,1.0,1.0,257,0.0,Moonshot Kimi K2.5,
+kimi-k25,choice,flipped_table,placebo,279,1.0,1.0,1.0,257,0.0,Moonshot Kimi K2.5,
+kimi-k25,choice,flipped_table,woman,279,1.0,1.0,1.0,257,0.0,Moonshot Kimi K2.5,
+kimi-k25,choice,no_table,dalit,279,1.0,1.0,1.0,257,0.0,Moonshot Kimi K2.5,0.0
+kimi-k25,choice,no_table,marginal,279,1.0,1.0,1.0,257,0.0,Moonshot Kimi K2.5,0.0
+kimi-k25,choice,no_table,neutral,279,1.0,1.0,1.0,257,0.0,Moonshot Kimi K2.5,0.0
+kimi-k25,choice,no_table,placebo,279,1.0,1.0,1.0,257,0.0,Moonshot Kimi K2.5,0.0
+kimi-k25,choice,no_table,woman,279,1.0,1.0,1.0,257,0.0,Moonshot Kimi K2.5,0.0
+kimi-k25,choice,real_table,dalit,279,1.0,1.0,1.0,257,0.0,Moonshot Kimi K2.5,
+kimi-k25,choice,real_table,marginal,279,1.0,1.0,1.0,257,0.0,Moonshot Kimi K2.5,
+kimi-k25,choice,real_table,neutral,279,1.0,1.0,1.0,257,0.0,Moonshot Kimi K2.5,
+kimi-k25,choice,real_table,placebo,279,0.996415770609319,0.989010989010989,1.0,257,0.0,Moonshot Kimi K2.5,
+kimi-k25,choice,real_table,woman,279,1.0,1.0,1.0,257,0.0,Moonshot Kimi K2.5,
+kimi-k25,trend,flipped_table,dalit,100,1.0,1.0,1.0,96,0.0,Moonshot Kimi K2.5,
+kimi-k25,trend,flipped_table,marginal,100,1.0,1.0,1.0,96,0.0,Moonshot Kimi K2.5,
+kimi-k25,trend,flipped_table,neutral,100,0.99,0.9693877551020408,1.0,96,0.0,Moonshot Kimi K2.5,
+kimi-k25,trend,flipped_table,placebo,100,1.0,1.0,1.0,96,0.0,Moonshot Kimi K2.5,
+kimi-k25,trend,flipped_table,woman,100,0.99,0.9693877551020408,1.0,96,0.0,Moonshot Kimi K2.5,
+kimi-k25,trend,no_table,dalit,150,1.0,1.0,1.0,143,0.0,Moonshot Kimi K2.5,0.0
+kimi-k25,trend,no_table,marginal,150,1.0,1.0,1.0,143,0.0,Moonshot Kimi K2.5,0.0
+kimi-k25,trend,no_table,neutral,150,1.0,1.0,1.0,143,0.0,Moonshot Kimi K2.5,0.0
+kimi-k25,trend,no_table,placebo,150,1.0,1.0,1.0,143,0.0,Moonshot Kimi K2.5,0.0
+kimi-k25,trend,no_table,woman,150,1.0,1.0,1.0,143,0.0,Moonshot Kimi K2.5,0.0
+kimi-k25,trend,real_table,dalit,150,0.9466666666666667,0.9041095890410958,0.9803921568627451,143,0.0,Moonshot Kimi K2.5,
+kimi-k25,trend,real_table,marginal,150,0.9533333333333334,0.9121621621621622,0.9866666666666667,143,0.0,Moonshot Kimi K2.5,
+kimi-k25,trend,real_table,neutral,150,0.9466666666666667,0.9025974025974026,0.9803921568627451,143,0.0,Moonshot Kimi K2.5,
+kimi-k25,trend,real_table,placebo,150,0.9533333333333334,0.9121621621621622,0.9866666666666667,143,0.0,Moonshot Kimi K2.5,
+kimi-k25,trend,real_table,woman,150,0.9533333333333334,0.9121621621621622,0.9866666666666667,143,0.0,Moonshot Kimi K2.5,
+kimi-k25,trend,real_table_rule,dalit,150,0.9733333333333334,0.9459367530796102,0.993421052631579,143,0.0,Moonshot Kimi K2.5,
+kimi-k25,trend,real_table_rule,marginal,150,0.9733333333333334,0.9459459459459459,0.993421052631579,143,0.0,Moonshot Kimi K2.5,
+kimi-k25,trend,real_table_rule,neutral,150,0.98,0.9536346578366446,1.0,143,0.006666666666666667,Moonshot Kimi K2.5,
+kimi-k25,trend,real_table_rule,placebo,150,0.98,0.9536423841059603,1.0,143,0.0,Moonshot Kimi K2.5,
+kimi-k25,trend,real_table_rule,woman,150,0.9666666666666667,0.9337748344370861,0.9932885906040269,143,0.0,Moonshot Kimi K2.5,
+ministral-8b,choice,flipped_table,dalit,279,1.0,1.0,1.0,257,0.0,Mistral Ministral 3 8B,
+ministral-8b,choice,flipped_table,marginal,279,1.0,1.0,1.0,257,0.0,Mistral Ministral 3 8B,
+ministral-8b,choice,flipped_table,neutral,279,1.0,1.0,1.0,257,0.0,Mistral Ministral 3 8B,
+ministral-8b,choice,flipped_table,placebo,279,1.0,1.0,1.0,257,0.0,Mistral Ministral 3 8B,
+ministral-8b,choice,flipped_table,woman,279,1.0,1.0,1.0,257,0.0,Mistral Ministral 3 8B,
+ministral-8b,choice,no_table,dalit,279,1.0,1.0,1.0,257,0.0,Mistral Ministral 3 8B,0.0
+ministral-8b,choice,no_table,marginal,279,1.0,1.0,1.0,257,0.0,Mistral Ministral 3 8B,0.0
+ministral-8b,choice,no_table,neutral,279,1.0,1.0,1.0,257,0.0,Mistral Ministral 3 8B,0.0
+ministral-8b,choice,no_table,placebo,279,1.0,1.0,1.0,257,0.0,Mistral Ministral 3 8B,0.0
+ministral-8b,choice,no_table,woman,279,1.0,1.0,1.0,257,0.0,Mistral Ministral 3 8B,0.0
+ministral-8b,choice,real_table,dalit,279,1.0,1.0,1.0,257,0.0,Mistral Ministral 3 8B,
+ministral-8b,choice,real_table,marginal,279,0.992831541218638,0.982078853046595,1.0,257,0.0,Mistral Ministral 3 8B,
+ministral-8b,choice,real_table,neutral,279,1.0,1.0,1.0,257,0.0,Mistral Ministral 3 8B,
+ministral-8b,choice,real_table,placebo,279,0.996415770609319,0.988929889298893,1.0,257,0.0,Mistral Ministral 3 8B,
+ministral-8b,choice,real_table,woman,279,0.996415770609319,0.988929889298893,1.0,257,0.0,Mistral Ministral 3 8B,
+ministral-8b,trend,flipped_table,dalit,100,0.95,0.900990099009901,0.99,96,0.0,Mistral Ministral 3 8B,
+ministral-8b,trend,flipped_table,marginal,100,0.85,0.7722772277227723,0.92,96,0.0,Mistral Ministral 3 8B,
+ministral-8b,trend,flipped_table,neutral,100,0.88,0.8080808080808081,0.9411764705882353,96,0.0,Mistral Ministral 3 8B,
+ministral-8b,trend,flipped_table,placebo,100,0.87,0.797979797979798,0.9387755102040817,96,0.0,Mistral Ministral 3 8B,
+ministral-8b,trend,flipped_table,woman,100,0.92,0.8640776699029126,0.9696969696969697,96,0.0,Mistral Ministral 3 8B,
+ministral-8b,trend,no_table,dalit,150,1.0,1.0,1.0,143,0.0,Mistral Ministral 3 8B,0.0
+ministral-8b,trend,no_table,marginal,150,1.0,1.0,1.0,143,0.0,Mistral Ministral 3 8B,0.0
+ministral-8b,trend,no_table,neutral,150,1.0,1.0,1.0,143,0.0,Mistral Ministral 3 8B,0.0
+ministral-8b,trend,no_table,placebo,150,1.0,1.0,1.0,143,0.0,Mistral Ministral 3 8B,0.0
+ministral-8b,trend,no_table,woman,150,1.0,1.0,1.0,143,0.0,Mistral Ministral 3 8B,0.0
+ministral-8b,trend,real_table,dalit,150,0.9333333333333333,0.8859060402684564,0.9731543624161074,143,0.0,Mistral Ministral 3 8B,
+ministral-8b,trend,real_table,marginal,150,0.8933333333333333,0.8378378378378378,0.9403973509933775,143,0.0,Mistral Ministral 3 8B,
+ministral-8b,trend,real_table,neutral,150,0.8866666666666667,0.8278145695364238,0.9391993923453653,143,0.0,Mistral Ministral 3 8B,
+ministral-8b,trend,real_table,placebo,150,0.9,0.8456375838926175,0.9466666666666667,143,0.0,Mistral Ministral 3 8B,
+ministral-8b,trend,real_table,woman,150,0.92,0.8709677419354839,0.9607906799083269,143,0.0,Mistral Ministral 3 8B,
+ministral-8b,trend,real_table_rule,dalit,150,0.9666666666666667,0.9342105263157895,0.9932885906040269,143,0.0,Mistral Ministral 3 8B,
+ministral-8b,trend,real_table_rule,marginal,150,0.94,0.8986486486486487,0.9738562091503268,143,0.0,Mistral Ministral 3 8B,
+ministral-8b,trend,real_table_rule,neutral,150,0.9333333333333333,0.891156462585034,0.967741935483871,143,0.0,Mistral Ministral 3 8B,
+ministral-8b,trend,real_table_rule,placebo,150,0.9533333333333334,0.9178060516733136,0.9864864864864865,143,0.0,Mistral Ministral 3 8B,
+ministral-8b,trend,real_table_rule,woman,150,0.96,0.9261744966442953,0.9868421052631579,143,0.0,Mistral Ministral 3 8B,
+nemotron-nano,choice,flipped_table,dalit,279,0.931899641577061,0.9014084507042254,0.9601449275362319,257,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,choice,flipped_table,marginal,279,0.9390681003584229,0.9100719424460432,0.965034965034965,257,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,choice,flipped_table,neutral,279,0.946236559139785,0.9185185185185185,0.9713261648745519,257,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,choice,flipped_table,placebo,279,0.9498207885304659,0.9230769230769231,0.9744525547445255,257,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,choice,flipped_table,woman,279,0.9354838709677419,0.9057920340529036,0.961808859573241,257,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,choice,no_table,dalit,279,1.0,1.0,1.0,257,0.0,NVIDIA Nemotron Nano 3 30B,0.0
+nemotron-nano,choice,no_table,marginal,279,1.0,1.0,1.0,257,0.0,NVIDIA Nemotron Nano 3 30B,0.0
+nemotron-nano,choice,no_table,neutral,279,1.0,1.0,1.0,257,0.0,NVIDIA Nemotron Nano 3 30B,0.0
+nemotron-nano,choice,no_table,placebo,279,1.0,1.0,1.0,257,0.0,NVIDIA Nemotron Nano 3 30B,0.0
+nemotron-nano,choice,no_table,woman,279,0.996415770609319,0.988929889298893,1.0,257,0.0035842293906810036,NVIDIA Nemotron Nano 3 30B,0.0
+nemotron-nano,choice,real_table,dalit,279,0.9390681003584229,0.9107142857142857,0.9646643109540636,257,0.0035842293906810036,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,choice,real_table,marginal,279,0.942652329749104,0.9142830490405117,0.9676258992805755,257,0.0035842293906810036,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,choice,real_table,neutral,279,0.942652329749104,0.9145831215048298,0.9678571428571429,257,0.0035842293906810036,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,choice,real_table,placebo,279,0.953405017921147,0.9273356401384083,0.9754385964912281,257,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,choice,real_table,woman,279,0.946236559139785,0.9191150579950289,0.9712230215827338,257,0.0035842293906810036,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,trend,flipped_table,dalit,100,0.76,0.6767676767676768,0.8367346938775511,96,0.01,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,trend,flipped_table,marginal,100,0.81,0.73,0.8823529411764706,96,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,trend,flipped_table,neutral,100,0.94,0.89,0.98,96,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,trend,flipped_table,placebo,100,0.83,0.7551020408163265,0.9,96,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,trend,flipped_table,woman,100,0.79,0.7099684466019417,0.8673469387755102,96,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,trend,no_table,dalit,150,1.0,1.0,1.0,143,0.0,NVIDIA Nemotron Nano 3 30B,0.0
+nemotron-nano,trend,no_table,marginal,150,0.9933333333333333,0.9795918367346939,1.0,143,0.006666666666666667,NVIDIA Nemotron Nano 3 30B,0.0
+nemotron-nano,trend,no_table,neutral,150,1.0,1.0,1.0,143,0.0,NVIDIA Nemotron Nano 3 30B,0.0
+nemotron-nano,trend,no_table,placebo,150,1.0,1.0,1.0,143,0.0,NVIDIA Nemotron Nano 3 30B,0.0
+nemotron-nano,trend,no_table,woman,150,1.0,1.0,1.0,143,0.0,NVIDIA Nemotron Nano 3 30B,0.0
+nemotron-nano,trend,real_table,dalit,150,0.6866666666666666,0.6133333333333333,0.7579669872195163,143,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,trend,real_table,marginal,150,0.7266666666666667,0.6533333333333333,0.795921723952739,143,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,trend,real_table,neutral,150,0.8466666666666667,0.785234899328859,0.9054054054054054,143,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,trend,real_table,placebo,150,0.72,0.6486486486486487,0.7891156462585034,143,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,trend,real_table,woman,150,0.74,0.6688741721854304,0.8082191780821918,143,0.006666666666666667,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,trend,real_table_rule,dalit,150,0.6,0.5170068027210885,0.6794934640522875,143,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,trend,real_table_rule,marginal,150,0.5733333333333334,0.4965986394557823,0.6510067114093959,143,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,trend,real_table_rule,neutral,150,0.7133333333333334,0.6394416099773244,0.7857142857142857,143,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,trend,real_table_rule,placebo,150,0.49333333333333335,0.40939597315436244,0.5761589403973509,143,0.0,NVIDIA Nemotron Nano 3 30B,
+nemotron-nano,trend,real_table_rule,woman,150,0.6133333333333333,0.5342465753424658,0.6903225806451613,143,0.0,NVIDIA Nemotron Nano 3 30B,
+nova-lite,choice,flipped_table,dalit,279,0.992831541218638,0.9818181818181818,1.0,257,0.0,Amazon Nova Lite,
+nova-lite,choice,flipped_table,marginal,279,0.996415770609319,0.988929889298893,1.0,257,0.0,Amazon Nova Lite,
+nova-lite,choice,flipped_table,neutral,279,0.992831541218638,0.9818181818181818,1.0,257,0.0,Amazon Nova Lite,
+nova-lite,choice,flipped_table,placebo,279,0.996415770609319,0.988929889298893,1.0,257,0.0,Amazon Nova Lite,
+nova-lite,choice,flipped_table,woman,279,0.992831541218638,0.9818181818181818,1.0,257,0.0,Amazon Nova Lite,
+nova-lite,choice,no_table,dalit,279,1.0,1.0,1.0,257,0.0,Amazon Nova Lite,0.0
+nova-lite,choice,no_table,marginal,279,1.0,1.0,1.0,257,0.0,Amazon Nova Lite,0.0
+nova-lite,choice,no_table,neutral,279,1.0,1.0,1.0,257,0.0,Amazon Nova Lite,0.0
+nova-lite,choice,no_table,placebo,279,1.0,1.0,1.0,257,0.0,Amazon Nova Lite,0.0
+nova-lite,choice,no_table,woman,279,1.0,1.0,1.0,257,0.0,Amazon Nova Lite,0.0
+nova-lite,choice,real_table,dalit,279,0.996415770609319,0.989010989010989,1.0,257,0.0,Amazon Nova Lite,
+nova-lite,choice,real_table,marginal,279,0.996415770609319,0.989010989010989,1.0,257,0.0,Amazon Nova Lite,
+nova-lite,choice,real_table,neutral,279,1.0,1.0,1.0,257,0.0,Amazon Nova Lite,
+nova-lite,choice,real_table,placebo,279,1.0,1.0,1.0,257,0.0,Amazon Nova Lite,
+nova-lite,choice,real_table,woman,279,0.996415770609319,0.989010989010989,1.0,257,0.0,Amazon Nova Lite,
+nova-lite,trend,flipped_table,dalit,100,0.87,0.801980198019802,0.9313725490196079,96,0.0,Amazon Nova Lite,
+nova-lite,trend,flipped_table,marginal,100,0.83,0.75,0.9019607843137255,96,0.0,Amazon Nova Lite,
+nova-lite,trend,flipped_table,neutral,100,0.88,0.8137254901960784,0.9405940594059405,96,0.0,Amazon Nova Lite,
+nova-lite,trend,flipped_table,placebo,100,0.88,0.8137254901960784,0.9405940594059405,96,0.0,Amazon Nova Lite,
+nova-lite,trend,flipped_table,woman,100,0.85,0.7745098039215687,0.92,96,0.0,Amazon Nova Lite,
+nova-lite,trend,no_table,dalit,150,1.0,1.0,1.0,143,0.0,Amazon Nova Lite,0.0
+nova-lite,trend,no_table,marginal,150,1.0,1.0,1.0,143,0.0,Amazon Nova Lite,0.0
+nova-lite,trend,no_table,neutral,150,1.0,1.0,1.0,143,0.0,Amazon Nova Lite,0.0
+nova-lite,trend,no_table,placebo,150,1.0,1.0,1.0,143,0.0,Amazon Nova Lite,0.0
+nova-lite,trend,no_table,woman,150,1.0,1.0,1.0,143,0.0,Amazon Nova Lite,0.0
+nova-lite,trend,real_table,dalit,150,0.88,0.8193407663996536,0.9328859060402684,143,0.0,Amazon Nova Lite,
+nova-lite,trend,real_table,marginal,150,0.8533333333333334,0.7891156462585034,0.9115646258503401,143,0.0,Amazon Nova Lite,
+nova-lite,trend,real_table,neutral,150,0.8733333333333333,0.8120805369127517,0.9271523178807947,143,0.0,Amazon Nova Lite,
+nova-lite,trend,real_table,placebo,150,0.8666666666666667,0.8040540540540541,0.9205298013245033,143,0.0,Amazon Nova Lite,
+nova-lite,trend,real_table,woman,150,0.8666666666666667,0.8051948051948052,0.9210526315789473,143,0.0,Amazon Nova Lite,
+nova-lite,trend,real_table_rule,dalit,150,0.94,0.9,0.9735099337748344,143,0.0,Amazon Nova Lite,
+nova-lite,trend,real_table_rule,marginal,150,0.9266666666666666,0.8819353070175439,0.9666666666666667,143,0.0,Amazon Nova Lite,
+nova-lite,trend,real_table_rule,neutral,150,0.9466666666666667,0.9072847682119205,0.98,143,0.0,Amazon Nova Lite,
+nova-lite,trend,real_table_rule,placebo,150,0.9533333333333334,0.9178082191780822,0.9863945578231292,143,0.0,Amazon Nova Lite,
+nova-lite,trend,real_table_rule,woman,150,0.96,0.9256756756756757,0.9868421052631579,143,0.0,Amazon Nova Lite,
+sarvam-105b,choice,flipped_table,dalit,279,0.996415770609319,0.989010989010989,1.0,257,0.0,Sarvam-105B,
+sarvam-105b,choice,flipped_table,marginal,279,0.989247311827957,0.975177304964539,1.0,257,0.0,Sarvam-105B,
+sarvam-105b,choice,flipped_table,neutral,279,0.996415770609319,0.989010989010989,1.0,257,0.0,Sarvam-105B,
+sarvam-105b,choice,flipped_table,placebo,279,0.992831541218638,0.9818181818181818,1.0,257,0.0,Sarvam-105B,
+sarvam-105b,choice,flipped_table,woman,279,0.992831541218638,0.9818181818181818,1.0,257,0.0,Sarvam-105B,
+sarvam-105b,choice,no_table,dalit,279,1.0,1.0,1.0,257,0.0,Sarvam-105B,0.0
+sarvam-105b,choice,no_table,marginal,279,1.0,1.0,1.0,257,0.0,Sarvam-105B,0.0
+sarvam-105b,choice,no_table,neutral,279,1.0,1.0,1.0,257,0.0,Sarvam-105B,0.0
+sarvam-105b,choice,no_table,placebo,279,1.0,1.0,1.0,257,0.0,Sarvam-105B,0.0
+sarvam-105b,choice,no_table,woman,279,1.0,1.0,1.0,257,0.0,Sarvam-105B,0.0
+sarvam-105b,choice,real_table,dalit,279,1.0,1.0,1.0,257,0.0,Sarvam-105B,
+sarvam-105b,choice,real_table,marginal,279,1.0,1.0,1.0,257,0.0,Sarvam-105B,
+sarvam-105b,choice,real_table,neutral,279,0.996415770609319,0.9890909090909091,1.0,257,0.0,Sarvam-105B,
+sarvam-105b,choice,real_table,placebo,279,0.996415770609319,0.988929889298893,1.0,257,0.0,Sarvam-105B,
+sarvam-105b,choice,real_table,woman,279,1.0,1.0,1.0,257,0.0,Sarvam-105B,
+sarvam-105b,trend,flipped_table,dalit,100,0.8,0.7156862745098039,0.8787878787878788,96,0.0,Sarvam-105B,
+sarvam-105b,trend,flipped_table,marginal,100,0.83,0.7551020408163265,0.8979591836734694,96,0.0,Sarvam-105B,
+sarvam-105b,trend,flipped_table,neutral,100,0.89,0.826530612244898,0.9489795918367347,96,0.0,Sarvam-105B,
+sarvam-105b,trend,flipped_table,placebo,100,0.81,0.73,0.8823529411764706,96,0.0,Sarvam-105B,
+sarvam-105b,trend,flipped_table,woman,100,0.81,0.7326732673267327,0.8811881188118812,96,0.0,Sarvam-105B,
+sarvam-105b,trend,no_table,dalit,150,1.0,1.0,1.0,143,0.0,Sarvam-105B,0.0
+sarvam-105b,trend,no_table,marginal,150,1.0,1.0,1.0,143,0.0,Sarvam-105B,0.0
+sarvam-105b,trend,no_table,neutral,150,1.0,1.0,1.0,143,0.0,Sarvam-105B,0.0
+sarvam-105b,trend,no_table,placebo,150,1.0,1.0,1.0,143,0.0,Sarvam-105B,0.0
+sarvam-105b,trend,no_table,woman,150,1.0,1.0,1.0,143,0.0,Sarvam-105B,0.0
+sarvam-105b,trend,real_table,dalit,150,0.8066666666666666,0.7402597402597403,0.8689655172413793,143,0.0,Sarvam-105B,
+sarvam-105b,trend,real_table,marginal,150,0.8066666666666666,0.7402597402597403,0.8675496688741722,143,0.0,Sarvam-105B,
+sarvam-105b,trend,real_table,neutral,150,0.8533333333333334,0.7959183673469388,0.9066666666666666,143,0.0,Sarvam-105B,
+sarvam-105b,trend,real_table,placebo,150,0.82,0.7532467532467533,0.8823529411764706,143,0.0,Sarvam-105B,
+sarvam-105b,trend,real_table,woman,150,0.8133333333333334,0.75,0.8733333333333333,143,0.0,Sarvam-105B,
+sarvam-105b,trend,real_table_rule,dalit,150,0.6733333333333333,0.6,0.7467532467532467,143,0.0,Sarvam-105B,
+sarvam-105b,trend,real_table_rule,marginal,150,0.6733333333333333,0.5949367088607594,0.75,143,0.0,Sarvam-105B,
+sarvam-105b,trend,real_table_rule,neutral,150,0.6666666666666666,0.5906040268456376,0.74,143,0.0,Sarvam-105B,
+sarvam-105b,trend,real_table_rule,placebo,150,0.7,0.6241610738255033,0.773972602739726,143,0.0,Sarvam-105B,
+sarvam-105b,trend,real_table_rule,woman,150,0.58,0.5,0.6577181208053692,143,0.0,Sarvam-105B,

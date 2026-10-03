@@ -1,0 +1,37 @@
+{
+  "cached_responses": 187379,
+  "finished_utc": "2026-10-02T07:30:55Z",
+  "models": [
+    "nova-lite",
+    "nemotron-nano",
+    "kimi-k25",
+    "ministral-8b",
+    "sarvam-105b"
+  ],
+  "pilot": false,
+  "repeat": 1,
+  "route_counts": {
+    "aws-account-1": 40720,
+    "aws-account-2": 40686,
+    "sarvam-key-1": 10240,
+    "sarvam-key-2": 10270
+  },
+  "route_failures": {
+    "aws-account-1": 2479,
+    "aws-account-2": 2496,
+    "sarvam-key-1": 1044,
+    "sarvam-key-2": 1019
+  },
+  "smoke": false,
+  "spent_usd_this_run": 14.7259,
+  "stages": [
+    "facts",
+    "kcc",
+    "agriadvice",
+    "market",
+    "schemes",
+    "related",
+    "mitigation"
+  ],
+  "tariff_date": "2026-10-01"
+}

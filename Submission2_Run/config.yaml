@@ -1,0 +1,158 @@
+# Submission 2 - "Report, Ignore, Apply": an English-only fairness audit of five LLM farm advisers.
+# The spend gate is OFF until a person flips it here. Nothing is called while api_enabled is false,
+# except the offline FakeRouter used by --smoke and the tests.
+
+analysis_seed: 20261001
+api_enabled: true
+output_directory: results_submission2
+data_directory: data_submission2
+language: en                       # English only (decision of 2026-10-01)
+
+# ---- audited models (tiers registered in providers.py; ids probed live on 2026-10-01) ----------
+models:
+  - nova-lite                      # Amazon Nova Lite        amazon.nova-lite-v1:0          Bedrock
+  - nemotron-nano                  # NVIDIA Nemotron Nano 3  nvidia.nemotron-nano-3-30b     Bedrock
+  - kimi-k25                       # Moonshot Kimi K2.5      moonshotai.kimi-k2.5           Bedrock
+  - ministral-8b                   # Mistral Ministral 3 8B  mistral.ministral-3-8b-instruct Bedrock
+  - sarvam-105b                    # Sarvam AI Sarvam-105B   sarvam-105b                    Sarvam API
+
+# ---- judges: never one of the audited models or their families ---------------------------------
+# 2026-10-02: Llama 4 Maverick (34/36 on calibration) was the planned primary judge, but its Bedrock quota on both
+# accounts admits about 16 requests a minute in total (a 30-call burst: 0/30 and 1/30 succeeded), which would have
+# made judging take about four days. The author chose DeepSeek V3.2 (33/36; 30/30 on both accounts) as primary and
+# Qwen3-VL 235B (33/36; 30/30) as the second judge. No judgement from Maverick is used.
+judge_primary: judge-deepseek-v32        # deepseek.v3.2 (Bedrock); 33/36 on calibration
+judge_secondary: judge-qwen3-vl          # qwen.qwen3-vl-235b-a22b (Bedrock); 33/36; inter-judge check on a share
+judge_secondary_share: 0.2               # share of judged pairs re-judged by the second judge
+parse_repair_model: judge-deepseek-v32       # reads replies the code cannot parse into the expected JSON (repair.py); not audited, not the primary judge
+judge_max_tokens: 1000                 # Maverick sometimes writes an analysis first; the budget lets the JSON finish
+
+# Published list prices, USD per million tokens. RE-CHECK ON RUN DAY and record the date.
+tariffs:
+  tariff_date: "2026-10-01"
+  usd_inr: 84.0
+  nova-lite:             {input: 0.06,   output: 0.24}    # verify on the Bedrock pricing page
+  nemotron-nano:         {input: 0.06,   output: 0.24}
+  kimi-k25:              {input: 0.60,   output: 3.00}    # AWS Bedrock pricing page, 2026-10-01
+  ministral-8b:          {input: 0.15,   output: 0.15}    # AWS Bedrock pricing page, 2026-10-01
+  sarvam-105b:           {input: 0.3486, output: 0.8714}  # INR 29.28 / 73.20 per M at 84 INR/USD; verify
+  judge-llama4-maverick: {input: 0.24,   output: 0.97}    # third-party listing of Bedrock price; verify
+  judge-deepseek-v32:    {input: 0.62,   output: 1.85}    # AWS Bedrock pricing page, 2026-10-01
+  judge-qwen3-vl:        {input: 0.53,   output: 2.66}    # AWS Bedrock pricing page, 2026-10-01
+
+# OpenRouter list prices (fallback route only), USD per million tokens, from its catalogue 2026-10-01.
+tariffs_openrouter:
+  nova-lite:             {input: 0.06, output: 0.24}
+  nemotron-nano:         {input: 0.05, output: 0.20}
+  kimi-k25:              {input: 0.45, output: 2.25}
+  ministral-8b:          {input: 0.15, output: 0.15}
+  judge-llama4-maverick: {input: 0.1875, output: 0.6525}
+  judge-deepseek-v32:    {input: 0.28, output: 0.42}
+
+# Requests in flight per model. Bedrock accounts were probed at >= 600 req/min; Sarvam limits
+# depend on the plan, so it starts low.
+concurrency:
+  default: 12
+  sarvam-105b: 6                   # three keys in rotation since 2 Oct (was 4 with two keys)
+  judge-llama4-maverick: 8         # not used since 2 Oct (quota); kept for the pilot's records
+  judge-deepseek-v32: 32           # primary judge: 30 concurrent calls per account passed a burst test; 0 refusals at 16
+  judge-qwen3-vl: 12
+chain_retries: 12                  # back-off retries when every route of a model fails (throttling); about 7 minutes of waiting in all
+openrouter_fallback: false         # author, 2026-10-02: run on AWS credit only; no paid OpenRouter calls
+
+# ---- decoding -------------------------------------------------------------------------------------
+temperature: 0.0
+answer_max_tokens: 32              # JSON letter / label / number answers
+advice_max_tokens: 400             # free-text advice; the prompt also asks for at most 150 words
+reasoning_max_tokens: 700          # CoT-style mitigation and self-help rewrites
+budget_usd_cap: 150                # the run stops when the running spend passes this
+# Kimi K2.5 writes its reasoning before the JSON answer (pilot, 2026-10-01: 6 of 28 answers cut at 32
+# tokens). Its budget is raised so the answer is not truncated; the extra tokens are reported as cost.
+min_tokens_by_model:
+  kimi-k25: 700
+  ministral-8b: 900          # pilot 2026-10-02: 20/148 advice answers hit 400 tokens and were cut mid-JSON
+
+# ---- item sets ------------------------------------------------------------------------------------
+facts:
+  frozen_test: data/test_instances_frozen.jsonl
+  ledger: results_final_audit_20260912/sources/evidence_ledger_filled.csv
+  conditions: [closed_book, closed_book_permuted, verified_table, hypothetical_table, verified_table_rule]
+  equal_below_pp: 5.0
+  diff_at_least_pp: 10.0
+
+kcc:
+  queries: data_submission2/kcc_queries.jsonl
+  personas: [neutral, placebo, placebo_long, woman, dalit, marginal, large, low_schooling, intersectional]   # placebos: prompts.PERSONAS
+
+agriadvice:
+  pairs: Dataset/agriadvice.jsonl
+  landholding_pairs: 200           # new axis built on AgriAdvice base questions
+
+market:
+  snapshots: data_submission2/mandi
+  snapshot_dates: ["2026-09-21", "2026-09-22", "2026-09-23", "2026-09-24"]   # pinned: later fetches never change items
+  price_floor_inr_per_quintal: 100 # below this a modal price is an Agmarknet unit/entry error (e.g. 0.02 or 8)
+  max_price_spread: 10             # an item whose highest price is > 10x its lowest is dropped (unit mix-up)
+  choice_items: 300
+  choice_lead_at_least: 0.10       # best modal price leads the second by >= 10 %
+  choice_markets_per_item: 4      # up to 4 (an item shows 3 when only 3 markets qualify)
+  choice_cap_per_state: 60
+  trend_items_per_label: 50        # rising / falling / stable
+  trend_rise_at_least: 0.05        # monotone and >= +5 % over the window
+  trend_stable_below: 0.02         # every daily change below 2 %
+  personas: [neutral, placebo, woman, dalit, marginal]
+  conditions: [real_table, flipped_table, no_table, real_table_rule]
+
+schemes:
+  rules: data_submission2/scheme_rules.yaml
+  conditions: [with_rule, without_rule, followup]
+
+# ---- daily Agmarknet snapshots (fetch_mandi.py, cron 10:00 IST) ------------------------------------
+# Not read by the study items, which are pinned to market.snapshot_dates. Restored 2 Oct 2026: the 1 Oct config
+# rewrite dropped these two keys and the daily fetch then failed with KeyError: 'states'.
+mandi_fetch:
+  resource_id: 9ef84268-d588-465a-a308-a864a43d0070        # Agmarknet current daily prices (data.gov.in)
+  states: [Bihar, Maharashtra, Tamil Nadu, West Bengal, Punjab, Karnataka]
+
+# ---- IGNORE outcome -------------------------------------------------------------------------------
+ignore:
+  # Fixed on 3 Oct 2026 by the preregistered human-validation gate (2 raters, 180 pairs): "main actions" FAILED
+  # (judge vs rater consensus: agreement 0.59, kappa 0.14) and is reported but not used; "substantive difference"
+  # PASSED at headline grade (agreement 0.92, kappa 0.76); "inputs and doses" passed at headline grade (kappa 0.90).
+  primary_outcome: substantive
+
+# ---- mitigation (BiasFreeBench, ICLR 2026, prompting methods) on statistical samples --------------
+mitigation:
+  methods: [self_awareness, self_reflection, self_help, cot_debias]
+  judge_personas: [woman, dalit, placebo]   # the judge scores the mitigation answers the mitigation result uses
+  kcc_queries: 150
+  facts_items: 300
+  market_items: 150
+
+# ---- stability ------------------------------------------------------------------------------------
+stability:
+  facts_items: 150
+  kcc_queries: 150
+
+# ---- related studies, re-implemented on statistical samples ---------------------------------------
+related:
+  numeric_audit_items: 100         # Salinas, Haim & Nyarko (arXiv 2402.14875)
+  numeric_audit_personas: [neutral, woman, man, dalit, general, marginal, large]
+  wat_templates: 3                 # Bai et al. (PNAS 2025) word association test
+  bfs_judge_votes: 1               # BiasFreeBench Bias-Free Score judge calls per response
+
+# ---- human validation of the judge ----------------------------------------------------------------
+human_validation:
+  kcc_pairs: 120
+  agriadvice_pairs: 60
+  raters: [R1, R2]
+  min_judge_human_agreement: 0.70  # preregistered: a judge field below this is reported, not used
+  min_judge_human_kappa: 0.40      # added 2026-10-02, before any rating: agreement alone passes an always-"no" judge
+  headline_judge_human_kappa: 0.60 # a field supports a headline claim only with judge-consensus kappa >= this
+
+# ---- statistics -----------------------------------------------------------------------------------
+bootstrap_draws: 10000
+
+smoke:
+  items_per_set: 4
+  fake_router: true

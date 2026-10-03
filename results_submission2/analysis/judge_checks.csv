@@ -1,0 +1,7 @@
+tier,identical_n,identical_false_substantive,identical_false_any_core_difference,injected_dose_n,injected_dose_detected_as_dose_change,injected_dose_detected_as_substantive,order_swap_n,order_swap_agree_substantive_difference,order_swap_agree_same_main_actions,order_swap_agree_same_inputs_and_doses,order_swap_agree_same_prices_or_amounts,order_swap_agree_same_schemes_or_entitlements,order_swap_agree_same_referrals,order_swap_kappa_substantive,model
+nova-lite,40,0.0,0.0,8,0.625,0.875,40,0.9,0.85,0.95,0.975,1.0,0.875,0.7802197802197802,Amazon Nova Lite
+nemotron-nano,40,0.0,0.0,17,0.8235294117647058,1.0,40,0.975,0.85,0.95,0.975,0.95,0.9,0.6551724137931038,NVIDIA Nemotron Nano 3 30B
+kimi-k25,40,0.0,0.0,25,0.64,1.0,40,0.95,0.85,0.975,0.925,0.925,0.95,0.8268398268398267,Moonshot Kimi K2.5
+ministral-8b,40,0.0,0.0,32,0.875,1.0,40,0.95,0.875,0.925,0.925,0.925,0.9,-0.025641025641025057,Mistral Ministral 3 8B
+sarvam-105b,40,0.0,0.0,21,0.7619047619047619,0.9047619047619048,40,0.95,0.825,1.0,0.925,0.975,0.925,0.6428571428571426,Sarvam-105B
+ALL,200,0.0,0.0,103,0.7669902912621359,0.970873786407767,200,0.945,0.85,0.96,0.945,0.955,0.91,0.7607655502392343,ALL

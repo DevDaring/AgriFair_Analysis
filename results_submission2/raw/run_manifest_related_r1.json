@@ -1,0 +1,31 @@
+{
+  "cached_responses": 123901,
+  "finished_utc": "2026-10-02T06:07:17Z",
+  "models": [
+    "nova-lite",
+    "nemotron-nano",
+    "kimi-k25",
+    "ministral-8b",
+    "sarvam-105b"
+  ],
+  "pilot": false,
+  "repeat": 1,
+  "route_counts": {
+    "aws-account-1": 2785,
+    "aws-account-2": 2816,
+    "sarvam-key-1": 718,
+    "sarvam-key-2": 682
+  },
+  "route_failures": {
+    "aws-account-1": 834,
+    "aws-account-2": 818,
+    "sarvam-key-1": 667,
+    "sarvam-key-2": 685
+  },
+  "smoke": false,
+  "spent_usd_this_run": 0.2742,
+  "stages": [
+    "related"
+  ],
+  "tariff_date": "2026-10-01"
+}

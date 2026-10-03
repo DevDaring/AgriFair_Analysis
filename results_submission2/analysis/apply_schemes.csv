@@ -1,0 +1,36 @@
+tier,condition,identity_relevant,n,accuracy,stated_a_wrong_value,declined,unparsed,model,control_rules_assessable,control_rules_with_identity_varying_answer,substantive_followup_change,identity_reference_in_followup
+nova-lite,with_rule,True,15,1.0,0.0,0.0,0.0,Amazon Nova Lite,,,,
+nova-lite,with_rule,False,11,1.0,0.0,0.0,0.0,Amazon Nova Lite,3,0.0,,
+nova-lite,without_rule,True,15,0.13333333333333333,0.26666666666666666,0.6,0.0,Amazon Nova Lite,,,,
+nova-lite,without_rule,False,11,0.6363636363636364,0.0,0.36363636363636365,0.0,Amazon Nova Lite,3,0.0,,
+nova-lite,followup,True,15,1.0,0.0,0.0,0.0,Amazon Nova Lite,,,,
+nova-lite,followup,False,11,1.0,0.0,0.0,0.0,Amazon Nova Lite,3,0.0,,
+nemotron-nano,with_rule,True,15,1.0,0.0,0.0,0.0,NVIDIA Nemotron Nano 3 30B,,,,
+nemotron-nano,with_rule,False,11,1.0,0.0,0.0,0.0,NVIDIA Nemotron Nano 3 30B,3,0.0,,
+nemotron-nano,without_rule,True,15,0.4666666666666667,0.5333333333333333,0.0,0.0,NVIDIA Nemotron Nano 3 30B,,,,
+nemotron-nano,without_rule,False,11,1.0,0.0,0.0,0.0,NVIDIA Nemotron Nano 3 30B,3,0.0,,
+nemotron-nano,followup,True,15,1.0,0.0,0.0,0.0,NVIDIA Nemotron Nano 3 30B,,,,
+nemotron-nano,followup,False,11,1.0,0.0,0.0,0.0,NVIDIA Nemotron Nano 3 30B,3,0.0,,
+kimi-k25,with_rule,True,15,1.0,0.0,0.0,0.0,Moonshot Kimi K2.5,,,,
+kimi-k25,with_rule,False,11,1.0,0.0,0.0,0.0,Moonshot Kimi K2.5,3,0.0,,
+kimi-k25,without_rule,True,15,0.6666666666666666,0.26666666666666666,0.06666666666666667,0.0,Moonshot Kimi K2.5,,,,
+kimi-k25,without_rule,False,11,0.8181818181818182,0.18181818181818182,0.0,0.0,Moonshot Kimi K2.5,3,0.3333333333333333,,
+kimi-k25,followup,True,15,1.0,0.0,0.0,0.0,Moonshot Kimi K2.5,,,,
+kimi-k25,followup,False,11,1.0,0.0,0.0,0.0,Moonshot Kimi K2.5,3,0.0,,
+ministral-8b,with_rule,True,15,1.0,0.0,0.0,0.0,Mistral Ministral 3 8B,,,,
+ministral-8b,with_rule,False,11,1.0,0.0,0.0,0.0,Mistral Ministral 3 8B,3,0.0,,
+ministral-8b,without_rule,True,15,0.2,0.6,0.2,0.0,Mistral Ministral 3 8B,,,,
+ministral-8b,without_rule,False,11,1.0,0.0,0.0,0.0,Mistral Ministral 3 8B,3,0.0,,
+ministral-8b,followup,True,15,1.0,0.0,0.0,0.0,Mistral Ministral 3 8B,,,,
+ministral-8b,followup,False,11,1.0,0.0,0.0,0.0,Mistral Ministral 3 8B,3,0.0,,
+sarvam-105b,with_rule,True,15,1.0,0.0,0.0,0.0,Sarvam-105B,,,,
+sarvam-105b,with_rule,False,11,1.0,0.0,0.0,0.0,Sarvam-105B,3,0.0,,
+sarvam-105b,without_rule,True,15,0.4,0.13333333333333333,0.4666666666666667,0.0,Sarvam-105B,,,,
+sarvam-105b,without_rule,False,11,0.7272727272727273,0.18181818181818182,0.09090909090909091,0.0,Sarvam-105B,3,0.3333333333333333,,
+sarvam-105b,followup,True,15,1.0,0.0,0.0,0.0,Sarvam-105B,,,,
+sarvam-105b,followup,False,11,1.0,0.0,0.0,0.0,Sarvam-105B,3,0.0,,
+nova-lite,followup_leakage,,20,,,,,Amazon Nova Lite,,,0.55,0.0
+nemotron-nano,followup_leakage,,20,,,,,NVIDIA Nemotron Nano 3 30B,,,0.45,0.0
+kimi-k25,followup_leakage,,20,,,,,Moonshot Kimi K2.5,,,0.45,0.0
+ministral-8b,followup_leakage,,20,,,,,Mistral Ministral 3 8B,,,0.65,0.0
+sarvam-105b,followup_leakage,,20,,,,,Sarvam-105B,,,0.75,0.0

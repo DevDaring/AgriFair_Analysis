@@ -1,0 +1,87 @@
+{
+  "agriadvice_dropped_non_indian": 6,
+  "check_failures": {
+    "mc": 3
+  },
+  "conditions": {
+    "facts": [
+      "closed_book",
+      "closed_book_permuted",
+      "verified_table",
+      "hypothetical_table",
+      "verified_table_rule"
+    ],
+    "market": [
+      "real_table",
+      "flipped_table",
+      "no_table",
+      "real_table_rule"
+    ],
+    "schemes": [
+      "with_rule",
+      "without_rule",
+      "followup"
+    ]
+  },
+  "counts": {
+    "agriadvice": 994,
+    "facts": 749,
+    "kcc": 454,
+    "market": 429,
+    "schemes": 26
+  },
+  "files_sha256": {
+    "agriadvice.jsonl": "afd3d999debf1f0ccd33b70e5c2760660c3e2e074998afce0ec72e1a31748d3b",
+    "check_failures.jsonl": "ec4022e009cbdaed58658b6dd10877d98533e5121be734c58848a2d1fd19cbac",
+    "facts.jsonl": "8af488b130d4c6d4f11c56134de2230ec5a590525471423fe481c5860d5414ca",
+    "kcc.jsonl": "603dd043350416139988263f00d1ae79845d35e8a844eb46c1d74c842f1059f5",
+    "market.jsonl": "a60b6ca5ef38fbfcbaf7882c5f0fa2082fdb5736ce3e02ccccba4bffee76c728",
+    "related_bbq.jsonl": "0d20e06c98ed769693ebb45ed16d0c112e2c813facef92106c672b98c10abfaa",
+    "related_numeric.jsonl": "5a05f5d70ac49d5aae779ad8397bf578a3ee07bdd2f280cc916809219135055c",
+    "related_rdt.jsonl": "a9acd13158e06322bc411d1dcea4978d23913bd1c7e112e6460e1f9173ebf28e",
+    "related_wat.jsonl": "52b9c614fee6066d3492cc0ded585dbf44869d4cde5e8ebb726417cbee381acd",
+    "schemes.jsonl": "669d4d3ee8bafd7a745ab1d50031c50976c58af6d4f7fd0090b81dab3ce982a0"
+  },
+  "kcc_dropped": {
+    "duplicate_query": 59,
+    "non_advisory_or_call_log": 87
+  },
+  "kcc_reference_in_english": 82,
+  "language": "en",
+  "market_choice": 279,
+  "market_choice_per_state": {
+    "Bihar": 4,
+    "Karnataka": 59,
+    "Maharashtra": 60,
+    "Punjab": 58,
+    "Tamil Nadu": 60,
+    "West Bengal": 38
+  },
+  "market_choice_scope": {
+    "district": 163,
+    "state": 116
+  },
+  "market_trend": {
+    "falling": 50,
+    "rising": 50,
+    "stable": 50
+  },
+  "samples": {
+    "mitigation_facts": 300,
+    "mitigation_kcc": 150,
+    "mitigation_market": 150,
+    "stability_facts": 150,
+    "stability_kcc": 150
+  },
+  "scheme_identity_relevant_items": 15,
+  "scheme_rules": 6,
+  "scheme_sources_archived": {
+    "miss_kcc_effective_interest": true,
+    "pmfby_farmer_premium": false,
+    "pmkisan_income_support": false,
+    "pmkmy_pension_eligibility": false,
+    "pmksy_pdmc_micro_irrigation": true,
+    "smam_individual_machinery": true
+  },
+  "seed": 20261001
+}

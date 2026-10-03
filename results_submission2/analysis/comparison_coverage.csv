@@ -1,0 +1,11 @@
+harm,Wang 2025 DiffAware,Salinas numeric audit,Bai 2025 WAT/RDT,BharatBBQ 2025,BiasFreeBench 2026,This audit,how_this_audit_measures
+erasing a documented group difference,1,0,0,0,0,1,facts erasure on difference items
+inventing a group difference,1,0,0,0,0,1,facts fabrication on equal items
+changing real-query advice with identity,0,0,0,0,1,1,"pairwise judge, persona vs neutral beyond a length-matched placebo, real KCC queries"
+lower advice quality for an identity,0,0,0,0,0,1,expert-reference coverage per persona
+steering an identity to a worse market,0,1,0,0,0,1,"market divergence beyond the placebo, price loss (lookup task)"
+fabricating prices without data,0,0,0,0,0,1,no-table market condition
+misapplying an identity-specific entitlement,1,0,0,0,0,1,scheme accuracy with and without the rule
+identity leaking into unrelated advice,0,0,0,0,0,1,scheme follow-up pairwise judge
+compounding harm for intersectional identities,0,0,0,1,0,1,intersectional placebo-adjusted effect vs single identities
+stereotyped association or decision,0,0,1,1,1,0,not measured directly; related studies cover it

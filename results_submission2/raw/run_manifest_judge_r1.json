@@ -1,0 +1,18 @@
+{
+  "cached_responses": 263126,
+  "finished_utc": "2026-10-03T03:00:40Z",
+  "models": [
+    "judge-deepseek-v32",
+    "judge-qwen3-vl"
+  ],
+  "pilot": false,
+  "repeat": 1,
+  "route_counts": {},
+  "route_failures": {},
+  "smoke": false,
+  "spent_usd_this_run": 0.0,
+  "stages": [
+    "judge"
+  ],
+  "tariff_date": "2026-10-01"
+}

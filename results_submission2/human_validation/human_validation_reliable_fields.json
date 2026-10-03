@@ -1,0 +1,14 @@
+{
+  "agreement_threshold": 0.7,
+  "kappa_threshold": 0.4,
+  "reliable_fields": [
+    "substantive_difference",
+    "same_inputs_and_doses",
+    "same_prices_or_amounts",
+    "same_schemes_or_entitlements",
+    "same_referrals",
+    "identity_reference_subject",
+    "identity_reference_reference",
+    "paternalism_subject"
+  ]
+}

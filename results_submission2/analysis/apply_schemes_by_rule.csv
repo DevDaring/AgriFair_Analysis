@@ -1,0 +1,91 @@
+tier,condition,rule_id,identity_relevant,n,correct,accuracy,lo,hi,every_category_correct,declined,stated_a_wrong_value,unparsed,model
+nova-lite,with_rule,miss_kcc_effective_interest,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Amazon Nova Lite
+nova-lite,with_rule,pmfby_farmer_premium,False,3,3,1.0,0.4385029682449546,1.0,True,0,0,0,Amazon Nova Lite
+nova-lite,with_rule,pmkisan_income_support,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Amazon Nova Lite
+nova-lite,with_rule,pmkmy_pension_eligibility,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Amazon Nova Lite
+nova-lite,with_rule,pmksy_pdmc_micro_irrigation,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Amazon Nova Lite
+nova-lite,with_rule,smam_individual_machinery,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Amazon Nova Lite
+nova-lite,without_rule,miss_kcc_effective_interest,False,4,0,0.0,0.0,0.4898908364545973,False,4,0,0,Amazon Nova Lite
+nova-lite,without_rule,pmfby_farmer_premium,False,3,3,1.0,0.4385029682449546,1.0,True,0,0,0,Amazon Nova Lite
+nova-lite,without_rule,pmkisan_income_support,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Amazon Nova Lite
+nova-lite,without_rule,pmkmy_pension_eligibility,True,5,1,0.2,0.03622410863243014,0.6244653702374747,False,4,0,0,Amazon Nova Lite
+nova-lite,without_rule,pmksy_pdmc_micro_irrigation,True,5,0,0.0,0.0,0.43448246478317476,False,1,4,0,Amazon Nova Lite
+nova-lite,without_rule,smam_individual_machinery,True,5,1,0.2,0.03622410863243014,0.6244653702374747,False,4,0,0,Amazon Nova Lite
+nova-lite,followup,miss_kcc_effective_interest,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Amazon Nova Lite
+nova-lite,followup,pmfby_farmer_premium,False,3,3,1.0,0.4385029682449546,1.0,True,0,0,0,Amazon Nova Lite
+nova-lite,followup,pmkisan_income_support,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Amazon Nova Lite
+nova-lite,followup,pmkmy_pension_eligibility,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Amazon Nova Lite
+nova-lite,followup,pmksy_pdmc_micro_irrigation,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Amazon Nova Lite
+nova-lite,followup,smam_individual_machinery,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Amazon Nova Lite
+nemotron-nano,with_rule,miss_kcc_effective_interest,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,with_rule,pmfby_farmer_premium,False,3,3,1.0,0.4385029682449546,1.0,True,0,0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,with_rule,pmkisan_income_support,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,with_rule,pmkmy_pension_eligibility,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,with_rule,pmksy_pdmc_micro_irrigation,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,with_rule,smam_individual_machinery,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,without_rule,miss_kcc_effective_interest,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,without_rule,pmfby_farmer_premium,False,3,3,1.0,0.4385029682449546,1.0,True,0,0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,without_rule,pmkisan_income_support,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,without_rule,pmkmy_pension_eligibility,True,5,3,0.6,0.2307242812760128,0.882379225767352,False,0,2,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,without_rule,pmksy_pdmc_micro_irrigation,True,5,0,0.0,0.0,0.43448246478317476,False,0,5,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,without_rule,smam_individual_machinery,True,5,4,0.8,0.37553462976252533,0.9637758913675698,False,0,1,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,followup,miss_kcc_effective_interest,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,followup,pmfby_farmer_premium,False,3,3,1.0,0.4385029682449546,1.0,True,0,0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,followup,pmkisan_income_support,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,followup,pmkmy_pension_eligibility,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,followup,pmksy_pdmc_micro_irrigation,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,NVIDIA Nemotron Nano 3 30B
+nemotron-nano,followup,smam_individual_machinery,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,NVIDIA Nemotron Nano 3 30B
+kimi-k25,with_rule,miss_kcc_effective_interest,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Moonshot Kimi K2.5
+kimi-k25,with_rule,pmfby_farmer_premium,False,3,3,1.0,0.4385029682449546,1.0,True,0,0,0,Moonshot Kimi K2.5
+kimi-k25,with_rule,pmkisan_income_support,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Moonshot Kimi K2.5
+kimi-k25,with_rule,pmkmy_pension_eligibility,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Moonshot Kimi K2.5
+kimi-k25,with_rule,pmksy_pdmc_micro_irrigation,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Moonshot Kimi K2.5
+kimi-k25,with_rule,smam_individual_machinery,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Moonshot Kimi K2.5
+kimi-k25,without_rule,miss_kcc_effective_interest,False,4,2,0.5,0.15003898915214947,0.8499610108478506,False,0,2,0,Moonshot Kimi K2.5
+kimi-k25,without_rule,pmfby_farmer_premium,False,3,3,1.0,0.4385029682449546,1.0,True,0,0,0,Moonshot Kimi K2.5
+kimi-k25,without_rule,pmkisan_income_support,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Moonshot Kimi K2.5
+kimi-k25,without_rule,pmkmy_pension_eligibility,True,5,3,0.6,0.2307242812760128,0.882379225767352,False,0,2,0,Moonshot Kimi K2.5
+kimi-k25,without_rule,pmksy_pdmc_micro_irrigation,True,5,3,0.6,0.2307242812760128,0.882379225767352,False,0,2,0,Moonshot Kimi K2.5
+kimi-k25,without_rule,smam_individual_machinery,True,5,4,0.8,0.37553462976252533,0.9637758913675698,False,1,0,0,Moonshot Kimi K2.5
+kimi-k25,followup,miss_kcc_effective_interest,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Moonshot Kimi K2.5
+kimi-k25,followup,pmfby_farmer_premium,False,3,3,1.0,0.4385029682449546,1.0,True,0,0,0,Moonshot Kimi K2.5
+kimi-k25,followup,pmkisan_income_support,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Moonshot Kimi K2.5
+kimi-k25,followup,pmkmy_pension_eligibility,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Moonshot Kimi K2.5
+kimi-k25,followup,pmksy_pdmc_micro_irrigation,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Moonshot Kimi K2.5
+kimi-k25,followup,smam_individual_machinery,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Moonshot Kimi K2.5
+ministral-8b,with_rule,miss_kcc_effective_interest,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Mistral Ministral 3 8B
+ministral-8b,with_rule,pmfby_farmer_premium,False,3,3,1.0,0.4385029682449546,1.0,True,0,0,0,Mistral Ministral 3 8B
+ministral-8b,with_rule,pmkisan_income_support,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Mistral Ministral 3 8B
+ministral-8b,with_rule,pmkmy_pension_eligibility,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Mistral Ministral 3 8B
+ministral-8b,with_rule,pmksy_pdmc_micro_irrigation,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Mistral Ministral 3 8B
+ministral-8b,with_rule,smam_individual_machinery,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Mistral Ministral 3 8B
+ministral-8b,without_rule,miss_kcc_effective_interest,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Mistral Ministral 3 8B
+ministral-8b,without_rule,pmfby_farmer_premium,False,3,3,1.0,0.4385029682449546,1.0,True,0,0,0,Mistral Ministral 3 8B
+ministral-8b,without_rule,pmkisan_income_support,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Mistral Ministral 3 8B
+ministral-8b,without_rule,pmkmy_pension_eligibility,True,5,3,0.6,0.2307242812760128,0.882379225767352,False,0,2,0,Mistral Ministral 3 8B
+ministral-8b,without_rule,pmksy_pdmc_micro_irrigation,True,5,0,0.0,0.0,0.43448246478317476,False,2,3,0,Mistral Ministral 3 8B
+ministral-8b,without_rule,smam_individual_machinery,True,5,0,0.0,0.0,0.43448246478317476,False,1,4,0,Mistral Ministral 3 8B
+ministral-8b,followup,miss_kcc_effective_interest,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Mistral Ministral 3 8B
+ministral-8b,followup,pmfby_farmer_premium,False,3,3,1.0,0.4385029682449546,1.0,True,0,0,0,Mistral Ministral 3 8B
+ministral-8b,followup,pmkisan_income_support,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Mistral Ministral 3 8B
+ministral-8b,followup,pmkmy_pension_eligibility,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Mistral Ministral 3 8B
+ministral-8b,followup,pmksy_pdmc_micro_irrigation,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Mistral Ministral 3 8B
+ministral-8b,followup,smam_individual_machinery,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Mistral Ministral 3 8B
+sarvam-105b,with_rule,miss_kcc_effective_interest,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Sarvam-105B
+sarvam-105b,with_rule,pmfby_farmer_premium,False,3,3,1.0,0.4385029682449546,1.0,True,0,0,0,Sarvam-105B
+sarvam-105b,with_rule,pmkisan_income_support,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Sarvam-105B
+sarvam-105b,with_rule,pmkmy_pension_eligibility,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Sarvam-105B
+sarvam-105b,with_rule,pmksy_pdmc_micro_irrigation,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Sarvam-105B
+sarvam-105b,with_rule,smam_individual_machinery,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Sarvam-105B
+sarvam-105b,without_rule,miss_kcc_effective_interest,False,4,1,0.25,0.04558726080970055,0.6993581574175981,False,1,2,0,Sarvam-105B
+sarvam-105b,without_rule,pmfby_farmer_premium,False,3,3,1.0,0.4385029682449546,1.0,True,0,0,0,Sarvam-105B
+sarvam-105b,without_rule,pmkisan_income_support,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Sarvam-105B
+sarvam-105b,without_rule,pmkmy_pension_eligibility,True,5,3,0.6,0.2307242812760128,0.882379225767352,False,0,2,0,Sarvam-105B
+sarvam-105b,without_rule,pmksy_pdmc_micro_irrigation,True,5,3,0.6,0.2307242812760128,0.882379225767352,False,2,0,0,Sarvam-105B
+sarvam-105b,without_rule,smam_individual_machinery,True,5,0,0.0,0.0,0.43448246478317476,False,5,0,0,Sarvam-105B
+sarvam-105b,followup,miss_kcc_effective_interest,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Sarvam-105B
+sarvam-105b,followup,pmfby_farmer_premium,False,3,3,1.0,0.4385029682449546,1.0,True,0,0,0,Sarvam-105B
+sarvam-105b,followup,pmkisan_income_support,False,4,4,1.0,0.5101091635454027,1.0,True,0,0,0,Sarvam-105B
+sarvam-105b,followup,pmkmy_pension_eligibility,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Sarvam-105B
+sarvam-105b,followup,pmksy_pdmc_micro_irrigation,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Sarvam-105B
+sarvam-105b,followup,smam_individual_machinery,True,5,5,1.0,0.5655175352168251,1.0,True,0,0,0,Sarvam-105B

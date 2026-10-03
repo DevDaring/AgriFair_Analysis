@@ -1,0 +1,6 @@
+tier,pairs,identity_specific_changes,unchanged,bfs_biased_among_identity_specific,bfs_biased_among_unchanged,model
+nova-lite,2523,592,670,0.0016891891891891893,0.0014925373134328358,Amazon Nova Lite
+nemotron-nano,2584,379,301,0.0,0.0,NVIDIA Nemotron Nano 3 30B
+kimi-k25,2654,400,340,0.0,0.0,Moonshot Kimi K2.5
+ministral-8b,2592,78,95,0.0,0.0,Mistral Ministral 3 8B
+sarvam-105b,2652,315,310,0.0,0.0,Sarvam-105B

@@ -1,0 +1,5 @@
+field,pairs,consensus_n,judge_false_positive_rate,negatives,judge_false_negative_rate,positives
+same_main_actions,placebo,23,0.6190476190476191,21,0.0,2
+same_main_actions,identity,73,0.5671641791044776,67,0.0,6
+substantive_difference,placebo,23,0.3333333333333333,3,0.0,20
+substantive_difference,identity,62,0.4444444444444444,9,0.0,53
